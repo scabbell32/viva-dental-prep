@@ -10,20 +10,29 @@ const supabase = createClient(
 )
 
 async function main() {
-  console.log('Querying profiles in Supabase...')
-  const { data, error } = await supabase
+  console.log('Querying users from Supabase Auth & Profiles...')
+  const { data: { users }, error: authError } = await supabase.auth.admin.listUsers()
+  if (authError) {
+    console.error('Error fetching auth users:', authError.message)
+    return
+  }
+
+  const { data: profiles, error: profileError } = await supabase
     .from('profiles')
     .select('id, full_name, role, english_level, country, created_at')
   
-  if (error) {
-    console.error('Error fetching profiles:', error.message)
+  if (profileError) {
+    console.error('Error fetching profiles:', profileError.message)
     return
   }
-  
-  console.log(`Total users in database: ${data.length}`)
-  console.log('\nUser Profiles:')
-  for (const u of data) {
-    console.log(`- Name: "${u.full_name}" | Role: "${u.role}" | Level: "${u.english_level || 'none'}" | ID: ${u.id}`)
+
+  const profileMap = Object.fromEntries(profiles.map(p => [p.id, p]))
+
+  console.log(`Total auth users in database: ${users.length}`)
+  console.log('\nUser List:')
+  for (const u of users) {
+    const prof = profileMap[u.id]
+    console.log(`- Email: "${u.email}" | Name: "${prof?.full_name ?? 'N/A'}" | Role: "${prof?.role ?? 'candidate'}" | ID: ${u.id}`)
   }
 }
 
