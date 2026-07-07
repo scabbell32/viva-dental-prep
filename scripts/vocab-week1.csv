@@ -1,0 +1,31 @@
+spanish_term,english_term,pronunciation_tip,category,week_number
+Esmalte,Enamel,"EH-na-mel",Dental Anatomy,1
+Dentina,Dentin,"DEN-tin",Dental Anatomy,1
+Cemento,Cementum,"seh-MEN-tum",Dental Anatomy,1
+Pulpa,Pulp,"PULP",Dental Anatomy,1
+Periodonto,Periodontium,"peh-ree-oh-DON-shum",Dental Anatomy,1
+Ligamento periodontal,Periodontal ligament,"peh-ree-oh-DON-tal LIG-ah-ment",Dental Anatomy,1
+Hueso alveolar,Alveolar bone,"al-VEE-oh-lar BONE",Dental Anatomy,1
+Encía,Gingiva,"JIN-jih-vah",Dental Anatomy,1
+Encía libre,Free gingiva,"FREE JIN-jih-vah",Dental Anatomy,1
+Encía adherida,Attached gingiva,"ah-TACHT JIN-jih-vah",Dental Anatomy,1
+Surco gingival,Gingival sulcus,"JIN-jih-val SUL-kus",Dental Anatomy,1
+Corona,Crown,"KROWN",Dental Anatomy,1
+Raíz,Root,"ROOT",Dental Anatomy,1
+Cuello del diente,Cementoenamel junction (CEJ),"SEE-ee-JAY",Dental Anatomy,1
+Furca,Furcation,"fur-KAY-shun",Dental Anatomy,1
+Sonda periodontal,Periodontal probe,"peh-ree-oh-DON-tal PROBE",Clinical Instruments,1
+Raspador,Scaler,"SKAY-ler",Clinical Instruments,1
+Cureta,Curette,"kyoo-RET",Clinical Instruments,1
+Espejo bucal,Mouth mirror,"MOUTH MIR-er",Clinical Instruments,1
+Explorador,Explorer,"ex-PLOR-er",Clinical Instruments,1
+Caries,Dental caries / Cavity,"KAIR-eez",Pathology,1
+Placa bacteriana,Dental plaque,"DEN-tal PLAK",Pathology,1
+Cálculo,Calculus / Tartar,"KAL-kyoo-lus",Pathology,1
+Gingivitis,Gingivitis,"jin-jih-VY-tis",Pathology,1
+Periodontitis,Periodontitis,"peh-ree-oh-don-TY-tis",Pathology,1
+Higiene oral,Oral hygiene,"OR-al HY-jeen",General,1
+Profilaxis,Prophylaxis,"pro-fih-LAK-sis",General,1
+Fluoruro,Fluoride,"FLOOR-ide",General,1
+Radiografía,Radiograph,"RAY-dee-oh-graf",Imaging,1
+Bitewing,Bitewing radiograph,"BY-teewing",Imaging,1

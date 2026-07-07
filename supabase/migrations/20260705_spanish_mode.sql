@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS spanish_mode BOOLEAN DEFAULT FALSE;
