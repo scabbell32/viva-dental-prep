@@ -319,23 +319,33 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
   const spCircleRef = useRef<SVGCircleElement>(null)
   const enCircleRef = useRef<SVGCircleElement>(null)
 
-  // Per-question countdown timer (30s, resets on each question/phase change)
-  const [timeLeft, setTimeLeft] = useState(30)
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  // Inactivity watchdog — no time pressure while actively answering. A gentle
+  // prompt appears only after a stretch of no interaction (dawdling or the app
+  // left open). Any tap/click/keypress counts as activity and resets it.
+  const IDLE_MS = 90000
+  const [idlePromptOpen, setIdlePromptOpen] = useState(false)
+  const lastActivityRef = useRef(Date.now())
 
   useEffect(() => {
     const isActiveQuiz = phase === 'spanish-quiz' || phase === 'english-quiz'
-    if (!isActiveQuiz) {
-      if (timerRef.current) clearInterval(timerRef.current)
-      return
+    if (!isActiveQuiz) return
+    lastActivityRef.current = Date.now()
+    const markActivity = () => { lastActivityRef.current = Date.now() }
+    const events: (keyof WindowEventMap)[] = ['pointerdown', 'keydown', 'touchstart']
+    events.forEach(e => window.addEventListener(e, markActivity, { passive: true }))
+    const iv = setInterval(() => {
+      if (Date.now() - lastActivityRef.current >= IDLE_MS) setIdlePromptOpen(true)
+    }, 5000)
+    return () => {
+      events.forEach(e => window.removeEventListener(e, markActivity))
+      clearInterval(iv)
     }
-    setTimeLeft(30)
-    if (timerRef.current) clearInterval(timerRef.current)
-    timerRef.current = setInterval(() => {
-      setTimeLeft(t => (t <= 1 ? 0 : t - 1))
-    }, 1000)
-    return () => { if (timerRef.current) clearInterval(timerRef.current) }
-  }, [current, phase]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [phase])
+
+  function dismissIdlePrompt() {
+    lastActivityRef.current = Date.now()
+    setIdlePromptOpen(false)
+  }
 
   useEffect(() => {
     if (phase !== 'final-results') return
@@ -498,45 +508,35 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
       }
     }
 
-    const timerUrgent = timeLeft <= 5
-    const timerWarn   = timeLeft <= 10 && timeLeft > 5
-    const timerColor  = timerUrgent ? '#f43f5e' : timerWarn ? '#f97316' : '#94a3b8'
-    const timerBg     = timerUrgent ? 'rgba(244,63,94,0.12)' : timerWarn ? 'rgba(249,115,22,0.1)' : 'rgba(255,255,255,0.05)'
-    const timerBorder = timerUrgent ? 'rgba(244,63,94,0.35)' : timerWarn ? 'rgba(249,115,22,0.3)' : 'rgba(255,255,255,0.08)'
-
     return (
       <div>
-        {/* Flash keyframe — injected once, harmless if repeated */}
-        <style>{`@keyframes vdp-flash{0%,100%{opacity:1}50%{opacity:0.25}}`}</style>
+        {idlePromptOpen && (
+          <div
+            onClick={dismissIdlePrompt}
+            style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(5,8,16,0.82)', backdropFilter: 'blur(6px)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.5rem' }}
+          >
+            <div onClick={e => e.stopPropagation()} style={{ ...CARD, maxWidth: 380, textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>⏳</div>
+              <div style={{ fontFamily: 'var(--font-heading)', fontSize: '1.25rem', fontWeight: 800, color: '#fff', marginBottom: '0.5rem' }}>
+                ¿Sigues tomando el examen?
+              </div>
+              <p style={{ color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.5, marginBottom: '1.5rem' }}>
+                Tu progreso está guardado. Continúa cuando estés listo — evita dejar la app abierta sin actividad.
+              </p>
+              <button onClick={dismissIdlePrompt} style={{ ...BTN_PRIMARY, width: '100%' }}>
+                Sí, continuar
+              </button>
+            </div>
+          </div>
+        )}
         <div style={{ marginBottom: '1.25rem', padding: '0 0.25rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
             <span style={{ fontFamily: 'var(--font-heading)', fontSize: '0.8rem', fontWeight: 700, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
               {phaseLabel}
             </span>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-              {timeLeft === 0 && (
-                <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#f43f5e', animation: 'vdp-flash 0.6s ease-in-out infinite' }}>
-                  ⚡ ¡Decide ya!
-                </span>
-              )}
-              <span
-                aria-live="polite"
-                aria-label={`${timeLeft} segundos restantes`}
-                style={{
-                  fontSize: '0.78rem', fontWeight: 700, color: timerColor,
-                  background: timerBg, border: `1px solid ${timerBorder}`,
-                  borderRadius: 99, padding: '0.2rem 0.6rem',
-                  fontVariantNumeric: 'tabular-nums',
-                  animation: timerUrgent && timeLeft > 0 ? 'vdp-flash 0.9s ease-in-out infinite' : 'none',
-                  minWidth: '2.8rem', textAlign: 'center',
-                }}
-              >
-                {timeLeft}s
-              </span>
-              <span style={{ fontSize: '0.8rem', color: '#475569', fontWeight: 500 }}>
-                {phaseOffset + current + 1} / {grandTotal}
-              </span>
-            </div>
+            <span style={{ fontSize: '0.8rem', color: '#475569', fontWeight: 500 }}>
+              {phaseOffset + current + 1} / {grandTotal}
+            </span>
           </div>
           <div
             role="progressbar"
