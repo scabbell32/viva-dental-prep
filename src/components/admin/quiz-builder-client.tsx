@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
@@ -223,11 +224,13 @@ function QuestionCard({ q, index }: { q: AdminQuestion; index: number }) {
 }
 
 export function QuizBuilderClient({ chapters }: Props) {
+  const router = useRouter()
   const [range, setRange]         = useState('10-15')
   const [chapter, setChapter]     = useState('all')
   const [difficulty, setDiff]     = useState('mixed')
   const [qType, setQType]         = useState('both')
   const [loading, setLoading]     = useState(false)
+  const [settingDaily, setSettingDaily] = useState(false)
   const [questions, setQuestions] = useState<AdminQuestion[] | null>(null)
   const [error, setError]         = useState<string | null>(null)
 
@@ -255,6 +258,31 @@ export function QuizBuilderClient({ chapters }: Props) {
     }
     const data = await res.json()
     setQuestions(data)
+  }
+
+  async function setAsDailyQuiz() {
+    if (!questions || questions.length === 0) return
+    setSettingDaily(true)
+    setError(null)
+    try {
+      const res = await fetch('/api/admin/daily-quiz/set', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ questionIds: questions.map(q => q.id) }),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (res.ok) {
+        router.push('/admin/quiz-preview')
+        router.refresh()
+      } else {
+        setError(data.error ?? 'Error al establecer como Quiz del Día')
+      }
+    } catch (e) {
+      console.error('Error setting daily quiz:', e)
+      setError('Error de red al establecer como Quiz del Día')
+    } finally {
+      setSettingDaily(false)
+    }
   }
 
   const sections = questions ? buildSections(questions) : []
@@ -357,12 +385,22 @@ export function QuizBuilderClient({ chapters }: Props) {
                 </Badge>
               )}
             </div>
-            <button
-              onClick={generate}
-              className="text-xs text-indigo-500 hover:text-indigo-700 font-medium"
-            >
-              ↻ Regenerar
-            </button>
+            <div className="flex items-center gap-3">
+              <Button
+                size="sm"
+                onClick={setAsDailyQuiz}
+                disabled={settingDaily || loading}
+                className="bg-green-600 hover:bg-green-700 text-white text-xs font-semibold px-3 h-8 flex items-center gap-1.5"
+              >
+                {settingDaily ? 'Estableciendo...' : '📅 Establecer como Quiz del Día'}
+              </Button>
+              <button
+                onClick={generate}
+                className="text-xs text-indigo-500 hover:text-indigo-700 font-medium"
+              >
+                ↻ Regenerar
+              </button>
+            </div>
           </div>
 
           {totalCount === 0 ? (
