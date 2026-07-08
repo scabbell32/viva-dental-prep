@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Badge } from '@/components/ui/badge'
@@ -27,6 +26,12 @@ const TYPE_COLOR: Record<string, string> = {
 
 interface Props {
   chapters: string[]
+}
+
+const RANGES: Record<string, { min: number; max: number; label: string }> = {
+  '7-10':  { min: 7,  max: 10, label: '7–10 (corto)' },
+  '10-15': { min: 10, max: 15, label: '10–15 (normal)' },
+  '15-20': { min: 15, max: 20, label: '15–20 (largo)' },
 }
 
 interface CaseGroup {
@@ -218,7 +223,7 @@ function QuestionCard({ q, index }: { q: AdminQuestion; index: number }) {
 }
 
 export function QuizBuilderClient({ chapters }: Props) {
-  const [count, setCount]         = useState('10')
+  const [range, setRange]         = useState('10-15')
   const [chapter, setChapter]     = useState('all')
   const [difficulty, setDiff]     = useState('mixed')
   const [qType, setQType]         = useState('both')
@@ -231,10 +236,12 @@ export function QuizBuilderClient({ chapters }: Props) {
     setError(null)
     setQuestions(null)
 
+    const { min, max } = RANGES[range] ?? RANGES['10-15']
     const params = new URLSearchParams({
       track: 'nbdhe',
       week: '20',
-      count,
+      min: String(min),
+      max: String(max),
       difficulty,
       type: qType,
     })
@@ -264,14 +271,15 @@ export function QuizBuilderClient({ chapters }: Props) {
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <div>
             <Label className="text-xs text-gray-500 mb-1 block">¿Cuántas preguntas?</Label>
-            <Input
-              type="number"
-              min={1}
-              max={50}
-              value={count}
-              onChange={e => setCount(e.target.value)}
-              className="text-sm"
-            />
+            <Select value={range} onValueChange={v => v && setRange(v)}>
+              <SelectTrigger className="text-sm"><SelectValue /></SelectTrigger>
+              <SelectContent>
+                {Object.entries(RANGES).map(([key, r]) => (
+                  <SelectItem key={key} value={key}>{r.label}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <p className="text-[11px] text-gray-400 mt-1">El número exacto se ajusta según los grupos de casos.</p>
           </div>
 
           <div>

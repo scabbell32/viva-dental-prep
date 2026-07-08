@@ -7,6 +7,13 @@ import type { SafeQuestion, Track, Option, DraftAnswer, EnglishLevel, SubmitResp
 const OPTIONS: Option[] = ['a', 'b', 'c', 'd', 'e', 'f']
 const OPTION_LABELS: Record<Option, string> = { a: 'A', b: 'B', c: 'C', d: 'D', e: 'E', f: 'F' }
 
+const REPORT_REASONS = [
+  { key: 'garbled', label: 'Texto confuso' },
+  { key: 'wrong_answer', label: 'Respuesta incorrecta' },
+  { key: 'duplicate_options', label: 'Opciones repetidas' },
+  { key: 'other', label: 'Otro' },
+]
+
 const CARD: React.CSSProperties = {
   background: 'rgba(20,30,54,0.85)',
   border: '1px solid rgba(255,255,255,0.1)',
@@ -157,6 +164,128 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
   const revealedRef = useRef<Set<string>>(new Set())
   // Display state for options translation toggle (resets on navigation)
   const [showOptionsES, setShowOptionsES] = useState(false)
+
+  // Report and zoom states
+  const [reportedIds, setReportedIds] = useState<Set<string>>(new Set())
+  const [reportOpenFor, setReportOpenFor] = useState<string | null>(null)
+  const [zoomedImageUrl, setZoomedImageUrl] = useState<string | null>(null)
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setZoomedImageUrl(null)
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [])
+
+  async function reportQuestion(questionId: string, reason: string) {
+    try {
+      const res = await fetch('/api/questions/report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question_id: questionId, reason }),
+      })
+      if (res.ok) {
+        setReportedIds(prev => {
+          const next = new Set(prev)
+          next.add(questionId)
+          return next
+        })
+      }
+    } catch (err) {
+      console.error('Error reporting question:', err)
+    } finally {
+      setReportOpenFor(null)
+    }
+  }
+
+  function renderZoomOverlay() {
+    if (!zoomedImageUrl) return null
+    return (
+      <div
+        onClick={() => setZoomedImageUrl(null)}
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 9999,
+          backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          backdropFilter: 'blur(8px)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          cursor: 'zoom-out',
+          padding: '1.5rem',
+          animation: 'vdp-fade-in 0.2s ease-out',
+        }}
+      >
+        <style>{`
+          @keyframes vdp-fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          @keyframes vdp-zoom-in {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+          }
+        `}</style>
+        <div
+          onClick={(e) => e.stopPropagation()}
+          style={{
+            position: 'relative',
+            maxWidth: '95vw',
+            maxHeight: '90vh',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            animation: 'vdp-zoom-in 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
+          }}
+        >
+          <img
+            src={zoomedImageUrl}
+            alt="Zoomed diagram"
+            onClick={() => setZoomedImageUrl(null)}
+            style={{
+              maxWidth: '100%',
+              maxHeight: '85vh',
+              objectFit: 'contain',
+              borderRadius: 12,
+              border: '2px solid rgba(255, 255, 255, 0.1)',
+              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+              backgroundColor: '#000',
+              cursor: 'zoom-out',
+            }}
+          />
+          <button
+            onClick={() => setZoomedImageUrl(null)}
+            style={{
+              position: 'absolute',
+              top: -40,
+              right: 0,
+              background: 'rgba(255, 255, 255, 0.1)',
+              border: '1px solid rgba(255, 255, 255, 0.2)',
+              color: '#fff',
+              borderRadius: '50%',
+              width: 32,
+              height: 32,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              fontSize: '1rem',
+              fontWeight: 700,
+              transition: 'background 0.2s',
+            }}
+            title="Close / Cerrar (Esc)"
+          >
+            ✕
+          </button>
+          <span style={{ color: 'rgba(255, 255, 255, 0.5)', fontSize: '0.75rem', marginTop: '0.75rem', fontWeight: 500 }}>
+            Click anywhere to close · Haz clic en cualquier parte para cerrar
+          </span>
+        </div>
+      </div>
+    )
+  }
 
   // localQuestions allows reshuffling on retake without a page reload
   const [localQuestions, setLocalQuestions] = useState<SafeQuestion[]>(() => shuffleKeepingGroupsTogether([...questions]))
@@ -461,7 +590,13 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
                   <div style={{ display: 'flex', gap: '0.6rem', overflowX: 'auto', paddingBottom: '0.4rem', WebkitOverflowScrolling: 'touch' }}>
                     {caseSet.images.map((img: CaseImage, imgIdx: number) => (
                       <div key={img.id} style={{ position: 'relative', flexShrink: 0, maxWidth: caseSet.images!.length > 1 ? '80%' : '100%', width: caseSet.images!.length > 1 ? 240 : '100%', borderRadius: 10, border: '1px solid rgba(255,255,255,0.08)', overflow: 'hidden', background: '#000', display: 'flex', flexDirection: 'column' }}>
-                        <img src={img.image_url} alt={img.caption || `Case image ${imgIdx + 1}`} style={{ width: '100%', height: 140, objectFit: 'contain', background: '#000' }} />
+                        <img
+                          src={img.image_url}
+                          alt={img.caption || `Case image ${imgIdx + 1}`}
+                          onClick={() => setZoomedImageUrl(img.image_url)}
+                          style={{ width: '100%', height: 140, objectFit: 'contain', background: '#000', cursor: 'zoom-in', transition: 'filter 0.2s' }}
+                          title="Click to zoom / Haz clic para ampliar"
+                        />
                         {caseSet.images!.length > 1 && (
                           <span style={{ position: 'absolute', top: 6, right: 6, background: 'rgba(0,0,0,0.6)', color: '#fff', fontSize: '0.6rem', fontWeight: 700, padding: '0.15rem 0.4rem', borderRadius: 4 }}>
                             {imgIdx + 1} / {caseSet.images!.length}
@@ -639,7 +774,43 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </button>
           </div>
+
+          {/* Report a problem — deliberately low-key */}
+          <div style={{ marginTop: '1.25rem', textAlign: 'center', minHeight: '1.5rem' }}>
+            {reportedIds.has(questionId) ? (
+              <span style={{ fontSize: '0.72rem', color: '#475569' }}>✓ Gracias, lo revisaremos</span>
+            ) : reportOpenFor === questionId ? (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{ fontSize: '0.7rem', color: '#64748b' }}>¿Qué está mal con esta pregunta?</span>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', justifyContent: 'center' }}>
+                  {REPORT_REASONS.map(r => (
+                    <button
+                      key={r.key}
+                      onClick={() => reportQuestion(questionId, r.key)}
+                      style={{ fontSize: '0.72rem', color: '#94a3b8', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 99, padding: '0.25rem 0.7rem', cursor: 'pointer' }}
+                    >
+                      {r.label}
+                    </button>
+                  ))}
+                  <button
+                    onClick={() => setReportOpenFor(null)}
+                    style={{ fontSize: '0.72rem', color: '#475569', background: 'none', border: 'none', cursor: 'pointer' }}
+                  >
+                    Cancelar
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <button
+                onClick={() => setReportOpenFor(questionId)}
+                style={{ fontSize: '0.72rem', color: '#475569', background: 'none', border: 'none', cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}
+              >
+                🚩 Reportar un problema
+              </button>
+            )}
+          </div>
         </div>
+        {renderZoomOverlay()}
       </div>
     )
   }
@@ -656,7 +827,13 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
             <div style={{ display: 'flex', gap: '0.6rem', overflowX: 'auto', paddingBottom: '0.4rem', WebkitOverflowScrolling: 'touch' }}>
               {currentImages.map((url, idx) => (
                 <div key={idx} style={{ position: 'relative', flexShrink: 0, maxWidth: currentImages.length > 1 ? '80%' : '100%', width: currentImages.length > 1 ? 240 : '100%', borderRadius: 10, border: '1px solid rgba(255,255,255,0.08)', overflow: 'hidden', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={url} alt={`Diagrama ${idx + 1}`} style={{ maxWidth: '100%', maxHeight: 200, objectFit: 'contain' }} />
+                  <img
+                    src={url}
+                    alt={`Diagrama ${idx + 1}`}
+                    onClick={() => setZoomedImageUrl(url)}
+                    style={{ maxWidth: '100%', maxHeight: 200, objectFit: 'contain', cursor: 'zoom-in' }}
+                    title="Click to zoom / Haz clic para ampliar"
+                  />
                   {currentImages.length > 1 && (
                     <span style={{ position: 'absolute', top: 6, right: 6, background: 'rgba(0,0,0,0.6)', color: '#fff', fontSize: '0.6rem', fontWeight: 700, padding: '0.15rem 0.4rem', borderRadius: 4 }}>
                       {idx + 1} / {currentImages.length}
@@ -880,7 +1057,13 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
             <div style={{ display: 'flex', gap: '0.6rem', overflowX: 'auto', paddingBottom: '0.4rem', WebkitOverflowScrolling: 'touch' }}>
               {currentImages.map((url, idx) => (
                 <div key={idx} style={{ position: 'relative', flexShrink: 0, maxWidth: currentImages.length > 1 ? '80%' : '100%', width: currentImages.length > 1 ? 240 : '100%', borderRadius: 10, border: '1px solid rgba(255,255,255,0.08)', overflow: 'hidden', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={url} alt={`Diagrama ${idx + 1}`} style={{ maxWidth: '100%', maxHeight: 200, objectFit: 'contain' }} />
+                  <img
+                    src={url}
+                    alt={`Diagrama ${idx + 1}`}
+                    onClick={() => setZoomedImageUrl(url)}
+                    style={{ maxWidth: '100%', maxHeight: 200, objectFit: 'contain', cursor: 'zoom-in' }}
+                    title="Click to zoom / Haz clic para ampliar"
+                  />
                   {currentImages.length > 1 && (
                     <span style={{ position: 'absolute', top: 6, right: 6, background: 'rgba(0,0,0,0.6)', color: '#fff', fontSize: '0.6rem', fontWeight: 700, padding: '0.15rem 0.4rem', borderRadius: 4 }}>
                       {idx + 1} / {currentImages.length}
@@ -1033,7 +1216,13 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
                           <div style={{ display: 'flex', gap: '0.6rem', overflowX: 'auto', marginTop: '0.5rem', paddingBottom: '0.4rem' }}>
                             {q.case_set.images.map((img, imgIdx) => (
                               <div key={img.id} style={{ position: 'relative', flexShrink: 0, maxWidth: '80%', width: 220, borderRadius: 8, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
-                                <img src={img.image_url} alt={img.caption || `Case image ${imgIdx + 1}`} style={{ width: '100%', height: 130, objectFit: 'contain', background: '#000' }} />
+                                <img
+                                  src={img.image_url}
+                                  alt={img.caption || `Case image ${imgIdx + 1}`}
+                                  onClick={() => setZoomedImageUrl(img.image_url)}
+                                  style={{ width: '100%', height: 130, objectFit: 'contain', background: '#000', cursor: 'zoom-in' }}
+                                  title="Click to zoom / Haz clic para ampliar"
+                                />
                                 {q.case_set!.images!.length > 1 && (
                                   <span style={{ position: 'absolute', top: 6, right: 6, background: 'rgba(0,0,0,0.6)', color: '#fff', fontSize: '0.6rem', fontWeight: 700, padding: '0.15rem 0.4rem', borderRadius: 4 }}>
                                     {imgIdx + 1} / {q.case_set!.images!.length}
@@ -1112,6 +1301,7 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38"/></svg>
           </button>
         </div>
+        {renderZoomOverlay()}
       </div>
     )
   }

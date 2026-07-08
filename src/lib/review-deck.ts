@@ -1,4 +1,5 @@
 import { createAdminClient } from '@/lib/supabase/admin'
+import { shuffle } from '@/lib/utils'
 import type { SafeQuestion, Track } from '@/types/database'
 
 const SAFE_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, option_f, difficulty, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, option_f_es, image_url, image_urls, case_set_id, question_type, sequence_order, lock_option_order, is_legacy, case_set:case_sets(*, images:case_images(*))'
@@ -105,10 +106,9 @@ export async function buildReviewDeck(candidateId: string, track: Track): Promis
       .select(SAFE_COLUMNS)
       .eq('track', track)
       .eq('is_active', true)
+      .eq('is_legacy', false) // only new + reviewed-and-cleared questions reach candidates
       .limit(30)
-    const shuffled = (filler ?? [])
-      .filter(q => !exclude.has(q.id))
-      .sort(() => Math.random() - 0.5)
+    const shuffled = shuffle((filler ?? []).filter(q => !exclude.has(q.id)))
       .slice(0, 10 - questionIds.length)
     questionIds = [...questionIds, ...shuffled.map(q => q.id)]
   }
@@ -120,6 +120,7 @@ export async function buildReviewDeck(candidateId: string, track: Track): Promis
     .select(SAFE_COLUMNS)
     .in('id', questionIds)
     .eq('is_active', true)
+    .eq('is_legacy', false) // don't resurface unreviewed legacy questions in repaso
 
   const parsed = (rows ?? []).map(q => {
     const rawCaseSet = (q as any).case_set
@@ -133,7 +134,7 @@ export async function buildReviewDeck(candidateId: string, track: Track): Promis
     }
   })
 
-  const questions = parsed.sort(() => Math.random() - 0.5) as unknown as SafeQuestion[]
+  const questions = shuffle(parsed) as unknown as SafeQuestion[]
 
   return { questions, eligibleCount, isMixed }
 }

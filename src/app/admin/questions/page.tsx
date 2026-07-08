@@ -30,6 +30,21 @@ export default async function QuestionsPage() {
     }
   })
 
+  // Open candidate reports, grouped by question
+  const { data: reportRows } = await adminClient
+    .from('question_reports')
+    .select('question_id, reason')
+    .eq('status', 'open')
+
+  const reports: Record<string, { count: number; reasons: string[] }> = {}
+  for (const r of reportRows ?? []) {
+    if (!reports[r.question_id]) reports[r.question_id] = { count: 0, reasons: [] }
+    reports[r.question_id].count++
+    if (r.reason && !reports[r.question_id].reasons.includes(r.reason)) {
+      reports[r.question_id].reasons.push(r.reason)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Nav role="admin" />
@@ -41,7 +56,7 @@ export default async function QuestionsPage() {
           <CardContent><QuestionForm /></CardContent>
         </Card>
 
-        <QuestionsClient questions={parsedQuestions} />
+        <QuestionsClient questions={parsedQuestions} reports={reports} />
       </main>
     </div>
   )

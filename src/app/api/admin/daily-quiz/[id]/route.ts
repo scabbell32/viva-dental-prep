@@ -35,6 +35,49 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
     updated = updated.filter((qid: string) => qid !== questionId)
   } else if (action === 'add') {
     if (!updated.includes(questionId)) updated = [...updated, questionId]
+  } else if (action === 'replace') {
+    const { data: currentQ } = await adminDb
+      .from('questions')
+      .select('track, week_number')
+      .eq('id', questionId)
+      .maybeSingle()
+
+    const qTrack = currentQ?.track || 'nbdhe'
+    const qWeek = currentQ?.week_number || 1
+
+    let candidatesQuery = adminDb
+      .from('questions')
+      .select('id')
+      .eq('track', qTrack)
+      .eq('is_active', true)
+      .eq('week_number', qWeek)
+
+    if (updated.length > 0) {
+      candidatesQuery = candidatesQuery.not('id', 'in', `(${updated.join(',')})`)
+    }
+
+    const { data: candidates } = await candidatesQuery.limit(30)
+
+    if (candidates && candidates.length > 0) {
+      const randomCandidate = candidates[Math.floor(Math.random() * candidates.length)].id
+      updated = updated.map((qid: string) => qid === questionId ? randomCandidate : qid)
+    } else {
+      let fallbackQuery = adminDb
+        .from('questions')
+        .select('id')
+        .eq('track', qTrack)
+        .eq('is_active', true)
+
+      if (updated.length > 0) {
+        fallbackQuery = fallbackQuery.not('id', 'in', `(${updated.join(',')})`)
+      }
+
+      const { data: fallbackCandidates } = await fallbackQuery.limit(30)
+      if (fallbackCandidates && fallbackCandidates.length > 0) {
+        const randomCandidate = fallbackCandidates[Math.floor(Math.random() * fallbackCandidates.length)].id
+        updated = updated.map((qid: string) => qid === questionId ? randomCandidate : qid)
+      }
+    }
   } else if (action === 'reorder') {
     // { action: 'reorder', questionIds: string[] }
     const { questionIds } = await req.json().catch(() => ({})) as { questionIds?: string[] }

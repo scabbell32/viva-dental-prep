@@ -6,6 +6,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 import { QuizClient } from '@/components/quiz/quiz-client'
 import { getCurrentWeekNumber } from '@/lib/program-week'
+import { selectQuizQuestions } from '@/lib/quiz-selection'
 import type { Track } from '@/types/database'
 
 const SAFE_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, option_f, difficulty, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, option_f_es, image_url, image_urls, case_set_id, question_type, sequence_order, lock_option_order, is_legacy, case_set:case_sets(*, images:case_images(*))'
@@ -55,11 +56,12 @@ async function fetchQuestions(track: Track, week: number): Promise<Record<string
     .select(SAFE_COLUMNS)
     .eq('track', track)
     .eq('is_active', true)
+    .eq('is_legacy', false) // only new + reviewed-and-cleared questions reach candidates
     .lte('week_number', week)
     .order('week_number', { ascending: false })
     .limit(50)
-  const shuffled = (data ?? []).sort(() => Math.random() - 0.5).slice(0, 15)
-  return parseCaseSets(shuffled) as Record<string, unknown>[]
+  const selected = selectQuizQuestions((data ?? []) as { case_set_id?: string | null; sequence_order?: number | null }[], 15)
+  return parseCaseSets(selected) as Record<string, unknown>[]
 }
 
 export default async function QuizPage() {

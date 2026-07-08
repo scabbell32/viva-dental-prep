@@ -6,6 +6,7 @@ import { redirect } from 'next/navigation'
 import type { SafeQuestion } from '@/types/database'
 import { QuizClient } from '@/components/quiz/quiz-client'
 import { getCurrentWeekNumber } from '@/lib/program-week'
+import { selectQuizQuestions } from '@/lib/quiz-selection'
 
 const SAFE_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, option_f, difficulty, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, option_f_es, image_url, image_urls, case_set_id, question_type, sequence_order, lock_option_order, is_legacy, case_set:case_sets(*, images:case_images(*))'
 
@@ -29,9 +30,10 @@ async function fetchPracticeQuestions() {
     .from('questions')
     .select(SAFE_COLUMNS)
     .eq('is_active', true)
+    .eq('is_legacy', false) // only new + reviewed-and-cleared questions reach candidates
     .limit(100)
-  const shuffled = (data ?? []).sort(() => Math.random() - 0.5).slice(0, 15)
-  return parseCaseSets(shuffled)
+  const selected = selectQuizQuestions((data ?? []) as { case_set_id?: string | null; sequence_order?: number | null }[], 15)
+  return parseCaseSets(selected)
 }
 
 const darkPage = {

@@ -607,14 +607,41 @@ function EditForm({ question, onDone }: { question: Question; onDone: (updated: 
   )
 }
 
-export function QuestionsClient({ questions: initial }: { questions: Question[] }) {
+const REPORT_REASON_LABELS: Record<string, string> = {
+  garbled: 'Texto confuso',
+  wrong_answer: 'Respuesta incorrecta',
+  duplicate_options: 'Opciones repetidas',
+  other: 'Otro',
+}
+
+type ReportInfo = { count: number; reasons: string[] }
+
+export function QuestionsClient({ questions: initial, reports = {} }: { questions: Question[]; reports?: Record<string, ReportInfo> }) {
   const supabase = createClient()
   const [questions, setQuestions] = useState(initial)
+  const [reportMap, setReportMap] = useState(reports)
   const [editing, setEditing] = useState<string | null>(null)
   const [filter, setFilter] = useState('')
   const [weekFilter, setWeekFilter] = useState<string>('all')
   const [legacyFilter, setLegacyFilter] = useState<string>('all')
+  const [reportedOnly, setReportedOnly] = useState(false)
   const [deleting, setDeleting] = useState<string | null>(null)
+  const [resolving, setResolving] = useState<string | null>(null)
+
+  async function resolveReports(questionId: string) {
+    setResolving(questionId)
+    await supabase
+      .from('question_reports')
+      .update({ status: 'resolved' })
+      .eq('question_id', questionId)
+      .eq('status', 'open')
+    setReportMap(prev => {
+      const next = { ...prev }
+      delete next[questionId]
+      return next
+    })
+    setResolving(null)
+  }
 
   function applyEdit(updated: Question) {
     setQuestions(prev => prev.map(q => q.id === updated.id ? updated : q))
@@ -629,17 +656,20 @@ export function QuestionsClient({ questions: initial }: { questions: Question[] 
     setDeleting(null)
   }
 
+  const totalReported = Object.keys(reportMap).length
+
   const filtered = questions.filter(q => {
     const matchesWeek = weekFilter === 'all' || String(q.week_number) === weekFilter
-    const matchesLegacy = legacyFilter === 'all' || 
-      (legacyFilter === 'legacy' && q.is_legacy) || 
+    const matchesLegacy = legacyFilter === 'all' ||
+      (legacyFilter === 'legacy' && q.is_legacy) ||
       (legacyFilter === 'new' && !q.is_legacy)
+    const matchesReported = !reportedOnly || Boolean(reportMap[q.id])
     const search = filter.toLowerCase()
     const matchesSearch = !search ||
       q.question_text.toLowerCase().includes(search) ||
       (q.chapter_tag ?? '').toLowerCase().includes(search) ||
       q.option_a.toLowerCase().includes(search)
-    return matchesWeek && matchesLegacy && matchesSearch
+    return matchesWeek && matchesLegacy && matchesReported && matchesSearch
   })
 
   return (
@@ -667,6 +697,16 @@ export function QuestionsClient({ questions: initial }: { questions: Question[] 
             <SelectItem value="legacy">Solo Legacy (Importadas)</SelectItem>
           </SelectContent>
         </Select>
+        <Button
+          type="button"
+          size="sm"
+          variant={reportedOnly ? 'default' : 'outline'}
+          onClick={() => setReportedOnly(v => !v)}
+          className={`h-8 text-xs ${reportedOnly ? 'bg-red-600 hover:bg-red-700 text-white' : totalReported > 0 ? 'border-red-300 text-red-700' : ''}`}
+          disabled={totalReported === 0 && !reportedOnly}
+        >
+          🚩 Reportadas{totalReported > 0 ? ` (${totalReported})` : ''}
+        </Button>
         <span className="text-sm text-gray-500 self-center">{filtered.length} pregunta{filtered.length !== 1 ? 's' : ''}</span>
       </div>
 
@@ -686,6 +726,11 @@ export function QuestionsClient({ questions: initial }: { questions: Question[] 
                     {q.week_number && <Badge variant="secondary" className="text-xs">Sem. {q.week_number}</Badge>}
                     <Badge variant="secondary" className="text-xs capitalize">{q.difficulty}</Badge>
                     {q.is_legacy && <Badge variant="outline" className="text-xs bg-amber-50 text-amber-700 border-amber-200">Legacy</Badge>}
+                    {reportMap[q.id] && (
+                      <Badge variant="outline" className="text-xs bg-red-50 text-red-700 border-red-300">
+                        🚩 Reportada ({reportMap[q.id].count}){reportMap[q.id].reasons.length > 0 ? `: ${reportMap[q.id].reasons.map(r => REPORT_REASON_LABELS[r] ?? r).join(', ')}` : ''}
+                      </Badge>
+                    )}
                     {q.case_set && (
                       <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">
                         Grupo: {q.case_set.case_label}
@@ -732,6 +777,18 @@ export function QuestionsClient({ questions: initial }: { questions: Question[] 
                 </div>
 
                 <div className="flex gap-2 flex-shrink-0">
+                  {reportMap[q.id] && (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="text-xs h-7 border-green-300 text-green-700"
+                      disabled={resolving === q.id}
+                      onClick={() => resolveReports(q.id)}
+                      title="Marcar los reportes de esta pregunta como resueltos"
+                    >
+                      {resolving === q.id ? '...' : '✓ Resolver'}
+                    </Button>
+                  )}
                   <Button
                     size="sm"
                     variant="outline"

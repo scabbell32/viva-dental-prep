@@ -69,6 +69,7 @@ export interface Question {
   difficulty: Difficulty
   is_active: boolean
   created_at: string
+  updated_at?: string
   // Case grouping
   case_set_id: string | null
   question_type: QuestionType
