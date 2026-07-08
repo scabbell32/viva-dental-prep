@@ -42,6 +42,7 @@ export function Nav({ role }: { role: Role }) {
     { href: '/admin',                     label: ui.admin.candidates },
     { href: '/admin/quiz-preview',        label: '📋 Quiz del Día' },
     { href: '/admin/quiz-builder',        label: '⚡ Generador' },
+    { href: '/admin/quiz-results',        label: '📊 Historial' },
     { href: '/admin/questions',           label: ui.admin.questions },
     { href: '/admin/case-sets',           label: 'Case Sets' },
     { href: '/admin/questions/translate', label: 'Traducir e Imágenes' },

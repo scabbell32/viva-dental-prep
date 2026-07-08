@@ -162,6 +162,7 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
   const [stackAdding, setStackAdding] = useState<Set<string>>(new Set())
   // Tracks which question IDs had a translation revealed this attempt (monotonic)
   const revealedRef = useRef<Set<string>>(new Set())
+  const startTimeRef = useRef(Date.now())
   // Display state for options translation toggle (resets on navigation)
   const [showOptionsES, setShowOptionsES] = useState(false)
 
@@ -431,10 +432,11 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
     }
     setSubmitting(true)
     setSubmitError(null)
+    const durationSeconds = Math.round((Date.now() - startTimeRef.current) / 1000)
     const res = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ track, week_number: weekNumber, answers: complete, mode }),
+      body: JSON.stringify({ track, week_number: weekNumber, answers: complete, mode, duration_seconds: durationSeconds }),
     })
     setSubmitting(false)
     if (!res.ok) {

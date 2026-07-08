@@ -60,14 +60,22 @@ export default async function AdminPage() {
     <div className="min-h-screen bg-gray-50">
       <Nav role="admin" />
       <main className="max-w-5xl mx-auto px-4 py-8 space-y-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-wrap gap-3">
           <h1 className="text-2xl font-bold text-gray-800">{ui.admin.candidates}</h1>
-          <Link
-            href="/admin/candidates/new"
-            className="bg-teal-600 hover:bg-teal-700 text-white text-sm px-4 py-2 rounded-md"
-          >
-            + Agregar Candidato
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              href="/admin/quiz-results"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-md"
+            >
+              📊 Historial de Quizzes
+            </Link>
+            <Link
+              href="/admin/candidates/new"
+              className="bg-teal-600 hover:bg-teal-700 text-white text-sm px-4 py-2 rounded-md"
+            >
+              + Agregar Candidato
+            </Link>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -30,6 +30,7 @@ type Attempt = {
   answers: AnswerRecord[]
   completed_at: string
   mode: string
+  duration_seconds?: number | null
 }
 
 type Profile = { id: string; full_name: string }
@@ -38,6 +39,25 @@ const OPTIONS = ['a', 'b', 'c', 'd'] as const
 const OPTION_LABELS: Record<string, string> = { a: 'A', b: 'B', c: 'C', d: 'D' }
 const DIFF_COLOR: Record<string, string> = {
   easy: '#16a34a', medium: '#d97706', hard: '#dc2626',
+}
+
+function formatDuration(seconds: number | null | undefined): string {
+  if (seconds == null || seconds <= 0) return '—'
+  const m = Math.floor(seconds / 60)
+  const s = seconds % 60
+  if (m === 0) return `${s}s`
+  return `${m}m ${s}s`
+}
+
+function formatCompletedAt(isoString: string): string {
+  try {
+    const d = new Date(isoString)
+    const time = d.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit', hour12: true })
+    const date = d.toLocaleDateString('es-MX', { day: 'numeric', month: 'short' })
+    return `${date}, ${time}`
+  } catch {
+    return '—'
+  }
 }
 
 // Find a candidate's answer for a specific question across their attempts
@@ -280,21 +300,28 @@ export function QuizResultsClient({
                               <span className="text-xs">no completó</span>
                             </div>
                           )
-                          const isCorrect = ans.selected_option === q.correct_option
-                          return (
-                            <div key={c.id} className="flex items-center gap-2 text-sm py-1">
-                              <span className="w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold"
-                                style={{ background: isCorrect ? '#dcfce7' : '#fef2f2', color: isCorrect ? '#15803d' : '#dc2626' }}>
-                                {isCorrect ? '✓' : '✗'}
-                              </span>
-                              <span className="flex-1 text-gray-700">{c.full_name}</span>
-                              <span className="text-xs font-semibold px-1.5 py-0.5 rounded"
-                                style={{ background: isCorrect ? '#dcfce7' : '#fef2f2', color: isCorrect ? '#15803d' : '#dc2626' }}>
-                                {OPTION_LABELS[ans.selected_option]}: {q[`option_${ans.selected_option as 'a' | 'b' | 'c' | 'd'}` as keyof Question] as string}
-                              </span>
-                              {ans.used_translation && <span className="text-xs text-gray-400">usó traducción</span>}
-                            </div>
-                          )
+                           const isCorrect = ans.selected_option === q.correct_option
+                           const attempt = latestAttempts.get(c.id)
+                           return (
+                             <div key={c.id} className="flex items-center gap-2 text-sm py-1">
+                               <span className="w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold"
+                                 style={{ background: isCorrect ? '#dcfce7' : '#fef2f2', color: isCorrect ? '#15803d' : '#dc2626' }}>
+                                 {isCorrect ? '✓' : '✗'}
+                               </span>
+                               <span className="text-gray-700">{c.full_name}</span>
+                               {attempt && (
+                                 <span className="text-[10px] text-gray-400">
+                                   ({formatCompletedAt(attempt.completed_at)} · {formatDuration(attempt.duration_seconds)})
+                                 </span>
+                               )}
+                               <span className="flex-1" />
+                               <span className="text-xs font-semibold px-1.5 py-0.5 rounded"
+                                 style={{ background: isCorrect ? '#dcfce7' : '#fef2f2', color: isCorrect ? '#15803d' : '#dc2626' }}>
+                                 {OPTION_LABELS[ans.selected_option]}: {q[`option_${ans.selected_option as 'a' | 'b' | 'c' | 'd'}` as keyof Question] as string}
+                               </span>
+                               {ans.used_translation && <span className="text-xs text-gray-400">usó traducción</span>}
+                             </div>
+                           )
                         })}
                       </div>
                     </div>
@@ -313,7 +340,9 @@ export function QuizResultsClient({
             <thead>
               <tr className="border-b bg-gray-50">
                 <th className="text-left px-4 py-3 font-semibold text-gray-700 whitespace-nowrap sticky left-0 bg-gray-50 z-10">Candidato</th>
-                <th className="px-3 py-3 font-semibold text-gray-700 whitespace-nowrap">Puntuación</th>
+                <th className="px-3 py-3 font-semibold text-gray-700 whitespace-nowrap text-center">Puntuación</th>
+                <th className="px-3 py-3 font-semibold text-gray-700 whitespace-nowrap text-center font-medium">Completado</th>
+                <th className="px-3 py-3 font-semibold text-gray-700 whitespace-nowrap text-center font-medium">Duración</th>
                 {questions.map((q, i) => (
                   <th key={q.id} className="px-2 py-3 font-semibold text-gray-500 text-center" title={q.question_text}>
                     Q{i + 1}
@@ -341,6 +370,12 @@ export function QuizResultsClient({
                           {score}/{total}
                         </span>
                       )}
+                    </td>
+                    <td className="px-3 py-2.5 text-center text-xs text-gray-500 whitespace-nowrap">
+                      {attempt ? formatCompletedAt(attempt.completed_at) : '—'}
+                    </td>
+                    <td className="px-3 py-2.5 text-center text-xs text-gray-500 whitespace-nowrap">
+                      {attempt ? formatDuration(attempt.duration_seconds) : '—'}
                     </td>
                     {questions.map(q => {
                       const ans = findAnswer(attempts, c.id, q.id)

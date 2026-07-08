@@ -101,6 +101,7 @@ export interface QuizAttempt {
   translation_reveals: number
   mode: 'weekly' | 'review'
   completed_at: string
+  duration_seconds?: number | null
 }
 
 export interface AnswerRecord {

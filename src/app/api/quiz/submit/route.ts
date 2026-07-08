@@ -11,11 +11,12 @@ export async function POST(request: NextRequest) {
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const body = await request.json()
-  const { track, week_number, answers, mode = 'weekly' }: {
+  const { track, week_number, answers, mode = 'weekly', duration_seconds }: {
     track: Track
     week_number: number
     answers: { question_id: string; selected_option: Option; used_translation?: boolean }[]
     mode?: 'weekly' | 'review'
+    duration_seconds?: number
   } = body
 
   if (!answers?.length) return NextResponse.json({ error: 'answers required' }, { status: 400 })
@@ -98,6 +99,7 @@ export async function POST(request: NextRequest) {
       total_questions: answers.length,
       translation_reveals,
       mode,
+      duration_seconds: duration_seconds || null,
       answers: graded.map(({ question_id, selected_option, is_correct, used_translation }) => ({
         question_id, selected_option, is_correct, used_translation,
       })),
