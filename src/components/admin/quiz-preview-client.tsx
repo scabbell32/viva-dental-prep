@@ -3,6 +3,7 @@
 import { useState, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
+import { QuizNotifyPanel } from '@/components/admin/quiz-notify-panel'
 
 type Q = {
   id: string
@@ -149,7 +150,15 @@ function PoolQuestion({ q, onAdd, disabled }: { q: Q; onAdd: () => void; disable
   )
 }
 
-export function QuizPreviewClient({ quiz: initial, allPool }: { quiz: DailyQuiz; allPool: Q[] }) {
+export function QuizPreviewClient({
+  quiz: initial,
+  allPool,
+  candidates,
+}: {
+  quiz: DailyQuiz
+  allPool: Q[]
+  candidates: { id: string; full_name: string; phone: string | null }[]
+}) {
   const router = useRouter()
   const [quiz, setQuiz] = useState(initial)
   const [pool, setPool] = useState<Q[]>(allPool.filter(p => !initial.question_ids.includes(p.id)))
@@ -302,8 +311,11 @@ export function QuizPreviewClient({ quiz: initial, allPool }: { quiz: DailyQuiz;
       )}
 
       {quiz.status === 'published' && (
-        <div style={{ padding: '0.65rem 1rem', borderRadius: 8, background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', fontSize: '0.82rem' }}>
-          Este quiz está publicado. Los candidatos lo verán hoy. Para editar, reviértelo a borrador primero.
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ padding: '0.65rem 1rem', borderRadius: 8, background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', fontSize: '0.82rem' }}>
+            Este quiz está publicado. Los candidatos lo verán hoy. Para editar, reviértelo a borrador primero.
+          </div>
+          <QuizNotifyPanel candidates={candidates} />
         </div>
       )}
 

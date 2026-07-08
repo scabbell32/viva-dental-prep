@@ -33,6 +33,10 @@ export function NewCandidateForm() {
             <Input id="country" name="country" placeholder="México" />
           </div>
           <div className="space-y-1">
+            <Label htmlFor="phone">Número de WhatsApp (con + y código de país)</Label>
+            <Input id="phone" name="phone" type="tel" placeholder="+5215512345678" />
+          </div>
+          <div className="space-y-1">
             <Label htmlFor="english_level">Nivel de inglés</Label>
             <select
               id="english_level"

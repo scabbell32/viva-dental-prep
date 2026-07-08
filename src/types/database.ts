@@ -16,6 +16,7 @@ export interface Profile {
   spanish_mode: boolean
   created_at: string
   exam_date: string | null  // ISO date YYYY-MM-DD
+  phone: string | null
 }
 
 export interface ProgramWeek {

@@ -14,6 +14,7 @@ export async function createCandidate(_prevState: string | null, formData: FormD
   const password = formData.get('password') as string
   const country = formData.get('country') as string
   const englishLevel = formData.get('english_level') as string
+  const phone = formData.get('phone') as string
 
   const adminClient = createAdminClient()
 
@@ -30,7 +31,7 @@ export async function createCandidate(_prevState: string | null, formData: FormD
   // Update profile with country and english_level (trigger creates the base profile)
   await adminClient
     .from('profiles')
-    .update({ country: country || null, english_level: englishLevel || null })
+    .update({ country: country || null, english_level: englishLevel || null, phone: phone || null })
     .eq('id', newUser.user.id)
 
   redirect('/admin')

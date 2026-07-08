@@ -11,6 +11,7 @@ import { getReadinessLabel, READINESS_LABELS } from '@/types/database'
 import type { Profile, QuizAttempt, ReadinessScore, AdminNote } from '@/types/database'
 import { AddNoteForm } from '@/components/admin/add-note-form'
 import { UpdateLevelForm } from '@/components/admin/update-level-form'
+import { UpdatePhoneForm } from '@/components/admin/update-phone-form'
 import { SpanishModeToggle } from '@/components/admin/spanish-mode-toggle'
 import { ResetDailyQuizButton } from '@/components/admin/reset-daily-quiz-button'
 
@@ -69,11 +70,13 @@ export default async function CandidateDetailPage({ params }: { params: Promise<
               {candidate.english_level && (
                 <Badge variant="secondary" className="capitalize">{candidate.english_level}</Badge>
               )}
+              {candidate.phone && <Badge variant="secondary" className="bg-teal-50 text-teal-700">📱 {candidate.phone}</Badge>}
             </div>
           </div>
           <div className="flex flex-col items-end gap-2">
             <UpdateLevelForm candidateId={id} currentLevel={candidate.english_level} />
             <SpanishModeToggle candidateId={id} initialValue={candidate.spanish_mode ?? false} />
+            <UpdatePhoneForm candidateId={id} currentPhone={candidate.phone} />
             <ResetDailyQuizButton candidateId={id} />
           </div>
         </div>

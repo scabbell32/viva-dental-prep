@@ -21,9 +21,10 @@ export default async function QuizPreviewPage() {
   const today = new Date().toISOString().slice(0, 10)
   const week = getCurrentWeekNumber()
 
-  const [{ data: quiz }, { data: poolIds }] = await Promise.all([
+  const [{ data: quiz }, { data: poolIds }, { data: candidates }] = await Promise.all([
     adminDb.from('daily_quizzes').select('*').eq('date', today).maybeSingle(),
     adminDb.from('questions').select('id').eq('track', 'nbdhe').eq('is_active', true).lte('week_number', week),
+    adminDb.from('profiles').select('id, full_name, phone').eq('role', 'candidate').order('full_name'),
   ])
 
   const availableCount = poolIds?.length ?? 0
@@ -103,6 +104,7 @@ export default async function QuizPreviewPage() {
         <QuizPreviewClient
           quiz={quizWithQuestions as Parameters<typeof QuizPreviewClient>[0]['quiz']}
           allPool={poolQuestions as Parameters<typeof QuizPreviewClient>[0]['allPool']}
+          candidates={(candidates ?? []) as any[]}
         />
       </main>
     </div>
