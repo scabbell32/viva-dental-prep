@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
-function useGenerate(getCount: () => number) {
+function useGenerate(getCount: () => number, date: string) {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -15,7 +15,7 @@ function useGenerate(getCount: () => number) {
     const res = await fetch('/api/admin/daily-quiz', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ count: getCount() }),
+      body: JSON.stringify({ count: getCount(), date }),
     })
     if (res.ok) {
       router.refresh()
@@ -29,9 +29,9 @@ function useGenerate(getCount: () => number) {
   return { generate, loading, error }
 }
 
-export function GenerateButtonClient({ availableCount }: { availableCount: number }) {
+export function GenerateButtonClient({ availableCount, date }: { availableCount: number; date: string }) {
   const [count, setCount] = useState(15)
-  const { generate, loading, error } = useGenerate(() => count)
+  const { generate, loading, error } = useGenerate(() => count, date)
   const max = Math.min(availableCount, 30)
 
   return (
@@ -60,9 +60,9 @@ export function GenerateButtonClient({ availableCount }: { availableCount: numbe
   )
 }
 
-export function RegenerateButtonClient({ currentCount }: { currentCount: number }) {
+export function RegenerateButtonClient({ currentCount, date }: { currentCount: number; date: string }) {
   const [count, setCount] = useState(currentCount)
-  const { generate, loading, error } = useGenerate(() => count)
+  const { generate, loading, error } = useGenerate(() => count, date)
 
   return (
     <div className="flex flex-col items-end gap-1">

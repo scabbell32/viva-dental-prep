@@ -35,10 +35,6 @@ const RANGES: Record<string, { min: number; max: number; label: string }> = {
   '15-20': { min: 15, max: 20, label: '15–20 (largo)' },
 }
 
-interface CaseGroup {
-  caseSet: CaseSetWithImages
-  questions: AdminQuestion[]
-}
 
 interface PreviewSection {
   type: 'standalone'
@@ -231,6 +227,7 @@ export function QuizBuilderClient({ chapters }: Props) {
   const [qType, setQType]         = useState('both')
   const [loading, setLoading]     = useState(false)
   const [settingDaily, setSettingDaily] = useState(false)
+  const [publishDate, setPublishDate] = useState(() => new Date().toISOString().slice(0, 10))
   const [questions, setQuestions] = useState<AdminQuestion[] | null>(null)
   const [error, setError]         = useState<string | null>(null)
 
@@ -268,11 +265,11 @@ export function QuizBuilderClient({ chapters }: Props) {
       const res = await fetch('/api/admin/daily-quiz/set', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ questionIds: questions.map(q => q.id) }),
+        body: JSON.stringify({ questionIds: questions.map(q => q.id), date: publishDate }),
       })
       const data = await res.json().catch(() => ({}))
       if (res.ok) {
-        router.push('/admin/quiz-preview')
+        router.push(`/admin/quiz-preview?date=${publishDate}`)
         router.refresh()
       } else {
         setError(data.error ?? 'Error al establecer como Quiz del Día')
@@ -296,7 +293,7 @@ export function QuizBuilderClient({ chapters }: Props) {
       <div className="bg-white rounded-xl border border-gray-200 p-5 space-y-5">
         <h2 className="font-semibold text-gray-700 text-sm">Parámetros del Quiz</h2>
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-5">
           <div>
             <Label className="text-xs text-gray-500 mb-1 block">¿Cuántas preguntas?</Label>
             <Select value={range} onValueChange={v => v && setRange(v)}>
@@ -346,6 +343,16 @@ export function QuizBuilderClient({ chapters }: Props) {
                 <SelectItem value="case">Solo casos</SelectItem>
               </SelectContent>
             </Select>
+          </div>
+
+          <div>
+            <Label className="text-xs text-gray-500 mb-1 block">Fecha de Publicación</Label>
+            <input
+              type="date"
+              value={publishDate}
+              onChange={e => setPublishDate(e.target.value)}
+              className="w-full h-9 rounded-md border border-input bg-background px-3 py-1.5 text-sm font-semibold text-gray-700 focus:outline-none focus:ring-1 focus:ring-indigo-500 cursor-pointer"
+            />
           </div>
         </div>
 

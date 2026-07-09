@@ -10,25 +10,25 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const { questionIds } = await req.json().catch(() => ({})) as { questionIds?: string[] }
+  const { questionIds, date } = await req.json().catch(() => ({})) as { questionIds?: string[]; date?: string }
   if (!questionIds || questionIds.length === 0) {
     return NextResponse.json({ error: 'Falta la lista de IDs de preguntas' }, { status: 400 })
   }
 
   const adminDb = createAdminClient()
-  const today = new Date().toISOString().slice(0, 10)
+  const targetDate = date || new Date().toISOString().slice(0, 10)
   const week = getCurrentWeekNumber()
 
-  // Find if a daily quiz already exists for today
+  // Find if a daily quiz already exists for targetDate
   const { data: existing } = await adminDb
     .from('daily_quizzes')
     .select('id, status')
-    .eq('date', today)
+    .eq('date', targetDate)
     .maybeSingle()
 
   if (existing?.status === 'published') {
     return NextResponse.json(
-      { error: 'Ya existe un quiz publicado para hoy. Reviértelo a borrador primero en el panel de Quiz del Día para sobrescribirlo.' },
+      { error: 'Ya existe un quiz publicado para esa fecha. Reviértelo a borrador primero en el panel de Quiz del Día para sobrescribirlo.' },
       { status: 409 }
     )
   }
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
     // Insert new daily quiz
     await adminDb
       .from('daily_quizzes')
-      .insert({ date: today, week_number: week, question_ids: questionIds, created_by: user.id, status: 'draft' })
+      .insert({ date: targetDate, week_number: week, question_ids: questionIds, created_by: user.id, status: 'draft' })
   }
 
   return NextResponse.json({ ok: true })

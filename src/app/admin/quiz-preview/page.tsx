@@ -6,19 +6,25 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 import { Nav } from '@/components/nav'
 import { QuizPreviewClient } from '@/components/admin/quiz-preview-client'
+import { QuizPreviewHeader } from '@/components/admin/quiz-preview-header'
 import { GenerateButtonClient, RegenerateButtonClient } from '@/components/admin/daily-quiz-generate-button'
 import { getCurrentWeekNumber } from '@/lib/program-week'
 
 const FULL_COLUMNS = 'id, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, correct_option, explanation, difficulty, image_url, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, explanation_es'
 
-export default async function QuizPreviewPage() {
+export default async function QuizPreviewPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ date?: string }>
+}) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
   if (user.user_metadata?.role !== 'admin') redirect('/admin')
 
   const adminDb = createAdminClient()
-  const today = new Date().toISOString().slice(0, 10)
+  const { date: paramDate } = await searchParams
+  const today = paramDate || new Date().toISOString().slice(0, 10)
   const week = getCurrentWeekNumber()
 
   const [{ data: quiz }, { data: poolIds }, { data: candidates }] = await Promise.all([
@@ -34,19 +40,16 @@ export default async function QuizPreviewPage() {
       <div className="min-h-screen bg-gray-50">
         <Nav role="admin" />
         <main className="max-w-3xl mx-auto px-4 py-8 space-y-6">
-          <div>
-            <h1 className="text-2xl font-bold text-gray-800">Quiz Diario — Vista Previa</h1>
-            <p className="text-sm text-gray-500 mt-0.5">Semana {week} · NBDHE · {today}</p>
-          </div>
+          <QuizPreviewHeader date={today} week={week} />
           <div className="rounded-xl border bg-white p-10 flex flex-col items-center gap-4">
             <div className="text-4xl">📋</div>
-            <h2 className="font-semibold text-gray-700">No hay quiz generado para hoy</h2>
+            <h2 className="font-semibold text-gray-700">No hay quiz generado para esta fecha</h2>
             <p className="text-sm text-gray-400">
               {availableCount > 0
                 ? `Banco tiene ${availableCount} preguntas activas disponibles.`
                 : 'No hay preguntas activas para la semana actual.'}
             </p>
-            {availableCount > 0 && <GenerateButtonClient availableCount={availableCount} />}
+            {availableCount > 0 && <GenerateButtonClient availableCount={availableCount} date={today} />}
           </div>
         </main>
       </div>
@@ -81,14 +84,13 @@ export default async function QuizPreviewPage() {
     <div className="min-h-screen bg-gray-50">
       <Nav role="admin" />
       <main className="max-w-3xl mx-auto px-4 py-8 space-y-6">
-        <div className="flex items-start justify-between flex-wrap gap-3">
-          <div>
-            <h1 className="text-2xl font-bold text-gray-800">Quiz Diario — Vista Previa</h1>
-            <p className="text-sm text-gray-500 mt-0.5">Semana {week} · NBDHE · {today}</p>
+        <div className="flex items-start justify-between flex-wrap gap-4">
+          <div className="flex-1 min-w-0">
+            <QuizPreviewHeader date={today} week={week} />
           </div>
-          <div className="flex flex-col items-end gap-2">
+          <div className="flex flex-col items-end gap-2 shrink-0 pt-3">
             {quiz.status === 'draft' && (
-              <RegenerateButtonClient currentCount={(quiz.question_ids as string[]).length} />
+              <RegenerateButtonClient currentCount={(quiz.question_ids as string[]).length} date={today} />
             )}
             {quiz.status === 'published' && (
               <Link
@@ -104,7 +106,7 @@ export default async function QuizPreviewPage() {
         <QuizPreviewClient
           quiz={quizWithQuestions as Parameters<typeof QuizPreviewClient>[0]['quiz']}
           allPool={poolQuestions as Parameters<typeof QuizPreviewClient>[0]['allPool']}
-          candidates={(candidates ?? []) as any[]}
+          candidates={(candidates ?? []) as Parameters<typeof QuizPreviewClient>[0]['candidates']}
         />
       </main>
     </div>
