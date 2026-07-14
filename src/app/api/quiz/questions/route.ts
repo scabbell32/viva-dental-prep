@@ -3,7 +3,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { NextRequest, NextResponse } from 'next/server'
 import type { Track, SafeQuestion, CaseSetWithImages, CaseImage } from '@/types/database'
 
-const QUESTION_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, difficulty, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, image_url, image_urls, case_set_id, question_type, sequence_order, lock_option_order'
+const QUESTION_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, difficulty, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, image_url, image_urls, context_text, case_set_id, question_type, sequence_order, lock_option_order'
 
 // Admin builder also needs correct answers
 const ADMIN_COLUMNS = QUESTION_COLUMNS + ', correct_option, explanation, explanation_es'

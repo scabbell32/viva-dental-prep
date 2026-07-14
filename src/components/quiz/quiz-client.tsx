@@ -852,6 +852,11 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
             )}
           </div>
         )}
+        {!q.case_set_id && q.context_text && (
+          <div style={{ marginBottom: '1rem', padding: '0.9rem 1.1rem', background: 'rgba(99,102,241,0.08)', border: '1px solid rgba(99,102,241,0.2)', borderRadius: 12, fontSize: '0.92rem', color: '#cbd5e1', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>
+            {q.context_text}
+          </div>
+        )}
         <span>{current + 1}. {q.question_text_es || q.question_text}</span>
       </>,
       OPTIONS.map(opt => ({ opt, primary: getEsText(q, opt), secondary: null })),
@@ -1080,6 +1085,11 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </div>
             )}
+          </div>
+        )}
+        {!q.case_set_id && q.context_text && (
+          <div style={{ marginBottom: '1rem', padding: '0.9rem 1.1rem', background: 'rgba(99,102,241,0.08)', border: '1px solid rgba(99,102,241,0.2)', borderRadius: 12, fontSize: '0.92rem', color: '#cbd5e1', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>
+            {q.context_text}
           </div>
         )}
         <QuestionText

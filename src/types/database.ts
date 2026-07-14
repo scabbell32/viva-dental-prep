@@ -79,6 +79,8 @@ export interface Question {
   // Media (standalone questions with a single image)
   image_url: string | null
   image_urls: string[] | null
+  // Optional free-text context panel (e.g. a text-only case scenario)
+  context_text: string | null
   // Spanish translations
   question_text_es: string | null
   option_a_es: string | null

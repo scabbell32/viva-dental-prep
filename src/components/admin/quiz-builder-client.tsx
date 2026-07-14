@@ -181,6 +181,9 @@ function QuestionCard({ q, index }: { q: AdminQuestion; index: number }) {
       </div>
 
       <div className="p-4">
+        {q.context_text && (
+          <p className="text-xs text-gray-600 bg-indigo-50 border border-indigo-100 rounded px-2.5 py-1.5 mb-2 whitespace-pre-wrap">{q.context_text}</p>
+        )}
         <p className="font-semibold text-gray-800 text-sm leading-relaxed mb-3">{q.question_text}</p>
 
         <div className="space-y-1.5">

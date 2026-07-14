@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 
-const SAFE_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, option_f, correct_option, explanation, difficulty, image_url, image_urls, case_set_id, question_type, sequence_order, lock_option_order, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, option_f_es, explanation_es, case_set:case_sets(*, images:case_images(*))'
+const SAFE_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, option_f, correct_option, explanation, difficulty, image_url, image_urls, context_text, case_set_id, question_type, sequence_order, lock_option_order, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, option_f_es, explanation_es, case_set:case_sets(*, images:case_images(*))'
 
 async function requireAdmin() {
   const supabase = await createClient()

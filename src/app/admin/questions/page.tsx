@@ -17,7 +17,7 @@ export default async function QuestionsPage() {
   const adminClient = createAdminClient()
   const { data: questions } = await adminClient
     .from('questions')
-    .select('id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, option_f, correct_option, explanation, difficulty, is_active, image_url, image_urls, case_set_id, sequence_order, is_legacy, case_set:case_sets(id, case_label, images:case_images(image_url))')
+    .select('id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, option_f, correct_option, explanation, difficulty, is_active, image_url, image_urls, context_text, case_set_id, sequence_order, is_legacy, case_set:case_sets(id, case_label, images:case_images(image_url))')
     .order('week_number', { ascending: true })
     .order('created_at', { ascending: false })
 

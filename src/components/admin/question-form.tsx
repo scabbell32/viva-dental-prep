@@ -24,6 +24,8 @@ export function QuestionForm({ onSave }: { onSave?: () => void }) {
   const [manualLink, setManualLink] = useState('')
   const [uploading, setUploading] = useState(false)
   const [groupImages, setGroupImages] = useState<string[]>([])
+  // Shared case text for the selected group (stored on case_sets.description)
+  const [groupContextText, setGroupContextText] = useState('')
 
   const [form, setForm] = useState({
     track: 'nbdhe' as Track,
@@ -37,6 +39,7 @@ export function QuestionForm({ onSave }: { onSave?: () => void }) {
     option_f: '',
     correct_option: 'a' as Option,
     explanation: '',
+    context_text: '',
     difficulty: 'medium' as Difficulty,
   })
 
@@ -142,23 +145,28 @@ export function QuestionForm({ onSave }: { onSave?: () => void }) {
     loadGroups()
   }, [chapterTag, form.track])
 
-  // Load case images when groupId changes
+  // Load case images and shared case text when groupId changes
   useEffect(() => {
     if (!groupId || groupId === 'new') {
       setGroupImages([])
+      setGroupContextText('')
       return
     }
-    async function loadGroupImages() {
-      const { data } = await supabase
+    async function loadGroupData() {
+      const { data: imgs } = await supabase
         .from('case_images')
         .select('image_url')
         .eq('case_set_id', groupId)
         .order('display_order')
-      if (data) {
-        setGroupImages(data.map(img => img.image_url))
-      }
+      if (imgs) setGroupImages(imgs.map(img => img.image_url))
+      const { data: cs } = await supabase
+        .from('case_sets')
+        .select('description')
+        .eq('id', groupId)
+        .maybeSingle()
+      setGroupContextText(cs?.description ?? '')
     }
-    loadGroupImages()
+    loadGroupData()
   }, [groupId])
 
   async function handleDeleteGroupImage(url: string) {
@@ -314,6 +322,16 @@ export function QuestionForm({ onSave }: { onSave?: () => void }) {
         }
       }
 
+      // Shared case text lives on the case_set (like group images), so it shows
+      // on every question in the group.
+      if (finalGroupId) {
+        const { error: descErr } = await supabase
+          .from('case_sets')
+          .update({ description: groupContextText.trim() || null })
+          .eq('id', finalGroupId)
+        if (descErr) console.error('Error saving case text:', descErr)
+      }
+
       // 2. Determine type
       if (finalGroupId) {
         question_type = 'case'
@@ -343,6 +361,9 @@ export function QuestionForm({ onSave }: { onSave?: () => void }) {
         option_f: form.option_f.trim() || null,
         correct_option: form.correct_option,
         explanation: form.explanation.trim() || null,
+        // Grouped questions use the shared case text on the case_set; only
+        // standalone questions keep per-question text here.
+        context_text: finalGroupId ? null : (form.context_text.trim() || null),
         difficulty: form.difficulty,
         image_url: imageUrls.length > 0 ? imageUrls[0] : null,
         image_urls: imageUrls,
@@ -363,7 +384,7 @@ export function QuestionForm({ onSave }: { onSave?: () => void }) {
       setForm({
         track: form.track, week_number: form.week_number, question_text: '',
         option_a: '', option_b: '', option_c: '', option_d: '', option_e: '', option_f: '',
-        correct_option: 'a', explanation: '', difficulty: form.difficulty,
+        correct_option: 'a', explanation: '', context_text: '', difficulty: form.difficulty,
       })
       setImageUrls([])
       setGroupId('')
@@ -528,6 +549,25 @@ export function QuestionForm({ onSave }: { onSave?: () => void }) {
             ))}
           </SelectContent>
         </Select>
+      </div>
+
+      {/* Case context text — shared across the group, or per-question for standalone */}
+      <div className="space-y-1 p-4 bg-amber-50/40 border border-amber-200/60 rounded-lg dark:bg-amber-950/10">
+        <Label className="font-semibold text-gray-800 dark:text-slate-200">
+          {groupId ? 'Texto del caso (compartido con el grupo)' : 'Texto del caso (opcional)'}
+        </Label>
+        <p className="text-xs text-gray-500">
+          {groupId
+            ? 'Se muestra con TODAS las preguntas de este grupo, igual que las imágenes del grupo. Editarlo aquí lo cambia para todo el grupo.'
+            : 'Un párrafo corto que se muestra con la pregunta. Úsalo para casos de solo texto, o junto con una imagen.'}
+        </p>
+        <Textarea
+          value={groupId ? groupContextText : form.context_text}
+          onChange={e => groupId ? setGroupContextText(e.target.value) : set('context_text', e.target.value)}
+          rows={3}
+          placeholder="Ej. Paciente de 45 años con antecedentes de diabetes tipo 2..."
+          className="bg-white dark:bg-slate-900"
+        />
       </div>
 
       {/* Image Upload Interface */}
