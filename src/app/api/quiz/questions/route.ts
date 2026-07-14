@@ -3,7 +3,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { NextRequest, NextResponse } from 'next/server'
 import type { Track, SafeQuestion, CaseSetWithImages, CaseImage } from '@/types/database'
 
-const QUESTION_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, difficulty, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, image_url, image_urls, context_text, case_set_id, question_type, sequence_order, lock_option_order'
+const QUESTION_COLUMNS = 'id, track, week_number, chapter_tag, question_text, option_a, option_b, option_c, option_d, option_e, difficulty, question_text_es, option_a_es, option_b_es, option_c_es, option_d_es, option_e_es, image_url, image_urls, context_text, case_set_id, question_type, sequence_order, lock_option_order, is_legacy, updated_at'
 
 // Admin builder also needs correct answers
 const ADMIN_COLUMNS = QUESTION_COLUMNS + ', correct_option, explanation, explanation_es'
@@ -45,6 +45,7 @@ export async function GET(request: NextRequest) {
   const chapterTag  = searchParams.get('chapter_tag') ?? null
   const difficulty  = searchParams.get('difficulty') ?? 'mixed'   // easy | medium | hard | mixed
   const typeFilter  = searchParams.get('type') ?? 'both'          // standalone | case | both
+  const provenance  = searchParams.get('provenance') ?? 'all'     // all | new | legacy | edited
   const isAdmin     = user.user_metadata?.role === 'admin'
   const cols        = isAdmin ? ADMIN_COLUMNS : QUESTION_COLUMNS
 
@@ -77,9 +78,22 @@ export async function GET(request: NextRequest) {
     if (chapterTag) sqQuery = sqQuery.eq('chapter_tag', chapterTag)
     if (difficulty !== 'mixed') sqQuery = sqQuery.eq('difficulty', difficulty)
     if (!chapterTag) sqQuery = sqQuery.lte('week_number', week)
+    if (provenance === 'new') sqQuery = sqQuery.eq('is_legacy', false)
+    if (provenance === 'legacy') sqQuery = sqQuery.eq('is_legacy', true)
+    if (provenance === 'edited') sqQuery = sqQuery.order('updated_at', { ascending: false })
 
     const { data: pool } = await sqQuery.limit(200)
-    standalonePool = shuffle((pool ?? []) as unknown as SafeQuestion[])
+
+    if (provenance === 'edited') {
+      standalonePool = (pool ?? []) as unknown as SafeQuestion[]
+      standalonePool.sort((a, b) => {
+        const aTime = a.updated_at ? new Date(a.updated_at).getTime() : 0
+        const bTime = b.updated_at ? new Date(b.updated_at).getTime() : 0
+        return bTime - aTime
+      })
+    } else {
+      standalonePool = shuffle((pool ?? []) as unknown as SafeQuestion[])
+    }
   }
   const hasStandalones = standalonePool.length > 0
 
@@ -103,12 +117,12 @@ export async function GET(request: NextRequest) {
     }
 
     const { data: rawCaseSets } = await csQuery
-    caseSets = shuffle((rawCaseSets ?? []).map(cs => ({
+    const parsedCaseSets = (rawCaseSets ?? []).map(cs => ({
       ...cs,
       images: ((cs.images ?? []) as CaseImage[]).sort((a, b) => a.display_order - b.display_order),
-    })) as CaseSetWithImages[])
+    })) as CaseSetWithImages[]
 
-    const setIds = caseSets.map(c => c.id)
+    const setIds = parsedCaseSets.map(c => c.id)
     if (setIds.length > 0) {
       let qQuery = adminClient
         .from('questions')
@@ -117,6 +131,8 @@ export async function GET(request: NextRequest) {
         .eq('is_active', true)
         .order('sequence_order', { ascending: true })
       if (difficulty !== 'mixed') qQuery = qQuery.eq('difficulty', difficulty)
+      if (provenance === 'new') qQuery = qQuery.eq('is_legacy', false)
+      if (provenance === 'legacy') qQuery = qQuery.eq('is_legacy', true)
 
       const { data: allCaseQs } = await qQuery
       for (const q of (allCaseQs ?? []) as unknown as SafeQuestion[]) {
@@ -125,6 +141,25 @@ export async function GET(request: NextRequest) {
         arr.push(q)
         bySet.set(key, arr)
       }
+    }
+
+    if (provenance === 'edited') {
+      caseSets = parsedCaseSets
+      caseSets.sort((a, b) => {
+        const aQs = bySet.get(a.id) ?? []
+        const bQs = bySet.get(b.id) ?? []
+        const aMax = aQs.reduce((max, q) => {
+          const t = q.updated_at ? new Date(q.updated_at).getTime() : 0
+          return t > max ? t : max
+        }, 0)
+        const bMax = bQs.reduce((max, q) => {
+          const t = q.updated_at ? new Date(q.updated_at).getTime() : 0
+          return t > max ? t : max
+        }, 0)
+        return bMax - aMax
+      })
+    } else {
+      caseSets = shuffle(parsedCaseSets)
     }
   }
 

@@ -175,8 +175,22 @@ function QuestionCard({ q, index }: { q: AdminQuestion; index: number }) {
         <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TYPE_COLOR[q.question_type] ?? ''}`}>
           {q.question_type === 'case' ? 'caso' : 'individual'}
         </span>
+        {q.is_legacy ? (
+          <Badge variant="outline" className="text-[10px] bg-amber-50 text-amber-600 border-amber-200 font-semibold px-1.5 py-0 h-5 flex items-center">
+            Legacy
+          </Badge>
+        ) : (
+          <Badge variant="outline" className="text-[10px] bg-green-50 text-green-600 border-green-200 font-semibold px-1.5 py-0 h-5 flex items-center">
+            Nueva
+          </Badge>
+        )}
         {q.chapter_tag && (
           <span className="text-xs text-gray-400">{q.chapter_tag.toUpperCase()}</span>
+        )}
+        {q.updated_at && (
+          <span className="text-[10px] text-gray-400 ml-auto">
+            Edición: {new Date(q.updated_at).toLocaleDateString('es-ES', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+          </span>
         )}
       </div>
 
@@ -225,6 +239,8 @@ function QuestionCard({ q, index }: { q: AdminQuestion; index: number }) {
 export function QuizBuilderClient({ chapters }: Props) {
   const router = useRouter()
   const [range, setRange]         = useState('10-15')
+  const [week, setWeek]           = useState('all')
+  const [provenance, setProvenance] = useState('all')
   const [chapter, setChapter]     = useState('all')
   const [difficulty, setDiff]     = useState('mixed')
   const [qType, setQType]         = useState('both')
@@ -242,11 +258,12 @@ export function QuizBuilderClient({ chapters }: Props) {
     const { min, max } = RANGES[range] ?? RANGES['10-15']
     const params = new URLSearchParams({
       track: 'nbdhe',
-      week: '20',
+      week: week === 'all' ? '20' : week,
       min: String(min),
       max: String(max),
       difficulty,
       type: qType,
+      provenance,
     })
     if (chapter !== 'all') params.set('chapter_tag', chapter)
 
@@ -296,7 +313,7 @@ export function QuizBuilderClient({ chapters }: Props) {
       <div className="bg-white rounded-xl border border-gray-200 p-5 space-y-5">
         <h2 className="font-semibold text-gray-700 text-sm">Parámetros del Quiz</h2>
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-5">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
           <div>
             <Label className="text-xs text-gray-500 mb-1 block">¿Cuántas preguntas?</Label>
             <Select value={range} onValueChange={v => v && setRange(v)}>
@@ -307,7 +324,20 @@ export function QuizBuilderClient({ chapters }: Props) {
                 ))}
               </SelectContent>
             </Select>
-            <p className="text-[11px] text-gray-400 mt-1">El número exacto se ajusta según los grupos de casos.</p>
+            <p className="text-[10px] text-gray-400 mt-1">Ajustado por grupo.</p>
+          </div>
+
+          <div>
+            <Label className="text-xs text-gray-500 mb-1 block">Semana</Label>
+            <Select value={week} onValueChange={v => v && setWeek(v)}>
+              <SelectTrigger className="text-sm"><SelectValue /></SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Hasta Semana 20</SelectItem>
+                {Array.from({ length: 20 }, (_, i) => i + 1).map(w => (
+                  <SelectItem key={w} value={String(w)}>Semana {w}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           <div>
@@ -349,7 +379,20 @@ export function QuizBuilderClient({ chapters }: Props) {
           </div>
 
           <div>
-            <Label className="text-xs text-gray-500 mb-1 block">Fecha de Publicación</Label>
+            <Label className="text-xs text-gray-500 mb-1 block">Procedencia</Label>
+            <Select value={provenance} onValueChange={v => v && setProvenance(v)}>
+              <SelectTrigger className="text-sm"><SelectValue /></SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Todas (Nuevas/Legacy)</SelectItem>
+                <SelectItem value="new">Solo Nuevas</SelectItem>
+                <SelectItem value="legacy">Solo Legacy</SelectItem>
+                <SelectItem value="edited">Recién editadas</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div>
+            <Label className="text-xs text-gray-500 mb-1 block">Fecha Publicación</Label>
             <input
               type="date"
               value={publishDate}
