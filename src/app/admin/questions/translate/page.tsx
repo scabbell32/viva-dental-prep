@@ -10,7 +10,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { AlertCircle, CheckCircle, Image as ImageIcon } from 'lucide-react'
+import { AlertCircle, CheckCircle, Image as ImageIcon, Sparkles, Loader2 } from 'lucide-react'
 
 const WEEKS = Array.from({ length: 20 }, (_, i) => i + 1)
 
@@ -100,6 +100,12 @@ export default function TranslatePage() {
 
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
+  
+  // AI Translation states
+  const [translating, setTranslating] = useState(false)
+  const [batchTranslating, setBatchTranslating] = useState(false)
+  const [batchStatus, setBatchStatus] = useState('')
+  const [batchProgress, setBatchProgress] = useState({ current: 0, total: 0 })
 
   // Auth check
   useEffect(() => {
@@ -184,6 +190,197 @@ export default function TranslatePage() {
   }, [selectedIdx, questions])
 
   const selectedQuestion = selectedIdx !== null ? questions[selectedIdx] : null
+
+  async function handleAutoTranslateSingle() {
+    if (!selectedQuestion) return
+    setTranslating(true)
+    setMessage(null)
+
+    try {
+      const res = await fetch('/api/admin/translate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          question_text: editForm.question_text,
+          option_a: editForm.option_a,
+          option_b: editForm.option_b,
+          option_c: editForm.option_c,
+          option_d: editForm.option_d,
+          option_e: editForm.option_e,
+          option_f: editForm.option_f,
+          explanation: editForm.explanation,
+          case_study: selectedQuestion.case_study ? {
+            title: selectedQuestion.case_study.title,
+            synopsis: selectedQuestion.case_study.synopsis,
+          } : null,
+        }),
+      })
+
+      const data = await res.json()
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to translate')
+      }
+
+      setEditForm(prev => ({
+        ...prev,
+        question_text_es: data.question_text_es || '',
+        option_a_es: data.option_a_es || '',
+        option_b_es: data.option_b_es || '',
+        option_c_es: data.option_c_es || '',
+        option_d_es: data.option_d_es || '',
+        option_e_es: data.option_e_es || '',
+        option_f_es: data.option_f_es || '',
+        explanation_es: data.explanation_es || '',
+      }))
+
+      if (selectedQuestion.case_study) {
+        setEditCase(prev => ({
+          ...prev,
+          title_es: data.case_study_title_es || '',
+          synopsis_es: data.case_study_synopsis_es || '',
+        }))
+      }
+
+      setMessage({ type: 'success', text: '✨ ¡Pregunta traducida con IA! Presione "Guardar Cambios" para registrarla.' })
+    } catch (e) {
+      console.error(e)
+      setMessage({ type: 'error', text: `Error de traducción: ${(e as Error).message}` })
+    } finally {
+      setTranslating(false)
+    }
+  }
+
+  async function handleBatchTranslate() {
+    const untranslated = questions.filter(
+      q => !q.question_text_es || !q.option_a_es || !q.option_b_es
+    )
+
+    if (untranslated.length === 0) {
+      alert('Todas las preguntas de esta semana ya tienen traducción.')
+      return
+    }
+
+    const confirmRun = confirm(
+      `Se encontraron ${untranslated.length} preguntas sin traducir en esta semana.\n¿Desea auto-traducirlas todas usando la IA de forma masiva?\n\n(Nota: Para respetar el límite de cuota, esperaremos 12 segundos entre cada pregunta, lo cual tomará aproximadamente ${Math.round(untranslated.length * 12.5 / 60)} minutos).`
+    )
+
+    if (!confirmRun) return
+
+    setBatchTranslating(true)
+    setBatchProgress({ current: 0, total: untranslated.length })
+    setMessage(null)
+
+    const updatedQuestions = [...questions]
+
+    for (let i = 0; i < untranslated.length; i++) {
+      const q = untranslated[i]
+      setBatchProgress({ current: i + 1, total: untranslated.length })
+      setBatchStatus(`Traduciendo pregunta ${i + 1} de ${untranslated.length} (ID: ...${q.id.slice(-6)})...`)
+
+      try {
+        // 1. Translate question via Gemini
+        const transRes = await fetch('/api/admin/translate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            question_text: q.question_text,
+            option_a: q.option_a,
+            option_b: q.option_b,
+            option_c: q.option_c,
+            option_d: q.option_d,
+            option_e: q.option_e,
+            option_f: q.option_f,
+            explanation: q.explanation,
+            case_study: q.case_study ? {
+              title: q.case_study.title,
+              synopsis: q.case_study.synopsis,
+            } : null,
+          }),
+        })
+
+        const transData = await transRes.json()
+        if (!transRes.ok) {
+          throw new Error(transData.error || 'Failed to translate')
+        }
+
+        // 2. Save translated question to database
+        const saveForm = {
+          question_text: q.question_text,
+          option_a: q.option_a,
+          option_b: q.option_b,
+          option_c: q.option_c || '',
+          option_d: q.option_d || '',
+          option_e: q.option_e || '',
+          option_f: q.option_f || '',
+          explanation: q.explanation || '',
+          is_active: q.is_active ?? true,
+          question_text_es: transData.question_text_es || '',
+          option_a_es: transData.option_a_es || '',
+          option_b_es: transData.option_b_es || '',
+          option_c_es: transData.option_c_es || '',
+          option_d_es: transData.option_d_es || '',
+          option_e_es: transData.option_e_es || '',
+          option_f_es: transData.option_f_es || '',
+          explanation_es: transData.explanation_es || '',
+          image_url: q.image_url || '',
+          image_urls: q.image_urls || [],
+        }
+
+        const saveRes = await fetch('/api/admin/questions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            question_id: q.id,
+            editForm: saveForm,
+            editCase: q.case_study ? {
+              id: q.case_study.id,
+              title_es: transData.case_study_title_es || '',
+              synopsis_es: transData.case_study_synopsis_es || '',
+            } : null,
+          }),
+        })
+
+        if (!saveRes.ok) {
+          const saveData = await saveRes.json()
+          throw new Error(saveData.error || 'Failed to save translated question')
+        }
+
+        // 3. Update local array to reflect translation in sidebar immediately
+        const idxInList = updatedQuestions.findIndex(item => item.id === q.id)
+        if (idxInList !== -1) {
+          updatedQuestions[idxInList] = {
+            ...updatedQuestions[idxInList],
+            ...saveForm,
+            case_study: q.case_study ? {
+              ...q.case_study,
+              title_es: transData.case_study_title_es || null,
+              synopsis_es: transData.case_study_synopsis_es || null,
+            } : null,
+          }
+          setQuestions([...updatedQuestions])
+        }
+
+        // 4. Rate-limit wait delay if not the last item
+        if (i < untranslated.length - 1) {
+          setBatchStatus(`Pregunta ${i + 1} completada. Esperando 12s para evitar límites de cuota...`)
+          await new Promise(r => setTimeout(r, 12000))
+        }
+      } catch (err) {
+        console.error(err)
+        alert(`Error al traducir pregunta (ID: ${q.id}): ${(err as Error).message}`)
+      }
+    }
+
+    setBatchTranslating(false)
+    setBatchStatus('')
+    setMessage({ type: 'success', text: `✨ ¡Traducción masiva completada! Se procesaron ${untranslated.length} preguntas.` })
+  }
 
   async function handleSave() {
     if (!selectedQuestion) return
@@ -287,6 +484,35 @@ export default function TranslatePage() {
   return (
     <div className="flex h-screen flex-col bg-gray-50 dark:bg-slate-950 font-sans text-gray-800 dark:text-slate-200 overflow-hidden">
       
+      {/* Batch Translating Progress Overlay */}
+      {batchTranslating && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <Card className="w-full max-w-md border-indigo-100 dark:border-indigo-900 shadow-xl bg-white dark:bg-slate-900">
+            <CardHeader className="text-center pb-2">
+              <Sparkles className="w-8 h-8 text-indigo-500 mx-auto animate-pulse mb-2" />
+              <CardTitle className="text-sm font-bold text-gray-900 dark:text-slate-100 uppercase tracking-wider">Traducción de Lote con IA</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-center p-6 pt-0">
+              <p className="text-xs text-gray-500 dark:text-slate-400 font-semibold">{batchStatus}</p>
+              
+              {/* Progress bar */}
+              <div className="w-full bg-gray-200 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                <div 
+                  className="bg-indigo-600 h-2.5 rounded-full transition-all duration-500" 
+                  style={{ width: `${(batchProgress.current / batchProgress.total) * 100}%` }}
+                />
+              </div>
+              <p className="text-[10px] text-gray-400 dark:text-slate-500">
+                Progreso: {batchProgress.current} / {batchProgress.total} preguntas
+              </p>
+              <p className="text-[9px] text-amber-600 dark:text-amber-500 font-medium">
+                Por favor, mantenga esta pestaña abierta hasta que finalice la traducción.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+      
       {/* HEADER BAR */}
       <header className="flex h-14 items-center justify-between border-b border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 shrink-0 shadow-sm z-10">
         <div className="flex items-center gap-3">
@@ -318,6 +544,16 @@ export default function TranslatePage() {
                 ))}
               </SelectContent>
             </Select>
+
+            <Button
+              variant="outline"
+              onClick={handleBatchTranslate}
+              disabled={batchTranslating || loadingQuestions || questions.length === 0}
+              className="w-full mt-2 border-indigo-200 text-indigo-600 hover:bg-indigo-50 dark:border-indigo-900 dark:text-indigo-400 dark:hover:bg-indigo-950/20 text-xs font-bold gap-1.5 flex items-center justify-center"
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              Auto-traducir Lote Completo (IA)
+            </Button>
           </div>
 
           <div className="flex-1 overflow-y-auto p-2 space-y-1.5 min-h-0">
@@ -644,6 +880,20 @@ export default function TranslatePage() {
                     className="text-xs bg-white dark:bg-slate-900"
                   >
                     Siguiente ►
+                  </Button>
+                  
+                  <Button
+                    onClick={handleAutoTranslateSingle}
+                    disabled={translating || saving}
+                    variant="outline"
+                    className="border-teal-200 text-teal-600 hover:bg-teal-50 dark:border-teal-900 dark:text-teal-400 dark:hover:bg-teal-950/20 text-xs font-bold gap-1 flex items-center"
+                  >
+                    {translating ? (
+                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                    ) : (
+                      <Sparkles className="w-3.5 h-3.5" />
+                    )}
+                    {translating ? 'Traduciendo...' : 'Traducir con IA'}
                   </Button>
                   
                   <span className="h-6 w-px bg-gray-200 dark:bg-slate-800" />
