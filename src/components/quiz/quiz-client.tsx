@@ -496,14 +496,15 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
       const activeQs = isEnglishPhase ? englishPhase.map(x => x.q) : localQuestions
       const range = getCaseRange(activeQs, current)
       if (range) {
+        const label = (!isEnglishPhase && caseSet.case_label_es) ? caseSet.case_label_es : caseSet.case_label
         if (range.start === range.end) {
           caseRangeText = isEnglishPhase
-            ? `Use ${caseSet.case_label} to answer question ${range.start}`
-            : `Usa ${caseSet.case_label} para responder la pregunta ${range.start}`
+            ? `Use ${label} to answer question ${range.start}`
+            : `Usa ${label} para responder la pregunta ${range.start}`
         } else {
           caseRangeText = isEnglishPhase
-            ? `Use ${caseSet.case_label} to answer questions ${range.start} - ${range.end}`
-            : `Usa ${caseSet.case_label} para responder las preguntas ${range.start} - ${range.end}`
+            ? `Use ${label} to answer questions ${range.start} - ${range.end}`
+            : `Usa ${label} para responder las preguntas ${range.start} - ${range.end}`
         }
       }
     }
@@ -564,9 +565,9 @@ export function QuizClient({ questions, track, weekNumber, englishLevel, spanish
                 {caseRangeText}
               </div>
               
-              {caseSet.description && (
+              {((!isEnglishPhase && caseSet.description_es) || caseSet.description) && (
                 <div style={{ fontSize: '0.88rem', color: '#cbd5e1', lineHeight: 1.45, maxHeight: 180, overflowY: 'auto', paddingRight: '0.4rem', borderRight: '2px solid rgba(255,255,255,0.05)', marginBottom: '0.5rem' }}>
-                  {caseSet.description}
+                  {(!isEnglishPhase && caseSet.description_es) ? caseSet.description_es : caseSet.description}
                 </div>
               )}
 

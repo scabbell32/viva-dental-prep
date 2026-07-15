@@ -27,12 +27,12 @@ export async function GET(req: NextRequest) {
       .from('questions')
       .select(`
         *,
-        case_study:case_studies (
+        case_study:case_sets (
           id,
-          title,
-          title_es,
-          synopsis,
-          synopsis_es
+          title:case_label,
+          title_es:case_label_es,
+          synopsis:description,
+          synopsis_es:description_es
         )
       `)
       .eq('week_number', week)
@@ -72,10 +72,10 @@ export async function POST(req: NextRequest) {
     // 1. Update case study if present
     if (editCase && editCase.id) {
       const { error: csErr } = await adminClient
-        .from('case_studies')
+        .from('case_sets')
         .update({
-          title_es: editCase.title_es || null,
-          synopsis_es: editCase.synopsis_es || null
+          case_label_es: editCase.title_es || null,
+          description_es: editCase.synopsis_es || null
         })
         .eq('id', editCase.id)
         

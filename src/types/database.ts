@@ -34,9 +34,11 @@ export interface CaseSet {
   week_number: number | null
   track: Track
   case_label: string          // 'Case A', 'Fig. 6.45', etc.
+  case_label_es?: string | null
   case_type: CaseType
   patient_data: Record<string, string> | null  // structured chart for patient cases
   description: string | null  // scenario paragraph or text passage
+  description_es?: string | null
   is_active: boolean
   created_at: string
   // Populated by join when needed

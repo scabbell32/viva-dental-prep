@@ -264,11 +264,11 @@ export default async function AttemptReviewPage({
                     }}
                   >
                     <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#c084fc', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.4rem' }}>
-                      Usa {question.case_set.case_label} para responder las siguientes preguntas:
+                      Usa {question.case_set.case_label_es || question.case_set.case_label} para responder las siguientes preguntas:
                     </div>
-                    {question.case_set.description && (
+                    {(question.case_set.description_es || question.case_set.description) && (
                       <p style={{ fontSize: '0.88rem', color: '#cbd5e1', lineHeight: 1.45, margin: '0 0 0.5rem', maxHeight: 180, overflowY: 'auto' }}>
-                        {question.case_set.description}
+                        {question.case_set.description_es || question.case_set.description}
                       </p>
                     )}
                     {question.case_set.case_type === 'patient' && question.case_set.patient_data && (
