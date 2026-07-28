@@ -14,18 +14,33 @@ export default async function QuizBuilderPage() {
 
   const adminClient = createAdminClient()
 
-  // Fetch all distinct chapters that have active questions
-  const { data: rows } = await adminClient
-    .from('questions')
-    .select('chapter_tag')
-    .eq('is_active', true)
-    .not('chapter_tag', 'is', null)
+  // Fetch all distinct chapters that have active questions (with pagination to bypass 1000 row limit)
+  const chaptersSet = new Set<string>()
+  let page = 0
+  const pageSize = 1000
+  while (true) {
+    const { data: rows } = await adminClient
+      .from('questions')
+      .select('chapter_tag')
+      .eq('is_active', true)
+      .not('chapter_tag', 'is', null)
+      .range(page * pageSize, (page + 1) * pageSize - 1)
 
-  const chapters = [...new Set((rows ?? []).map(r => r.chapter_tag).filter(Boolean))]
+    if (!rows || rows.length === 0) break
+    for (const r of rows) {
+      if (r.chapter_tag) {
+        chaptersSet.add(r.chapter_tag)
+      }
+    }
+    if (rows.length < pageSize) break
+    page++
+  }
+
+  const chapters = [...chaptersSet]
     .sort((a, b) => {
       const n = (s: string) => parseInt(s.replace(/\D/g, '') || '0')
-      return n(a!) - n(b!)
-    }) as string[]
+      return n(a) - n(b)
+    })
 
   return (
     <div className="min-h-screen bg-gray-50">
