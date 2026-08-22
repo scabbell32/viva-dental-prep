@@ -1,0 +1,655 @@
+# Chapter 12: Biochemistry, Nutrition & Nutritional Counseling
+## Comprehensive NBDHE Board Exam Review & Rationales
+
+### **Q1. Which of the following disaccharides is composed of one glucose molecule and one galactose molecule?**
+* a. Sucrose
+* b. Lactose
+* c. Maltose
+* d. Fructose
+
+* **Correct Answer:** **B. Lactose**
+* **Clinical Rationale:**
+  b. Lactose is a disaccharide made up of one glucose molecule and one galactose molecule. It is commonly found in milk and dairy products. 
+a. Sucrose is composed of one glucose molecule and one fructose molecule, not galactose. 
+c. Maltose is made up of two glucose molecules linked together. 
+d. Fructose is a monosaccharide.
+
+---
+
+### **Q2. Which of the following statements about salivary amylase is correct?**
+* a. Salivary amylase is secreted by the pancreas and acts in the small intestine.
+* b. Salivary amylase begins the digestion of carbohydrates in the mouth.
+* c. Salivary amylase is active primarily in the stomach where it helps digest proteins.
+* d. Salivary amylase is active in the small intestine.
+
+* **Correct Answer:** **B. Salivary amylase begins the digestion of carbohydrates in the mouth.**
+* **Clinical Rationale:**
+  b. Salivary amylase begins the digestion of carbohydrates in the mouth. Salivary amylase is an enzyme produced by the salivary glands that starts the digestion of carbohydrates (starches) in the mouth.  
+a. Salivary amylase is secreted by the salivary glands, not the pancreas.
+c. Salivary amylase may continue the initial enzymatic hydrolysis of starch that started in the mouth but is not active primarily in the stomach. Hydrochloric acid denatures proteins.
+d. Pancreatic amylase is active in the small intestine.
+
+---
+
+### **Q3. Which of the following is responsible for emulsifying fat during the digestive process?**
+* a. Pepsin
+* b. Amylase
+* c. Bile
+* d. Lactase
+
+* **Correct Answer:** **C. Bile**
+* **Clinical Rationale:**
+  c. Bile is a digestive fluid produced by the liver and stored in the gallbladder. It contains bile salts that aids in the emulsification of fat during the digestive process. 
+a. Pepsin is a digestive enzyme found in the stomach with HCL that primarily breaks down proteins into peptides, not fats.
+b. Salivary amylase is an enzyme that breaks down starch into maltose in the mouth; it does not emulsify fats.
+c. Lactase is an enzyme that breaks down lactose (a sugar found in milk) into glucose and galactose. It does not play a role in fat digestion.
+
+---
+
+### **Q4. Which of the following is an example of a monosaccharide?**
+* a. Sucrose
+* b. Lactose
+* c. Fructose
+* d. Starch
+
+* **Correct Answer:** **C. Fructose**
+* **Clinical Rationale:**
+  c. Fructose is a monosaccharide.  It is a single sugar unit and the sweetest tasting sugar. 
+a. Sucrose is a disaccharide composed of one glucose molecule and one fructose molecule. b.Lactose is a disaccharide, made up of one glucose molecule and one galactose molecule. 
+    d. Starch is a polysaccharide consisting of multiple glucose units linked together.
+
+---
+
+### **Q5. To reduce cariogenicity, sucrose should be:**
+* a. Consumed throughout the day
+* b. Consumed with acidic foods
+* c. Consumed as part of a meal
+* d. Consumed with sticky foods
+
+* **Correct Answer:** **C. Consumed as part of a meal**
+* **Clinical Rationale:**
+  c.  Acids can attack teeth for up to 20 minutes after eating, so eating sugar with meals can help clear the mouth of sugary food debris. 
+a. Consuming sugar more than four times a day is linked to higher levels of caries
+b.  High-acid foods can affect mineralization of enamel
+d. Sticky foods can remain on teeth for a long time, which increases the amount of time teeth are exposed to sugar and acidic challenges
+
+---
+
+### **Q6. What is the end product of glycolysis in the presence of oxygen?**
+* a. Pyruvate
+* b. Lactic acid
+* c. Acetyl-CoA
+* d. Release of carbon dioxide
+
+* **Correct Answer:** **C. Acetyl-CoA**
+* **Clinical Rationale:**
+  c. Acetyl-CoA is the end product of glycolysis in the presence of oxygen or aerobic conditions. 
+	a.	Pyruvate is the end product of glycolysis in the absence of oxygen or anaerobic conditions.
+	b.	Lactic acid is the end product of glycolysis in the absence of oxygen or anaerobic conditions.
+	c.	Release of carbon dioxide occurs during the Tricarboxylic acid cycle (TCA) or Krebs cycle.
+
+---
+
+### **Q7. Which of the following best defines gluconeogenesis?**
+* a. The process of converting glucose into glycogen for storage in the liver and muscles
+* b. The synthesis of glucose from noncarbohydrate precursors, such as amino acids and lactate
+* c. Excess carbohydrate in the diet stored as fat is converted to fat to be stored in adipose tissue as long-term energy storage form
+* d. The conversion of glucose into pyruvate through glycolysis
+
+* **Correct Answer:** **B. The synthesis of glucose from noncarbohydrate precursors, such as amino acids and lactate**
+* **Clinical Rationale:**
+  b. The synthesis of glucose from non-carbohydrate precursors, such as amino acids and lactate correctly defines gluconeogenesis, which is the metabolic process through which glucose is synthesized from non-carbohydrate sources. 
+ a. This describes glycogenesis, not gluconeogenesis. Glycogenesis is the process of converting glucose into glycogen for storage, whereas gluconeogenesis involves creating new glucose molecules.
+c.This describes lipogenesis
+d. This describes glycolysis, the metabolic pathway that converts glucose into pyruvate to produce energy. This is the reverse of gluconeogenesis, which involves the synthesis of glucose rather than its breakdown
+
+---
+
+### **Q8. All of the following statements are true about anabolic hormones except one. Which one is the EXCEPTION?**
+* a. Lowers blood glucose level
+* b. Promotes the synthesis of molecules and the storage of energy
+* c. Include estrogen, testosterone, growth hormones, and insulin
+* d. Lowers blood glucose level, breaks down molecules, and releases energy
+
+* **Correct Answer:** **D. Lowers blood glucose level, breaks down molecules, and releases energy**
+* **Clinical Rationale:**
+  d.  Catabolic hormones, such as cortisol, play a role in the breakdown of molecules (such as proteins and lipids) and the release of energy, especially during stress or fasting.
+a. b. c. Anabolic hormones promote the synthesis of molecules (like proteins and glycogen), lower blood glucose, and support the storage of energy.
+
+---
+
+### **Q9. Catabolic hormones are metabolic regulators of all of the following processes EXCEPT one. Which is the EXCEPTION?**
+* a. Mobilization of fatty acids from adipose tissue
+* b. Breakdown of glycogen in the liver
+* c. Synthesis of proteins in muscle tissue
+* d. Increase in blood glucose levels through gluconeogenesis
+
+* **Correct Answer:** **C. Synthesis of proteins in muscle tissue**
+* **Clinical Rationale:**
+  c. Synthesis of proteins in muscle tissue is the exception. Catabolic hormones are generally involved in breaking down molecules and increasing energy availability, not in the synthesis of molecules. The synthesis of molecules such as proteins in muscle tissue is typically regulated by anabolic hormones.
+a. Catabolic hormones like epinephrine stimulate the mobilization of fatty acids from adipose tissue to provide energy.
+b. Catabolic hormones are involved in the breakdown of glycogen in the liver to release glucose into the bloodstream. For example, glucagon promotes glycogenolysis.
+d. Catabolic hormones can increase blood glucose levels through glycogenolysis and gluconeogenesis.
+
+---
+
+### **Q10. Which of the following is an example of soluble fiber?**
+* a. Cellulose
+* b. Lignin
+* c. Pectin
+* d. Hemicellulose
+
+* **Correct Answer:** **C. Pectin**
+* **Clinical Rationale:**
+  c.  Pectin is an example of soluble fiber. Soluble fiber dissolves in water to form a gel-like substance and can help lower blood cholesterol levels and regulate blood sugar.
+a. Cellulose is a type of insoluble fiber. It does not dissolve in water and helps add bulk to the stool, aiding in digestive health.
+b. Lignin is also an example of insoluble fiber. It is a component of plant cell walls that adds structural strength and does not dissolve in water.
+d. Hemicellulose is a type of fiber that includes both soluble and insoluble forms, but it is primarily known for its insoluble properties. It is found in the cell walls of plants and contributes to the bulk of dietary fiber.
+
+---
+
+### **Q11. All of the following are biological roles of carbohydrates, EXCEPT one. Which is the EXCEPTION?**
+* a. Providing a primary source of energy for cells
+* b. Serving as structural components of cell membranes
+* c. Acting as a storage form of energy in the form of glycogen
+* d. Contributing to the synthesis of proteins and nucleic acids
+
+* **Correct Answer:** **D. Contributing to the synthesis of proteins and nucleic acids**
+* **Clinical Rationale:**
+  d. Carbohydrates do not directly contribute to the synthesis of proteins and nucleic acids. 
+a.Carbohydrates provide a primary source of energy for cells. Glucose, a simple carbohydrate, is the main energy source for cellular functions and metabolism.
+b.Carbohydrates serve as structural components of cell membranes in the form of glycoproteins and glycolipids. 
+c.Carbohydrates act as a storage form of energy in the form of glycogen, which is stored in the liver and muscles and can be mobilized when needed.
+
+---
+
+### **Q12. Which of the following is characterized by a gradual reduction in lactase enzyme activity starting in childhood or adolescence due to genetic factors?**
+* a. Primary lactose intolerance
+* b. Secondary lactose intolerance
+* c. Milk protein intolerance
+* d. Gluten intolerance
+
+* **Correct Answer:** **A. Primary lactose intolerance**
+* **Clinical Rationale:**
+  a. Primary lactose intolerance is indeed characterized by a gradual reduction in lactase enzyme activity, which typically begins in childhood or adolescence due to genetic factors. It is congenital. 
+b. Secondary lactose intolerance is not necessarily a lifelong condition; it can be temporary or permanent. It is caused by an external factor such as gastrointestinal illness or injury that affects lactase production. If the underlying condition is treated or resolved, lactase production can often return to normal or improve, making the condition reversible in many cases.
+c. A food allergy, such as cow's milk allergy, is an immune reaction to the protein in milk. A lactose intolerance is caused by the inability to break down lactose, which is the sugar in milk.
+d. Gluten intolerance affects the digestive system
+
+---
+
+### **Q13. For individuals diagnosed with phenylketonuria (PKU), which of the following nutritive or nonnutritive sweetener should be avoided?**
+* a. Sucralose
+* b. Steviol glycosides
+* c. Aspartame
+* d. Saccharin
+
+* **Correct Answer:** **C. Aspartame**
+* **Clinical Rationale:**
+  c. Aspartame is the correct answer because it contains phenylalanine, which individuals with phenylketonuria (PKU) are unable to metabolize effectively. Consuming phenylalanine can lead to toxic levels in the body, causing serious health issues for those with PKU.
+a.Sucralose is an nonnutritive sweetener that does not contain phenylalanine and considered safe for individuals with PKU. 
+b.Steviol glycosides are nonnutritive sweeteners derived from chemicals in the stevia plant. They do not contain phenylalanine and considered safe for individuals with PKU.
+d.Saccharin is a nonnutritive sweetener that does not contain phenylalanine and considered safe for individuals with PKU.
+
+---
+
+### **Q14. Which of the following is an example of a homopolysaccharide?**
+* a. Pectin
+* b. Cellulose
+* c. Glycoprotein
+* d. Glycolipid
+
+* **Correct Answer:** **B. Cellulose**
+* **Clinical Rationale:**
+  b. Cellulose is a homopolysaccharide composed entirely of glucose units linked together in beta linkages and not capable of being hydrolyzed by human digestive enzymes. It is the chief constituent of the framework of plants.  Cellulose provides bulk and fiber in the diet. 
+a.Pectin is not a homopolysaccharide. It is a heteropolysaccharide.
+b.Glycoprotein is not a homopolysaccharide. It is a heteropolysaccharide. It is a protein with carbohydrate chains (oligosaccharides) attached to it.
+c.Glycolipid is not a homopolysaccharide. It is a heteropolysaccharide. It is a molecule consisting of a lipid (fatty acid) with carbohydrate chains attached.
+
+---
+
+### **Q15. What is the recommended daily allowance (RDA) for digestible carbohydrate for adults and children?**
+* a. 100 g
+* b. 130 g
+* c. 65 g
+* d. 50 g
+
+* **Correct Answer:** **B. 130 g**
+* **Clinical Rationale:**
+  b. 130 g/day is the recommended daily allowance (RDA) for digestible carbohydrate for adults and children
+a. 100 g/day of digestible carbohydrate is a minimum amount that should be consumed to prevent use of body protein as an energy source.
+c. 65 g/day of digestible carbohydrate is a minimum amount that should be consumed to prevent use of body protein as an energy source.
+d. 50 g/day of digestible carbohydrate is a minimum amount that should be consumed to prevent use of body protein as an energy source.
+
+---
+
+### **Q16. Individuals on a vegan diet are at risk of which of the following nutrient deficiencies?**
+* a. Vitamin A
+* b. Vitamin C
+* c. Vitamin B12
+* d. Vitamin D
+
+* **Correct Answer:** **C. Vitamin B12**
+* **Clinical Rationale:**
+  c. Vitamin B12 is only found in animal products. A vegan diet is restrictive of any foods containing animal products, so this nutrient must be supplemented to avoid deficiency. 
+a. Vitamin A is a nutrient that can be adequately consumed through regular consumption of fruits and vegetables.
+b. Vitamin C is a nutrient that can be adequately consumed through regular consumption of fruits and vegetables. 
+d. Vitamin D is a nutrient found in both plant (D2) and animal products (D3). It can be adequately consumed through regular consumption of vegetables.  It is also known as the sunshine vitamin and adequate amounts can be consumed from being outside daily for 10-15 minutes with no sunscreen.
+
+---
+
+### **Q17. Each of the following statements is specific to individuals with type 2 diabetes EXCEPT one. Which one is the EXCEPTION?**
+* a. Regular meal patterns are recommended to maintain blood glucose control.
+* b. Daily injections of insulin are needed.
+* c. Routine blood testing to monitor blood sugar levels is recommended.
+* d. Medication is often prescribed to facilitate glucose metabolism.
+
+* **Correct Answer:** **B. Daily injections of insulin are needed.**
+* **Clinical Rationale:**
+  b. Daily injections of insulin are required of individuals with type 1 diabetes. Although some individuals with uncontrolled type 2 diabetes may be indicated for insulin use as well, most individuals with type 2 manage their blood glucose levels with prescription medication, diet and/or exercise. 
+a. It is recommended individuals with type 2 diabetes have a specialized diet and regular meal patterns to maintain blood glucose control.
+c. It is recommended individuals with type 2 diabetes do routine blood testing to monitor their blood sugar levels.
+d. Medication is often prescribed to individuals with type 2 diabetes to facilitate glucose metabolism.
+
+---
+
+### **Q18. Polydipsia is a sign/symptom of diabetes mellitus. Which of the following describes this identified sign/symptom?**
+* a. Frequent urination
+* b. Extreme hunger
+* c. Excessive thirst
+* d. Recurring gingival infections
+
+* **Correct Answer:** **C. Excessive thirst**
+* **Clinical Rationale:**
+  c. Excessive thirst is a common sign /symptom of diabetes mellitus known as polydipsia. 
+	a.	Frequent urination is known as polyuria.
+	b.	Extreme hunger is polyphagia.
+	c.	Recurring gingival infections is a common occurrence due to heightened inflammation and a propensity for reduced immune function in patients with diabetes mellitus.
+
+---
+
+### **Q19. Depletion of which vitamin affects the liver’s ability metabolize alcohol?**
+* a. B vitamins
+* b. Vitamin C
+* c. Vitamin D
+* d. Vitamin K
+
+* **Correct Answer:** **A. B vitamins**
+* **Clinical Rationale:**
+  a.  B vitamins such as niacin and thiamin are needed for the liver to metabolize alcohol. 
+      b. Vitamin C helps the body grow and repair tissues in all parts of the body, including bone and teeth
+      c. Vitamin D helps the body absorb calcium, which is a key component of bones. Vitamin D also helps maintain calcium levels in the body, which helps prevent osteoporosis and other bone conditions
+     d. Vitamin K is a fat-soluble nutrient that helps with blood clotting and bone health
+
+---
+
+### **Q20. All of the following statements are true about nonessential amino acids EXCEPT one. Which is the EXCEPTION?**
+* a. Nonessential amino acids can be synthesized by the body.
+* b. Nonessential amino acids do not need to be provided by the diet.
+* c. Histidine, isoleucine, leucine, and lysine are examples of nonessential amino acids that must be provided in the diet for adults.
+* d. Nonessential amino acids are necessary for normal metabolic reactions.
+
+* **Correct Answer:** **C. Histidine, isoleucine, leucine, and lysine are examples of nonessential amino acids that must be provided in the diet for adults.**
+* **Clinical Rationale:**
+  c. Histidine, isoleucine, leucine, and lysine are examples of essential amino acids that must be provided in the diet for adults not nonessential amino acids. 
+	a.	Nonessential amino acids can be synthesized by the body is a true statement.
+	b.	Nonessential amino acids do not need to be provided by the diet is a true statement.
+d. Nonessential amino acids are necessary for normal metabolic is a true statement.
+
+---
+
+### **Q21. A primary structure of an amino acid is described by which of the following?**
+* a. Steric interaction of amino acids that are far apart in the linear sequence causing folding and the ultimate functional structure of the protein; disulfide bonds are examples
+* b. A linear sequence of the component amino acids
+* c. A steric interaction of amino acids that are close to one another in the linear sequence; the alpha helix and beta sheet are examples
+* d. Steric interaction between subunits of proteins with more than one polypeptide chain; hemoglobin is an example
+
+* **Correct Answer:** **B. A linear sequence of the component amino acids**
+* **Clinical Rationale:**
+  b. The primary structure of an amino acid has a linear sequence of the component amino acids.
+a. Tertiary structure of an amino acid has a steric interaction of amino acids that are far apart in the linear sequence causing folding and the ultimate functional structure of the protein; disulfide bonds are examples
+c. Secondary structure of an amino acid has a steric interaction of amino acids that are close to one another in the linear sequence; the alpha helix and beta sheet are examples.
+d. Quaternary structure of an amino acid has a steric interaction between subunits of proteins with more than one polypeptide chain; hemoglobin is an example.
+
+---
+
+### **Q22. Which enzyme is primarily responsible for breaking down proteins into smaller peptides in the stomach?**
+* a. Amylase
+* b. Pepsin
+* c. Lipase
+* d. Trypsin
+
+* **Correct Answer:** **B. Pepsin**
+* **Clinical Rationale:**
+  b. Pepsin
+a. Amylase is an enzyme that breaks down complex carbohydrates into simpler sugars, which helps with digestion
+b. Lipase is an enzyme in the digestive system that breaks down fats (lipids) into smaller molecules, like fatty acids and glycerol, allowing the body to absorb them in the small intestine
+c. Trypsin is a digestive enzyme that breaks down proteins in the small intestine, helping to complete the digestion process that begins in the stomach
+
+---
+
+### **Q23. Positive nitrogen balance occurs in which of the following:**
+* a. Fever or infection
+* b. Recovery from surgery
+* c. Anxiety
+* d. Prolonged stress
+
+* **Correct Answer:** **B. Recovery from surgery**
+* **Clinical Rationale:**
+  b. Positive nitrogen balance is when intake is greater than output of nitrogen.  Indicates net protein synthesis and is the normal situation for anyone building protein-containing tissue such as during childhood, pregnancy, and recovery from undernutrition, surgery, or illness.   
+a. When the body must break down its own protein to meet energy or metabolic needs, negative nitrogen balance occurs. Fever or infection is an example of a negative nitrogen balance. 
+c. Negative nitrogen balance may occur with anxiety.
+d. Negative nitrogen balance may occur during periods of prolonged stress.
+
+---
+
+### **Q24. Derived lipids are compounds whose synthesis begins with acetyl groups added on one at a time. Examples of a derived lipid include all of the following EXCEPT one. Which is the EXCEPTION?**
+* a. Steroids
+* b. Saturated fatty acid
+* c. Cholesterol
+* d. Sterols
+
+* **Correct Answer:** **B. Saturated fatty acid**
+* **Clinical Rationale:**
+  b. A saturated fatty acid is a true fat.  A true fat is an example of a simple lipid that contains fatty acids attached to glycerol through an ester linkage. 
+a. A steroid is an example of a derived lipid.
+c. Cholesterol is an example of a derived lipid.
+d. Sterols are an example of a derived lipid.
+
+---
+
+### **Q25. Which of the following hormones is involved in both anabolism and catabolism?**
+* a. Epinephrine
+* b. Insulin
+* c. Thyroid-stimulating hormone (TSH)
+* d. Glucagon
+
+* **Correct Answer:** **C. Thyroid-stimulating hormone (TSH)**
+* **Clinical Rationale:**
+  c. Thyroid-stimulating hormones are involved in both anabolism and catabolism. 
+a. Epinephrine is a hormone that induces catabolism. 
+b. Insulin is a hormone that stimulates anabolism. 
+d. Glucagon is a primary hormone that promotes catabolism.
+
+---
+
+### **Q26. All of the following are true about the biologic role functions of lipids EXCEPT one. Which is the EXCEPTION?**
+* a. Provides energy source of 4 kcal/g
+* b. Protective padding for body organs
+* c. Insulation for the maintenance of body temperature
+* d. Long-term storage of energy
+
+* **Correct Answer:** **A. Provides energy source of 4 kcal/g**
+* **Clinical Rationale:**
+  a. Lipids provide an energy source of 9 kcal/g. Proteins and carbohydrates provide an energy source of 4 kcal/g. 
+	a.	Lipids function as protective padding for body organs.
+	b.	Lipids provide insulation for the maintenance of body temperature.
+	c.	Lipids serve as a long-term storage of energy.
+
+---
+
+### **Q27. Which of the following anthropometric measures is the most accurate method used to determine body fat through the ability to distinguish fat mass, fat-free mass and bone mineral loss?**
+* a. Bioelectrical impedance
+* b. Underwater weighting
+* c. Dual-energy x-ray absorptiometry (DEXA)
+* d. Arm muscle circumference
+
+* **Correct Answer:** **C. Dual-energy x-ray absorptiometry (DEXA)**
+* **Clinical Rationale:**
+  c. Dual-energy x-ray absorptiometry (DEXA) can distinguish fat mass, fat-free mass, and bone mineral loss. It is the most accurate method used to determine body fat. 
+a. Bioelectrical impedance is a potential predictor of total body fat. Lean body mass conducts electricity better than fat mass. 
+b. Underwater weighing is the most accurate method to determine body volume.
+d. Arm muscle circumference is a sensitive indicator of the muscle mass that reflects protein stores.
+
+---
+
+### **Q28. How does an increase in body weight generally affect basal metabolic rate?**
+* a. BMR decreases because the body requires less energy to maintain a larger mass
+* b. BMR increases because the body requires less energy to maintain a larger mass
+* c. BMR remains unchanged because body weight does not affect the rate of metabolism
+* d. BMR fluctuates unpredictably with changes in body weight
+
+* **Correct Answer:** **B. BMR increases because the body requires less energy to maintain a larger mass**
+* **Clinical Rationale:**
+  b. An increase in body weight generally leads to an increase in basal metabolic rate (BMR). BMR is the rate at which your body expends energy while at rest in order to maintain vital functions like breathing, circulation, and cell production. As body weight increases, especially if the increase is due to an increase in muscle mass, the body requires more energy to maintain these functions, which raises the BMR. Even if the weight gain is due to fat, the overall increase in body mass typically results in a higher BMR, although muscle mass has a greater impact on metabolic rate compared to fat.
+
+---
+
+### **Q29. All of the following are examples of conditions that may result from water toxicity EXCEPT one. Which is the EXCEPTION?**
+* a. Edema
+* b. Malfunction of kidneys
+* c. Hypertension
+* d. Sodium retention
+
+* **Correct Answer:** **B. Malfunction of kidneys**
+* **Clinical Rationale:**
+  b. Malfunction of kidneys, blood loss, vomiting, diarrhea, and inadequate fluid intake can result in dehydration rather than water intoxication.
+a. Edema can result from water intoxication.
+c. Hypertension can result from water intoxication.
+d. Sodium retention can result from water intoxication.
+
+---
+
+### **Q30. Which of the following eating disorders may result in death from multiorgan failure?**
+* a. Obesity
+* b. OSFED—Other Specified Eating or Feeding Disorder
+* c. Anorexia
+* d. Bulimia
+
+* **Correct Answer:** **C. Anorexia**
+* **Clinical Rationale:**
+  c. Anorexia is a state of protein energy malnutrition that is brought on by voluntary starvation. Death from failure of multiple organ systems may occur as a result of dehydration and extreme deprivation of caloric intake.
+a. Obesity is not specifically categorized as an eating disorder by the American Psychological Association.  The body is in a heightened inflammatory state which may increase risk for systemic and oral disease. 
+b. OSFED-Other Specified Eating or Feeding Disorder is a broad category established to ensure treatment for those individuals who do not meet the strict criteria for diagnosis for bulimia, anorexia nervosa or binge eating disorder. 
+d. Bulimia is characterized by self-induced vomiting. Swelling of the salivary glands, esophagus and the demineralization of tooth enamel from acid resulting in sensitive teeth may occur.
+
+---
+
+### **Q31. Which of the following is not a quality of fat-soluble vitamins?**
+* a. Only contain the elements of carbon, hydrogen, and oxygen
+* b. Not readily excreted
+* c. Deficiency symptoms often develop rapidly
+* d. Toxic with chronic excessive intake
+
+* **Correct Answer:** **C. Deficiency symptoms often develop rapidly**
+* **Clinical Rationale:**
+  c. Deficiency symptoms do not often develop rapidly with fat-soluble vitamins. 
+a. Fat-soluble vitamins contain the elements carbon, hydrogen, and oxygen.
+b. Fat-soluble vitamins are not readily excreted.
+d. Fat-soluble vitamins can be toxic if consumed in excessive amounts
+
+---
+
+### **Q32. Which of the following statements is true about fat-soluble vitamins?**
+* a. They play a role in maintenance of the body’s mucosal linings and epithelial cells.
+* b. They mostly come from plant sources.
+* c. They quickly pass through the body and are excreted in urine.
+* d. They are stored in the stomach.
+
+* **Correct Answer:** **A. They play a role in maintenance of the body’s mucosal linings and epithelial cells.**
+* **Clinical Rationale:**
+  a. Fat-soluble vitamins (A,D, E K) play a role in maintenance of the body’s mucosal linings and epithelial cells. 
+b. Fat soluble vitamins tend to come from animal and dairy products, but can also be found in some fruits and vegetables
+c. Because the body holds on to fat-soluble vitamins, most people who have adequate access to nutritious foods get plenty of vitamins A, E and K in their diets without trying too hard
+d. Fat-soluble vitamins are stored in the body’s fatty tissue and the liver
+
+---
+
+### **Q33. Which of the following is a compound lipid that contains a carbohydrate component and is found in the brain and nervous tissue?**
+* a. lipoproteins
+* b. glycolipids
+* c. phospholipids
+* d. sterol
+
+* **Correct Answer:** **B. glycolipids**
+* **Clinical Rationale:**
+  b. Glycolipids is a compound lipid that contains a carbohydrate component and is found in the brain and nervous tissue. 
+	a.	Lipoproteins are a compound lipid that is water-soluble and responsible for carrying lipids throughout the body. 
+c. Phospholipids are compound lipid comprised of glycerol + 2 fatty acids + phosphate group  
+    and equals an R group. 
+	d.Sterols are an example of a derived lipid which are compounds whose synthesis begins like fatty acid synthesis, with acetyl groups added on one at a time.
+
+---
+
+### **Q34. Which of the following vitamins is classified as a water-soluble vitamin?**
+* a. Vitamin A
+* b. Vitamin C
+* c. Vitamin D
+* d. Vitamin E
+
+* **Correct Answer:** **B. Vitamin C**
+* **Clinical Rationale:**
+  b. Vitamin C is classified as a water-soluble vitamin. 
+	a.	Vitamin A is a fat-soluble vitamin
+	b.	Vitamin D is a fat-soluble vitamin
+	c.	Vitamin E is a fat-soluble vitamin
+
+---
+
+### **Q35. Which of the following refers to erosion of tooth enamel?**
+* a. Halitosis
+* b. Lanugo
+* c. Perimylolysis
+* d. Glossitis
+
+* **Correct Answer:** **C. Perimylolysis**
+* **Clinical Rationale:**
+  c. Perimylolysis is erosion of tooth enamel.
+ a. Halitosis is bad breath
+ b. Lanugo is a thin, fine layer of hair common in someone with anorexia; the body’s protective mechanism to maintain warmth when there is an extreme loss of weight. 
+d. Glossitis is inflammation of the tongue.
+
+---
+
+### **Q36. Secondary deficiency is the result of the inability to digest, absorb and used foods consumed. Which of the following is an example of secondary deficiency?**
+* a. Fad diets
+* b. Illness
+* c. Allergies
+* d. Loss of appetite
+
+* **Correct Answer:** **C. Allergies**
+* **Clinical Rationale:**
+  c. Allergies are an example of secondary deficiency. Sensitivity to certain foods or chemicals in foods can lead to malabsorption syndromes. An example is celiac disease. 
+	a.	Fad diets are an example of primary deficiency that can contribute to low calorie or imbalanced diet plans. 
+	b.	Illness is an example of a primary deficiency that can occur due to loss of appetite.
+	d.	Loss of appetite is an example of a primary deficiency that can be a side effect of illness.
+
+---
+
+### **Q37. Which assessment of dietary intake provides a more accurate measure of an individual’s intake?**
+* a. Food-frequency questionnaire.
+* b. 3- to 7-day food record diary
+* c. 24-hour dietary recall method
+* d. 24-hour recall method and 3- to 7-day food record diary
+
+* **Correct Answer:** **D. 24-hour recall method and 3- to 7-day food record diary**
+* **Clinical Rationale:**
+  d. Using both a 24-hour recall method and 3- to 7-day food record diary provides a more accurate measure of an individual’s intake. 
+	a.	 Food frequency questionnaire asks how often food items are consumed; works better with large groups in the community setting. 
+	b.	3- to 7-day food record diary records everything eaten within a certain number of days requested; should include at least one weekend day.  Unless written down immediately, details of intake may be forgotten. 
+	c.	24-hour dietary recall method is a mental recall of everything eaten in the previous 24 hours; useful for individual counseling in a clinical setting; may not represent “typical” or “usual” intake.
+
+---
+
+### **Q38. Which of the following is the value based on an approximation of nutrient intake by a group of healthy people that is used when the RDA value (recommended dietary allowance) cannot be determined?**
+* a. UL (upper limit)
+* b. AI (adequate intake)
+* c. EER (estimated energy requirement)
+* d. EAR (estimated average requirement)
+
+* **Correct Answer:** **B. AI (adequate intake)**
+* **Clinical Rationale:**
+  b. AI (adequate intake) is the value based on an approximation of nutrient intake by a group of healthy people that is used when the RDA value (recommended dietary allowance) cannot be determined.
+	a.UL (upper limit)
+c.EER (estimated energy requirement)
+d.EAR (estimated average requirement)
+
+---
+
+### **Q39. Which of the following dietary recommendations is most appropriate for a person with Chronic Kidney Disease (CKD)?**
+* a. Increase protein intake to support muscle mass and overall health
+* b. Consume high-sodium foods to help balance electrolytes and fluid levels
+* c. Limit phosphorus-rich foods, such as dairy products and certain whole grains
+* d. Drink excessive amounts of fluids to promote kidney function and prevent dehydration
+
+* **Correct Answer:** **C. Limit phosphorus-rich foods, such as dairy products and certain whole grains**
+* **Clinical Rationale:**
+  c. With reduced kidney function a person with CKD may need to limit intake of foods high in phosphorus to control how much phosphorus gets into the bloodstream. High phosphorus levels in your blood can cause your bones to lose calcium, making bones weak and brittle.
+	a.	When the body uses protein, it produces waste. Your kidneys remove this waste. Eating more protein than one needs may make the kidneys work harder.
+	b.	To help control your blood pressure, the diet should contain less than 2,300 milligrams of sodium each day.
+	d.	People with advanced chronic kidney disease (CKD) or kidney failure should limit their fluid intake because their kidneys can't remove excess water and waste as well as they should.
+
+---
+
+### **Q40. Which of the following statements BEST describes the dietary reference intake (DRI)?**
+* a. The intake level sufficient to meet nutrient requirements of nearly all healthy individuals
+* b. Value based on the observed average or experimentally set intake by individuals that appear to sustain a defined nutritional status
+* c. Nutrient intake value estimated to meet the requirements of half the healthy individuals in a group
+* d. Value based on approximation of nutrient intake by a group of healthy people
+
+* **Correct Answer:** **B. Value based on the observed average or experimentally set intake by individuals that appear to sustain a defined nutritional status**
+* **Clinical Rationale:**
+  b.  Dietary reference intake (DRI) values are based on the observed average or experimentally set intake by individuals that appear to sustain a defined nutritional status. 
+a. The recommended dietary allowance (RDA) is the intake level sufficient to meet the nutrient requirements of nearly all healthy individuals.  
+c. The estimated average requirement (EAR) is the nutrient intake value that is estimated to meet the requirements of half of the healthy individuals in a group. 
+d. The adequate intake (AI) is the value based on the approximation of nutrient intake by a group of healthy people.
+
+---
+
+### **Q41. A deficiency of which of the following nutrient can result in pernicious anemia in elderly and vegan populations?**
+* a. Vitamin B6
+* b. Vitamin D
+* c. Vitamin B12
+* d. Calcium
+
+* **Correct Answer:** **C. Vitamin B12**
+* **Clinical Rationale:**
+  c. Pernicious anemia is a result of vitamin B12 deficiency. Vitamin B12 binds with intrinsic factor (IF) in the gut to be fully absorbed in the small intestine.  As we age, hydrochloric acid (HCL) is diminished; HCL is needed for IF to bind with vitamin B12.  B12 is only found in animal products.  Vegans do not consume any animal products. For these reasons, pernicious anemia is common to elderly and vegan populations.   
+	b.	Vitamin D controls calcification of dentin and enamel by regulating calcium absorption in the intestines
+	c.	B6 is an important coenzyme for normal carbohydrate metabolism.
+	d.	Calcium deficiency contributes to poor bone mineral density.  It is important in normal tooth and bone mineralization.
+
+---
+
+### **Q42. What role does vitamin C have in tooth formation?**
+* a. Is involved in the formation of the matrix of dentin and enamel
+* b. Is important to the normal growth of dentin and enamel
+* c. Controls calcification of dentin and enamel
+* d. Is involved in the hydroxylation of proline and lysine in collagen synthesis
+
+* **Correct Answer:** **D. Is involved in the hydroxylation of proline and lysine in collagen synthesis**
+* **Clinical Rationale:**
+  d. Vitamin C (ascorbic acid) acts as an essential coenzyme for prolyl hydroxylase and lysyl hydroxylase, facilitating the hydroxylation of proline and lysine in collagen synthesis, which forms the organic matrix of dentin, cementum, and periodontal ligament.
+
+---
+
+### **Q43. Supragingival biofilm formation is influenced by frequent intake of which of the following in the diet?**
+* a. Dietary monosaccharides and disaccharides
+* b. Fiber-rich foods
+* c. Protein-rich foods
+* d. Fat-rich foods
+
+* **Correct Answer:** **A. Dietary monosaccharides and disaccharides**
+* **Clinical Rationale:**
+  a. Frequent dietary intake of monosaccharides and disaccharides influences supragingival biofilm or plaque formation.
+b. Fiber-rich foods are encouraged to reduce the formation of supragingival biofilm or plaque.
+c. Protein-rich foods promote a more alkaline pH in the oral cavity. Protein-rich foods do not contribute to the formation of supragingival biofilm or plaque.
+d. Fat content of foods promotes a more alkaline pH in the oral cavity. Foods with a higher fat content do not contribute to the formation of supragingival biofilm or plaque.
+
+---
+
+### **Q44. Accurate guidance for nutrition counseling after a prosthesis insertion includes all of the following EXCEPT one. Which is the EXCEPTION?**
+* a. Advise the patient to consume liquid foods for the first 24 hours.
+* b. Dietary sugars should be restricted to prevent bacterial growth, acid production, and biofilm formation.
+* c. Flavors of foods will not be altered immediately after the prosthesis is inserted.
+* d. To equalize occlusal forces, evenly divide each bite of food in the right and left sides of the mouth.
+
+* **Correct Answer:** **C. Flavors of foods will not be altered immediately after the prosthesis is inserted.**
+* **Clinical Rationale:**
+  c. Immediately following insertion of a new prosthesis, flavors of foods will be altered.  However, this should eventually disappear with continued wear of the prosthesis. 
+	a.Patients should be advised to consume liquid foods for the first 24 hours after insertion of prosthesis. 
+	b. Dietary sugars should be restricted to prevent bacterial growth, acid production and biofilm formation. 
+d. To equalize occlusal forces, each bite of food should be divided in the right and left sides of the mouth after insertion of prosthesis.
+
+---
+

@@ -1,0 +1,442 @@
+[
+  {
+    "orig_num": 1,
+    "question_text": "Which of the following disaccharides is composed of one glucose molecule and one galactose molecule?",
+    "option_a": "Sucrose",
+    "option_b": "Lactose",
+    "option_c": "Maltose",
+    "option_d": "Fructose",
+    "correct_option": "b",
+    "explanation": "b. Lactose is a disaccharide made up of one glucose molecule and one galactose molecule. It is commonly found in milk and dairy products. \na. Sucrose is composed of one glucose molecule and one fructose molecule, not galactose. \nc. Maltose is made up of two glucose molecules linked together. \nd. Fructose is a monosaccharide."
+  },
+  {
+    "orig_num": 2,
+    "question_text": "Which of the following statements about salivary amylase is correct?",
+    "option_a": "Salivary amylase is secreted by the pancreas and acts in the small intestine.",
+    "option_b": "Salivary amylase begins the digestion of carbohydrates in the mouth.",
+    "option_c": "Salivary amylase is active primarily in the stomach where it helps digest proteins.",
+    "option_d": "Salivary amylase is active in the small intestine.",
+    "correct_option": "b",
+    "explanation": "b. Salivary amylase begins the digestion of carbohydrates in the mouth. Salivary amylase is an enzyme produced by the salivary glands that starts the digestion of carbohydrates (starches) in the mouth.  \na. Salivary amylase is secreted by the salivary glands, not the pancreas.\nc. Salivary amylase may continue the initial enzymatic hydrolysis of starch that started in the mouth but is not active primarily in the stomach. Hydrochloric acid denatures proteins.\nd. Pancreatic amylase is active in the small intestine."
+  },
+  {
+    "orig_num": 3,
+    "question_text": "Which of the following is responsible for emulsifying fat during the digestive process?",
+    "option_a": "Pepsin",
+    "option_b": "Amylase",
+    "option_c": "Bile",
+    "option_d": "Lactase",
+    "correct_option": "c",
+    "explanation": "c. Bile is a digestive fluid produced by the liver and stored in the gallbladder. It contains bile salts that aids in the emulsification of fat during the digestive process. \na. Pepsin is a digestive enzyme found in the stomach with HCL that primarily breaks down proteins into peptides, not fats.\nb. Salivary amylase is an enzyme that breaks down starch into maltose in the mouth; it does not emulsify fats.\nc. Lactase is an enzyme that breaks down lactose (a sugar found in milk) into glucose and galactose. It does not play a role in fat digestion."
+  },
+  {
+    "orig_num": 4,
+    "question_text": "Which of the following is an example of a monosaccharide?",
+    "option_a": "Sucrose",
+    "option_b": "Lactose",
+    "option_c": "Fructose",
+    "option_d": "Starch",
+    "correct_option": "c",
+    "explanation": "c. Fructose is a monosaccharide.  It is a single sugar unit and the sweetest tasting sugar. \na. Sucrose is a disaccharide composed of one glucose molecule and one fructose molecule. b.Lactose is a disaccharide, made up of one glucose molecule and one galactose molecule. \n    d. Starch is a polysaccharide consisting of multiple glucose units linked together."
+  },
+  {
+    "orig_num": 5,
+    "question_text": "To reduce cariogenicity, sucrose should be:",
+    "option_a": "Consumed throughout the day",
+    "option_b": "Consumed with acidic foods",
+    "option_c": "Consumed as part of a meal",
+    "option_d": "Consumed with sticky foods",
+    "correct_option": "c",
+    "explanation": "c.  Acids can attack teeth for up to 20 minutes after eating, so eating sugar with meals can help clear the mouth of sugary food debris.\u00a0\na. Consuming sugar more than four times a day is linked to higher levels of caries\nb.  High-acid foods can affect mineralization of enamel\nd. Sticky foods can remain on teeth for a long time, which increases the amount of time teeth are exposed to sugar and acidic challenges"
+  },
+  {
+    "orig_num": 6,
+    "question_text": "What is the end product of glycolysis in the presence of oxygen?",
+    "option_a": "Pyruvate",
+    "option_b": "Lactic acid",
+    "option_c": "Acetyl-CoA",
+    "option_d": "Release of carbon dioxide",
+    "correct_option": "c",
+    "explanation": "c. Acetyl-CoA is the end product of glycolysis in the presence of oxygen or aerobic conditions. \n\ta.\tPyruvate is the end product of glycolysis in the absence of oxygen or anaerobic conditions.\n\tb.\tLactic acid is the end product of glycolysis in the absence of oxygen or anaerobic conditions.\n\tc.\tRelease of carbon dioxide occurs during the Tricarboxylic acid cycle (TCA) or Krebs cycle."
+  },
+  {
+    "orig_num": 7,
+    "question_text": "Which of the following best defines gluconeogenesis?",
+    "option_a": "The process of converting glucose into glycogen for storage in the liver and muscles",
+    "option_b": "The synthesis of glucose from noncarbohydrate precursors, such as amino acids and lactate",
+    "option_c": "Excess carbohydrate in the diet stored as fat is converted to fat to be stored in adipose tissue as long-term energy storage form",
+    "option_d": "The conversion of glucose into pyruvate through glycolysis",
+    "correct_option": "b",
+    "explanation": "b. The synthesis of glucose from non-carbohydrate precursors, such as amino acids and lactate correctly defines gluconeogenesis, which is the metabolic process through which glucose is synthesized from non-carbohydrate sources. \n a. This describes glycogenesis, not gluconeogenesis. Glycogenesis is the process of converting glucose into glycogen for storage, whereas gluconeogenesis involves creating new glucose molecules.\nc.This describes lipogenesis\nd. This describes glycolysis, the metabolic pathway that converts glucose into pyruvate to produce energy. This is the reverse of gluconeogenesis, which involves the synthesis of glucose rather than its breakdown"
+  },
+  {
+    "orig_num": 8,
+    "question_text": "All of the following statements are true about anabolic hormones except one. Which one is the EXCEPTION?",
+    "option_a": "Lowers blood glucose level",
+    "option_b": "Promotes the synthesis of molecules and the storage of energy",
+    "option_c": "Include estrogen, testosterone, growth hormones, and insulin",
+    "option_d": "Lowers blood glucose level, breaks down molecules, and releases energy",
+    "correct_option": "d",
+    "explanation": "d.  Catabolic hormones, such as cortisol, play a role in the breakdown of molecules (such as proteins and lipids) and the release of energy, especially during stress or fasting.\na. b. c. Anabolic hormones promote the synthesis of molecules (like proteins and glycogen), lower blood glucose, and support the storage of energy."
+  },
+  {
+    "orig_num": 9,
+    "question_text": "Catabolic hormones are metabolic regulators of all of the following processes EXCEPT one. Which is the EXCEPTION?",
+    "option_a": "Mobilization of fatty acids from adipose tissue",
+    "option_b": "Breakdown of glycogen in the liver",
+    "option_c": "Synthesis of proteins in muscle tissue",
+    "option_d": "Increase in blood glucose levels through gluconeogenesis",
+    "correct_option": "c",
+    "explanation": "c. Synthesis of proteins in muscle tissue is the exception. Catabolic hormones are generally involved in breaking down molecules and increasing energy availability, not in the synthesis of molecules. The synthesis of molecules such as proteins in muscle tissue is typically regulated by anabolic hormones.\na. Catabolic hormones like epinephrine stimulate the mobilization of fatty acids from adipose tissue to provide energy.\nb. Catabolic hormones are involved in the breakdown of glycogen in the liver to release glucose into the bloodstream. For example, glucagon promotes glycogenolysis.\nd. Catabolic hormones can increase blood glucose levels through glycogenolysis and gluconeogenesis."
+  },
+  {
+    "orig_num": 10,
+    "question_text": "Which of the following is an example of soluble fiber?",
+    "option_a": "Cellulose",
+    "option_b": "Lignin",
+    "option_c": "Pectin",
+    "option_d": "Hemicellulose",
+    "correct_option": "c",
+    "explanation": "c.  Pectin is an example of soluble fiber. Soluble fiber dissolves in water to form a gel-like substance and can help lower blood cholesterol levels and regulate blood sugar.\na. Cellulose is a type of insoluble fiber. It does not dissolve in water and helps add bulk to the stool, aiding in digestive health.\nb. Lignin is also an example of insoluble fiber. It is a component of plant cell walls that adds structural strength and does not dissolve in water.\nd. Hemicellulose is a type of fiber that includes both soluble and insoluble forms, but it is primarily known for its insoluble properties. It is found in the cell walls of plants and contributes to the bulk of dietary fiber."
+  },
+  {
+    "orig_num": 11,
+    "question_text": "All of the following are biological roles of carbohydrates, EXCEPT one. Which is the EXCEPTION?",
+    "option_a": "Providing a primary source of energy for cells",
+    "option_b": "Serving as structural components of cell membranes",
+    "option_c": "Acting as a storage form of energy in the form of glycogen",
+    "option_d": "Contributing to the synthesis of proteins and nucleic acids",
+    "correct_option": "d",
+    "explanation": "d. Carbohydrates do not directly contribute to the synthesis of proteins and nucleic acids. \na.Carbohydrates provide a primary source of energy for cells. Glucose, a simple carbohydrate, is the main energy source for cellular functions and metabolism.\nb.Carbohydrates serve as structural components of cell membranes in the form of glycoproteins and glycolipids. \nc.Carbohydrates act as a storage form of energy in the form of glycogen, which is stored in the liver and muscles and can be mobilized when needed."
+  },
+  {
+    "orig_num": 12,
+    "question_text": "Which of the following is characterized by a gradual reduction in lactase enzyme activity starting in childhood or adolescence due to genetic factors?",
+    "option_a": "Primary lactose intolerance",
+    "option_b": "Secondary lactose intolerance",
+    "option_c": "Milk protein intolerance",
+    "option_d": "Gluten intolerance",
+    "correct_option": "a",
+    "explanation": "a. Primary lactose intolerance is indeed characterized by a gradual reduction in lactase enzyme activity, which typically begins in childhood or adolescence due to genetic factors. It is congenital. \nb. Secondary lactose intolerance is not necessarily a lifelong condition; it can be temporary or permanent. It is caused by an external factor such as gastrointestinal illness or injury that affects lactase production. If the underlying condition is treated or resolved, lactase production can often return to normal or improve, making the condition reversible in many cases.\nc. A food allergy, such as cow's milk allergy, is an immune reaction to the protein in milk.\u00a0A lactose intolerance is caused by the inability to break down lactose, which is the sugar in milk.\nd. Gluten intolerance affects the digestive system"
+  },
+  {
+    "orig_num": 13,
+    "question_text": "For individuals diagnosed with phenylketonuria (PKU), which of the following nutritive or nonnutritive sweetener should be avoided?",
+    "option_a": "Sucralose",
+    "option_b": "Steviol glycosides",
+    "option_c": "Aspartame",
+    "option_d": "Saccharin",
+    "correct_option": "c",
+    "explanation": "c. Aspartame is the correct answer because it contains phenylalanine, which individuals with phenylketonuria (PKU) are unable to metabolize effectively. Consuming phenylalanine can lead to toxic levels in the body, causing serious health issues for those with PKU.\na.Sucralose is an nonnutritive sweetener that does not contain phenylalanine and considered safe for individuals with PKU. \nb.Steviol glycosides are nonnutritive sweeteners derived from chemicals in the stevia plant. They do not contain phenylalanine and considered safe for individuals with PKU.\nd.Saccharin is a nonnutritive sweetener that does not contain phenylalanine and considered safe for individuals with PKU."
+  },
+  {
+    "orig_num": 14,
+    "question_text": "Which of the following is an example of a homopolysaccharide?",
+    "option_a": "Pectin",
+    "option_b": "Cellulose",
+    "option_c": "Glycoprotein",
+    "option_d": "Glycolipid",
+    "correct_option": "b",
+    "explanation": "b. Cellulose is a homopolysaccharide composed entirely of glucose units linked together in beta linkages and not capable of being hydrolyzed by human digestive enzymes. It is the chief constituent of the framework of plants.  Cellulose provides bulk and fiber in the diet. \na.Pectin is not a homopolysaccharide. It is a heteropolysaccharide.\nb.Glycoprotein is not a homopolysaccharide. It is a heteropolysaccharide. It is a protein with carbohydrate chains (oligosaccharides) attached to it.\nc.Glycolipid is not a homopolysaccharide. It is a heteropolysaccharide. It is a molecule consisting of a lipid (fatty acid) with carbohydrate chains attached."
+  },
+  {
+    "orig_num": 21,
+    "question_text": "What is the recommended daily allowance (RDA) for digestible carbohydrate for adults and children?",
+    "option_a": "100 g",
+    "option_b": "130 g",
+    "option_c": "65 g",
+    "option_d": "50 g",
+    "correct_option": "b",
+    "explanation": "b. 130 g/day is the recommended daily allowance (RDA) for digestible carbohydrate for adults and children\na. 100 g/day of digestible carbohydrate is a minimum amount that should be consumed to prevent use of body protein as an energy source.\nc. 65 g/day of digestible carbohydrate is a minimum amount that should be consumed to prevent use of body protein as an energy source.\nd. 50 g/day of digestible carbohydrate is a minimum amount that should be consumed to prevent use of body protein as an energy source."
+  },
+  {
+    "orig_num": 22,
+    "question_text": "Individuals on a vegan diet are at risk of which of the following nutrient deficiencies?",
+    "option_a": "Vitamin A",
+    "option_b": "Vitamin C",
+    "option_c": "Vitamin B12",
+    "option_d": "Vitamin D",
+    "correct_option": "c",
+    "explanation": "c. Vitamin B12 is only found in animal products. A vegan diet is restrictive of any foods containing animal products, so this nutrient must be supplemented to avoid deficiency. \na. Vitamin A is a nutrient that can be adequately consumed through regular consumption of fruits and vegetables.\nb. Vitamin C is a nutrient that can be adequately consumed through regular consumption of fruits and vegetables. \nd. Vitamin D is a nutrient found in both plant (D2) and animal products (D3). It can be adequately consumed through regular consumption of vegetables.  It is also known as the sunshine vitamin and adequate amounts can be consumed from being outside daily for 10-15 minutes with no sunscreen."
+  },
+  {
+    "orig_num": 23,
+    "question_text": "Each of the following statements is specific to individuals with type 2 diabetes EXCEPT one. Which one is the EXCEPTION?",
+    "option_a": "Regular meal patterns are recommended to maintain blood glucose control.",
+    "option_b": "Daily injections of insulin are needed.",
+    "option_c": "Routine blood testing to monitor blood sugar levels is recommended.",
+    "option_d": "Medication is often prescribed to facilitate glucose metabolism.",
+    "correct_option": "b",
+    "explanation": "b. Daily injections of insulin are required of individuals with type 1 diabetes. Although some individuals with uncontrolled type 2 diabetes may be indicated for insulin use as well, most individuals with type 2 manage their blood glucose levels with prescription medication, diet and/or exercise. \na. It is recommended individuals with type 2 diabetes have a specialized diet and regular meal patterns to maintain blood glucose control.\nc. It is recommended individuals with type 2 diabetes do routine blood testing to monitor their blood sugar levels.\nd. Medication is often prescribed to individuals with type 2 diabetes to facilitate glucose metabolism."
+  },
+  {
+    "orig_num": 24,
+    "question_text": "Polydipsia is a sign/symptom of diabetes mellitus. Which of the following describes this identified sign/symptom?",
+    "option_a": "Frequent urination",
+    "option_b": "Extreme hunger",
+    "option_c": "Excessive thirst",
+    "option_d": "Recurring gingival infections",
+    "correct_option": "c",
+    "explanation": "c. Excessive thirst is a common sign /symptom of diabetes mellitus known as polydipsia. \n\ta.\tFrequent urination is known as polyuria.\n\tb.\tExtreme hunger is polyphagia.\n\tc.\tRecurring gingival infections is a common occurrence due to heightened inflammation and a propensity for reduced immune function in patients with diabetes mellitus."
+  },
+  {
+    "orig_num": 25,
+    "question_text": "Depletion of which vitamin affects the liver\u2019s ability metabolize alcohol?",
+    "option_a": "B vitamins",
+    "option_b": "Vitamin C",
+    "option_c": "Vitamin D",
+    "option_d": "Vitamin K",
+    "correct_option": "a",
+    "explanation": "a.  B vitamins such as niacin and thiamin are needed for the liver to metabolize alcohol. \n      b. Vitamin C helps the body grow and repair tissues in all parts of the body, including bone and teeth\n      c. Vitamin D helps the body absorb calcium, which is a key component of bones.\u00a0Vitamin D also helps maintain calcium levels in the body, which helps prevent osteoporosis and other bone conditions\n     d. Vitamin K is a fat-soluble nutrient that\u00a0helps with blood clotting and bone health"
+  },
+  {
+    "orig_num": 26,
+    "question_text": "All of the following statements are true about nonessential amino acids EXCEPT one. Which is the EXCEPTION?",
+    "option_a": "Nonessential amino acids can be synthesized by the body.",
+    "option_b": "Nonessential amino acids do not need to be provided by the diet.",
+    "option_c": "Histidine, isoleucine, leucine, and lysine are examples of nonessential amino acids that must be provided in the diet for adults.",
+    "option_d": "Nonessential amino acids are necessary for normal metabolic reactions.",
+    "correct_option": "c",
+    "explanation": "c. Histidine, isoleucine, leucine, and lysine are examples of essential amino acids that must be provided in the diet for adults not nonessential amino acids. \n\ta.\tNonessential amino acids can be synthesized by the body is a true statement.\n\tb.\tNonessential amino acids do not need to be provided by the diet is a true statement.\nd. Nonessential amino acids are necessary for normal metabolic is a true statement."
+  },
+  {
+    "orig_num": 27,
+    "question_text": "A primary structure of an amino acid is described by which of the following?",
+    "option_a": "Steric interaction of amino acids that are far apart in the linear sequence causing folding and the ultimate functional structure of the protein; disulfide bonds are examples",
+    "option_b": "A linear sequence of the component amino acids",
+    "option_c": "A steric interaction of amino acids that are close to one another in the linear sequence; the alpha helix and beta sheet are examples",
+    "option_d": "Steric interaction between subunits of proteins with more than one polypeptide chain; hemoglobin is an example",
+    "correct_option": "b",
+    "explanation": "b. The primary structure of an amino acid has a linear sequence of the component amino acids.\na. Tertiary structure of an amino acid has a steric interaction of amino acids that are far apart in the linear sequence causing folding and the ultimate functional structure of the protein; disulfide bonds are examples\nc. Secondary structure of an amino acid has a steric interaction of amino acids that are close to one another in the linear sequence; the alpha helix and beta sheet are examples.\nd. Quaternary structure of an amino acid has a steric interaction between subunits of proteins with more than one polypeptide chain; hemoglobin is an example."
+  },
+  {
+    "orig_num": 28,
+    "question_text": "Which enzyme is primarily responsible for breaking down proteins into smaller peptides in the stomach?",
+    "option_a": "Amylase",
+    "option_b": "Pepsin",
+    "option_c": "Lipase",
+    "option_d": "Trypsin",
+    "correct_option": "b",
+    "explanation": "b. Pepsin\na. Amylase is an enzyme that\u00a0breaks down complex carbohydrates into simpler sugars, which helps with digestion\nb. Lipase is an enzyme in the digestive system that\u00a0breaks down fats (lipids) into smaller molecules, like fatty acids and glycerol, allowing the body to absorb them in the small intestine\nc. Trypsin is a digestive enzyme that\u00a0breaks down proteins in the small intestine, helping to complete the digestion process that begins in the stomach"
+  },
+  {
+    "orig_num": 29,
+    "question_text": "Positive nitrogen balance occurs in which of the following:",
+    "option_a": "Fever or infection",
+    "option_b": "Recovery from surgery",
+    "option_c": "Anxiety",
+    "option_d": "Prolonged stress",
+    "correct_option": "b",
+    "explanation": "b. Positive nitrogen balance is when intake is greater than output of nitrogen.  Indicates net protein synthesis and is the normal situation for anyone building protein-containing tissue such as during childhood, pregnancy, and recovery from undernutrition, surgery, or illness.   \na. When the body must break down its own protein to meet energy or metabolic needs, negative nitrogen balance occurs. Fever or infection is an example of a negative nitrogen balance. \nc. Negative nitrogen balance may occur with anxiety.\nd. Negative nitrogen balance may occur during periods of prolonged stress."
+  },
+  {
+    "orig_num": 30,
+    "question_text": "Derived lipids are compounds whose synthesis begins with acetyl groups added on one at a time. Examples of a derived lipid include all of the following EXCEPT one. Which is the EXCEPTION?",
+    "option_a": "Steroids",
+    "option_b": "Saturated fatty acid",
+    "option_c": "Cholesterol",
+    "option_d": "Sterols",
+    "correct_option": "b",
+    "explanation": "b. A saturated fatty acid is a true fat.  A true fat is an example of a simple lipid that contains fatty acids attached to glycerol through an ester linkage. \na. A steroid is an example of a derived lipid.\nc. Cholesterol is an example of a derived lipid.\nd. Sterols are an example of a derived lipid."
+  },
+  {
+    "orig_num": 31,
+    "question_text": "Which of the following hormones is involved in both anabolism and catabolism?",
+    "option_a": "Epinephrine",
+    "option_b": "Insulin",
+    "option_c": "Thyroid-stimulating hormone (TSH)",
+    "option_d": "Glucagon",
+    "correct_option": "c",
+    "explanation": "c. Thyroid-stimulating hormones are involved in both anabolism and catabolism. \na. Epinephrine is a hormone that induces catabolism. \nb. Insulin is a hormone that stimulates anabolism. \nd. Glucagon is a primary hormone that promotes catabolism."
+  },
+  {
+    "orig_num": 32,
+    "question_text": "All of the following are true about the biologic role functions of lipids EXCEPT one. Which is the EXCEPTION?",
+    "option_a": "Provides energy source of 4 kcal/g",
+    "option_b": "Protective padding for body organs",
+    "option_c": "Insulation for the maintenance of body temperature",
+    "option_d": "Long-term storage of energy",
+    "correct_option": "a",
+    "explanation": "a. Lipids provide an energy source of 9 kcal/g. Proteins and carbohydrates provide an energy source of 4 kcal/g. \n\ta.\tLipids function as protective padding for body organs.\n\tb.\tLipids provide insulation for the maintenance of body temperature.\n\tc.\tLipids serve as a long-term storage of energy."
+  },
+  {
+    "orig_num": 33,
+    "question_text": "Which of the following anthropometric measures is the most accurate method used to determine body fat through the ability to distinguish fat mass, fat-free mass and bone mineral loss?",
+    "option_a": "Bioelectrical impedance",
+    "option_b": "Underwater weighting",
+    "option_c": "Dual-energy x-ray absorptiometry (DEXA)",
+    "option_d": "Arm muscle circumference",
+    "correct_option": "c",
+    "explanation": "c. Dual-energy x-ray absorptiometry (DEXA) can distinguish fat mass, fat-free mass, and bone mineral loss. It is the most accurate method used to determine body fat. \na. Bioelectrical impedance is a potential predictor of total body fat. Lean body mass conducts electricity better than fat mass. \nb. Underwater weighing is the most accurate method to determine body volume.\nd. Arm muscle circumference is a sensitive indicator of the muscle mass that reflects protein stores."
+  },
+  {
+    "orig_num": 34,
+    "question_text": "How does an increase in body weight generally affect basal metabolic rate?",
+    "option_a": "BMR decreases because the body requires less energy to maintain a larger mass",
+    "option_b": "BMR increases because the body requires less energy to maintain a larger mass",
+    "option_c": "BMR remains unchanged because body weight does not affect the rate of metabolism",
+    "option_d": "BMR fluctuates unpredictably with changes in body weight",
+    "correct_option": "b",
+    "explanation": "b. An increase in body weight generally leads to an increase in basal metabolic rate (BMR). BMR is the rate at which your body expends energy while at rest in order to maintain vital functions like breathing, circulation, and cell production. As body weight increases, especially if the increase is due to an increase in muscle mass, the body requires more energy to maintain these functions, which raises the BMR. Even if the weight gain is due to fat, the overall increase in body mass typically results in a higher BMR, although muscle mass has a greater impact on metabolic rate compared to fat."
+  },
+  {
+    "orig_num": 35,
+    "question_text": "All of the following are examples of conditions that may result from water toxicity EXCEPT one. Which is the EXCEPTION?",
+    "option_a": "Edema",
+    "option_b": "Malfunction of kidneys",
+    "option_c": "Hypertension",
+    "option_d": "Sodium retention",
+    "correct_option": "b",
+    "explanation": "b. Malfunction of kidneys, blood loss, vomiting, diarrhea, and inadequate fluid intake can result in dehydration rather than water intoxication.\na. Edema can result from water intoxication.\nc. Hypertension can result from water intoxication.\nd. Sodium retention can result from water intoxication."
+  },
+  {
+    "orig_num": 36,
+    "question_text": "Which of the following eating disorders may result in death from multiorgan failure?",
+    "option_a": "Obesity",
+    "option_b": "OSFED\u2014Other Specified Eating or Feeding Disorder",
+    "option_c": "Anorexia",
+    "option_d": "Bulimia",
+    "correct_option": "c",
+    "explanation": "c. Anorexia is a state of protein energy malnutrition that is brought on by voluntary starvation. Death from failure of multiple organ systems may occur as a result of dehydration and extreme deprivation of caloric intake.\na. Obesity is not specifically categorized as an eating disorder by the American Psychological Association.  The body is in a heightened inflammatory state which may increase risk for systemic and oral disease. \nb. OSFED-Other Specified Eating or Feeding Disorder is a broad category established to ensure treatment for those individuals who do not meet the strict criteria for diagnosis for bulimia, anorexia nervosa or binge eating disorder. \nd. Bulimia is characterized by self-induced vomiting. Swelling of the salivary glands, esophagus and the demineralization of tooth enamel from acid resulting in sensitive teeth may occur."
+  },
+  {
+    "orig_num": 37,
+    "question_text": "Which of the following is not a quality of fat-soluble vitamins?",
+    "option_a": "Only contain the elements of carbon, hydrogen, and oxygen",
+    "option_b": "Not readily excreted",
+    "option_c": "Deficiency symptoms often develop rapidly",
+    "option_d": "Toxic with chronic excessive intake",
+    "correct_option": "c",
+    "explanation": "c. Deficiency symptoms do not often develop rapidly with fat-soluble vitamins. \na. Fat-soluble vitamins contain the elements carbon, hydrogen, and oxygen.\nb. Fat-soluble vitamins are not readily excreted.\nd. Fat-soluble vitamins can be toxic if consumed in excessive amounts"
+  },
+  {
+    "orig_num": 38,
+    "question_text": "Which of the following statements is true about fat-soluble vitamins?",
+    "option_a": "They play a role in maintenance of the body\u2019s mucosal linings and epithelial cells.",
+    "option_b": "They mostly come from plant sources.",
+    "option_c": "They quickly pass through the body and are excreted in urine.",
+    "option_d": "They are stored in the stomach.",
+    "correct_option": "a",
+    "explanation": "a. Fat-soluble vitamins (A,D, E K) play a role in maintenance of the body\u2019s mucosal linings and epithelial cells. \nb. Fat soluble vitamins tend to come from animal and dairy products, but can also be found in some fruits and vegetables\nc. Because the body holds on to fat-soluble vitamins, most people who have adequate access to nutritious foods get plenty of vitamins A, E and K in their diets without trying too hard\nd. Fat-soluble vitamins are stored in the body\u2019s fatty tissue and the liver"
+  },
+  {
+    "orig_num": 39,
+    "question_text": "Which of the following is a compound lipid that contains a carbohydrate component and is found in the brain and nervous tissue?",
+    "option_a": "lipoproteins",
+    "option_b": "glycolipids",
+    "option_c": "phospholipids",
+    "option_d": "sterol",
+    "correct_option": "b",
+    "explanation": "b. Glycolipids is a compound lipid that contains a carbohydrate component and is found in the brain and nervous tissue. \n\ta.\tLipoproteins are a compound lipid that is water-soluble and responsible for carrying lipids throughout the body. \nc. Phospholipids are compound lipid comprised of glycerol + 2 fatty acids + phosphate group  \n    and equals an R group. \n\td.Sterols are an example of a derived lipid which are compounds whose synthesis begins like fatty acid synthesis, with acetyl groups added on one at a time."
+  },
+  {
+    "orig_num": 40,
+    "question_text": "Which of the following vitamins is classified as a water-soluble vitamin?",
+    "option_a": "Vitamin A",
+    "option_b": "Vitamin C",
+    "option_c": "Vitamin D",
+    "option_d": "Vitamin E",
+    "correct_option": "b",
+    "explanation": "b. Vitamin C is classified as a water-soluble vitamin. \n\ta.\tVitamin A is a fat-soluble vitamin\n\tb.\tVitamin D is a fat-soluble vitamin\n\tc.\tVitamin E is a fat-soluble vitamin"
+  },
+  {
+    "orig_num": 41,
+    "question_text": "Which of the following refers to erosion of tooth enamel?",
+    "option_a": "Halitosis",
+    "option_b": "Lanugo",
+    "option_c": "Perimylolysis",
+    "option_d": "Glossitis",
+    "correct_option": "c",
+    "explanation": "c. Perimylolysis is erosion of tooth enamel.\n a. Halitosis is bad breath\n b. Lanugo is a thin, fine layer of hair common in someone with anorexia; the body\u2019s protective mechanism to maintain warmth when there is an extreme loss of weight. \nd. Glossitis is inflammation of the tongue."
+  },
+  {
+    "orig_num": 42,
+    "question_text": "Secondary deficiency is the result of the inability to digest, absorb and used foods consumed. Which of the following is an example of secondary deficiency?",
+    "option_a": "Fad diets",
+    "option_b": "Illness",
+    "option_c": "Allergies",
+    "option_d": "Loss of appetite",
+    "correct_option": "c",
+    "explanation": "c. Allergies are an example of secondary deficiency. Sensitivity to certain foods or chemicals in foods can lead to malabsorption syndromes. An example is celiac disease. \n\ta.\tFad diets are an example of primary deficiency that can contribute to low calorie or imbalanced diet plans. \n\tb.\tIllness is an example of a primary deficiency that can occur due to loss of appetite.\n\td.\tLoss of appetite is an example of a primary deficiency that can be a side effect of illness."
+  },
+  {
+    "orig_num": 43,
+    "question_text": "Which assessment of dietary intake provides a more accurate measure of an individual\u2019s intake?",
+    "option_a": "Food-frequency questionnaire.",
+    "option_b": "3- to 7-day food record diary",
+    "option_c": "24-hour dietary recall method",
+    "option_d": "24-hour recall method and 3- to 7-day food record diary",
+    "correct_option": "d",
+    "explanation": "d. Using both a 24-hour recall method and 3- to 7-day food record diary provides a more accurate measure of an individual\u2019s intake. \n\ta.\t Food frequency questionnaire asks how often food items are consumed; works better with large groups in the community setting. \n\tb.\t3- to 7-day food record diary records everything eaten within a certain number of days requested; should include at least one weekend day.  Unless written down immediately, details of intake may be forgotten. \n\tc.\t24-hour dietary recall method is a mental recall of everything eaten in the previous 24 hours; useful for individual counseling in a clinical setting; may not represent \u201ctypical\u201d or \u201cusual\u201d intake."
+  },
+  {
+    "orig_num": 44,
+    "question_text": "Which of the following is the value based on an approximation of nutrient intake by a group of healthy people that is used when the RDA value (recommended dietary allowance) cannot be determined?",
+    "option_a": "UL (upper limit)",
+    "option_b": "AI (adequate intake)",
+    "option_c": "EER (estimated energy requirement)",
+    "option_d": "EAR (estimated average requirement)",
+    "correct_option": "b",
+    "explanation": "b. AI (adequate intake) is the value based on an approximation of nutrient intake by a group of healthy people that is used when the RDA value (recommended dietary allowance) cannot be determined.\n\ta.UL (upper limit)\nc.EER (estimated energy requirement)\nd.EAR (estimated average requirement)"
+  },
+  {
+    "orig_num": 45,
+    "question_text": "Which of the following dietary recommendations is most appropriate for a person with Chronic Kidney Disease (CKD)?",
+    "option_a": "Increase protein intake to support muscle mass and overall health",
+    "option_b": "Consume high-sodium foods to help balance electrolytes and fluid levels",
+    "option_c": "Limit phosphorus-rich foods, such as dairy products and certain whole grains",
+    "option_d": "Drink excessive amounts of fluids to promote kidney function and prevent dehydration",
+    "correct_option": "c",
+    "explanation": "c. With reduced kidney function a person with CKD may need to limit intake of foods high in phosphorus\u00a0to control how much phosphorus gets into the bloodstream. High phosphorus levels in your blood can cause your bones to lose calcium, making bones weak and brittle.\n\ta.\tWhen the body uses\u00a0protein, it produces waste. Your kidneys remove this waste. Eating more protein than one needs may make the kidneys work harder.\n\tb.\tTo help control your\u00a0blood pressure, the diet should contain less than 2,300 milligrams of\u00a0sodium\u00a0each day.\n\td.\tPeople with advanced chronic kidney disease (CKD) or kidney failure should limit their fluid intake because\u00a0their kidneys can't remove excess water and waste as well as they should."
+  },
+  {
+    "orig_num": 46,
+    "question_text": "Which of the following statements BEST describes the dietary reference intake (DRI)?",
+    "option_a": "The intake level sufficient to meet nutrient requirements of nearly all healthy individuals",
+    "option_b": "Value based on the observed average or experimentally set intake by individuals that appear to sustain a defined nutritional status",
+    "option_c": "Nutrient intake value estimated to meet the requirements of half the healthy individuals in a group",
+    "option_d": "Value based on approximation of nutrient intake by a group of healthy people",
+    "correct_option": "b",
+    "explanation": "b.  Dietary reference intake (DRI) values are based on the observed average or experimentally set intake by individuals that appear to sustain a defined nutritional status. \na. The recommended dietary allowance (RDA) is the intake level sufficient to meet the nutrient requirements of nearly all healthy individuals.  \nc. The estimated average requirement (EAR) is the nutrient intake value that is estimated to meet the requirements of half of the healthy individuals in a group. \nd. The adequate intake (AI) is the value based on the approximation of nutrient intake by a group of healthy people."
+  },
+  {
+    "orig_num": 47,
+    "question_text": "A deficiency of which of the following nutrient can result in pernicious anemia in elderly and vegan populations?",
+    "option_a": "Vitamin B6",
+    "option_b": "Vitamin D",
+    "option_c": "Vitamin B12",
+    "option_d": "Calcium",
+    "correct_option": "c",
+    "explanation": "c. Pernicious anemia is a result of vitamin B12 deficiency. Vitamin B12 binds with intrinsic factor (IF) in the gut to be fully absorbed in the small intestine.  As we age, hydrochloric acid (HCL) is diminished; HCL is needed for IF to bind with vitamin B12.  B12 is only found in animal products.  Vegans do not consume any animal products. For these reasons, pernicious anemia is common to elderly and vegan populations.   \n\tb.\tVitamin D controls calcification of dentin and enamel by regulating calcium absorption in the intestines\n\tc.\tB6 is an important coenzyme for normal carbohydrate metabolism.\n\td.\tCalcium deficiency contributes to poor bone mineral density.  It is important in normal tooth and bone mineralization."
+  },
+  {
+    "orig_num": 48,
+    "question_text": "What role does vitamin C have in tooth formation?",
+    "option_a": "Is involved in the formation of the matrix of dentin and enamel",
+    "option_b": "Is important to the normal growth of dentin and enamel",
+    "option_c": "Controls calcification of dentin and enamel",
+    "option_d": "Is involved in the hydroxylation of proline and lysine in collagen synthesis",
+    "correct_option": "d",
+    "explanation": "d. Vitamin C (ascorbic acid) acts as an essential coenzyme for prolyl hydroxylase and lysyl hydroxylase, facilitating the hydroxylation of proline and lysine in collagen synthesis, which forms the organic matrix of dentin, cementum, and periodontal ligament."
+  },
+  {
+    "orig_num": 49,
+    "question_text": "Supragingival biofilm formation is influenced by frequent intake of which of the following in the diet?",
+    "option_a": "Dietary monosaccharides and disaccharides",
+    "option_b": "Fiber-rich foods",
+    "option_c": "Protein-rich foods",
+    "option_d": "Fat-rich foods",
+    "correct_option": "a",
+    "explanation": "a. Frequent dietary intake of monosaccharides and disaccharides influences supragingival biofilm or plaque formation.\nb. Fiber-rich foods are encouraged to reduce the formation of supragingival biofilm or plaque.\nc. Protein-rich foods promote a more alkaline pH in the oral cavity. Protein-rich foods do not contribute to the formation of supragingival biofilm or plaque.\nd. Fat content of foods promotes a more alkaline pH in the oral cavity. Foods with a higher fat content do not contribute to the formation of supragingival biofilm or plaque."
+  },
+  {
+    "orig_num": 50,
+    "question_text": "Accurate guidance for nutrition counseling after a prosthesis insertion includes all of the following EXCEPT one. Which is the EXCEPTION?",
+    "option_a": "Advise the patient to consume liquid foods for the first 24 hours.",
+    "option_b": "Dietary sugars should be restricted to prevent bacterial growth, acid production, and biofilm formation.",
+    "option_c": "Flavors of foods will not be altered immediately after the prosthesis is inserted.",
+    "option_d": "To equalize occlusal forces, evenly divide each bite of food in the right and left sides of the mouth.",
+    "correct_option": "c",
+    "explanation": "c. Immediately following insertion of a new prosthesis, flavors of foods will be altered.  However, this should eventually disappear with continued wear of the prosthesis. \n\ta.Patients should be advised to consume liquid foods for the first 24 hours after insertion of prosthesis. \n\tb. Dietary sugars should be restricted to prevent bacterial growth, acid production and biofilm formation. \nd. To equalize occlusal forces, each bite of food should be divided in the right and left sides of the mouth after insertion of prosthesis."
+  }
+]
