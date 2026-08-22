@@ -1,0 +1,602 @@
+[
+  {
+    "num": 1,
+    "stem": "Small, white to yellow raised sebaceous glands appear as spots in hairless areas of the body. What is the name for these spots?",
+    "options": {
+      "a": "Fordyce granules",
+      "b": "Lichen planus",
+      "c": "Morsicatio buccarum (Cheek biting)",
+      "d": "Leukoedema"
+    },
+    "correct": "a",
+    "rationale": "Fordyce granules have a raised, yellow to white hue and are ectopic sebaceous glands. Lichen planus exhibits a white lacy appearance, morsicatio buccarum exhibits an irritated/macerated appearance, and leukoedema has a blue opalescent appearance that disappears when stretched."
+  },
+  {
+    "num": 2,
+    "stem": "Lichen planus that exhibits a white lacy appearance is termed:",
+    "options": {
+      "a": "Atrophic lichen planus",
+      "b": "Reticular lichen planus",
+      "c": "Erosive lichen planus",
+      "d": "Plaque-like lichen planus"
+    },
+    "correct": "b",
+    "rationale": "Reticular lichen planus is the most common form and characteristically exhibits Wickham striae (a white lacy appearance). Atrophic and erosive forms present with red, irritated, or ulcerative surfaces."
+  },
+  {
+    "num": 3,
+    "stem": "The varicella-zoster virus causes which of the following?",
+    "options": {
+      "a": "Herpes Labialis",
+      "b": "Shingles",
+      "c": "Primary Herpetic Gingivostomatitis",
+      "d": "Herpangina"
+    },
+    "correct": "b",
+    "rationale": "Shingles (herpes zoster) is caused by reactivation of the latent varicella-zoster virus. Herpes labialis and primary herpetic gingivostomatitis are caused by HSV-1; herpangina is caused by coxsackievirus."
+  },
+  {
+    "num": 4,
+    "stem": "One characteristic associated with a differentiation of Fordyce granules and cheek bites is which of the following:",
+    "options": {
+      "a": "Both are found in all age groups",
+      "b": "When the tissue is stretched, opalescence disappears",
+      "c": "It is found in the buccal mucosa",
+      "d": "Both may have a white/yellow hue in appearance"
+    },
+    "correct": "b",
+    "rationale": "Intracellular edema is responsible for leukoedema and will disappear when the tissue is stretched. Morsicatio buccarum (cheek biting) exhibits macerated tissue that will not disappear upon stretching."
+  },
+  {
+    "num": 5,
+    "stem": "Fordyce granules are ectopic sebaceous granules and affect most adults but are not found in those who have not reached puberty. This is due to:",
+    "options": {
+      "a": "Chronic trauma",
+      "b": "Androgenic hormones",
+      "c": "Dental product sensitivity",
+      "d": "Due to hyperkeratosis"
+    },
+    "correct": "b",
+    "rationale": "Fordyce granules respond to androgenic hormones during puberty, which is why both adolescent males and females begin developing them at puberty, but they are absent in young children."
+  },
+  {
+    "num": 6,
+    "stem": "The irritation fibroma is most often found in certain oral areas. Which choice best describes the location?",
+    "options": {
+      "a": "The tongue",
+      "b": "The vestibular areas",
+      "c": "Areas of high trauma such as the lips, tongue, and gingiva",
+      "d": "The soft palate"
+    },
+    "correct": "c",
+    "rationale": "Areas of high trauma such as the labial mucosa, tongue, buccal mucosa along the occlusal line, and gingiva experience chronic bite trauma leading to irritation fibromas."
+  },
+  {
+    "num": 7,
+    "stem": "The most common age group for an irritation fibroma is:",
+    "options": {
+      "a": "Adolescent ages in both males and females",
+      "b": "A 45-year-old female",
+      "c": "A 65-year-old male patient",
+      "d": "A 70-year-old geriatric female patient"
+    },
+    "correct": "b",
+    "rationale": "Irritation fibromas are most commonly diagnosed in adult females in their 40s to 60s (such as a 45-year-old female) along the bite line over time."
+  },
+  {
+    "num": 8,
+    "stem": "A mucocele is not a true cyst because of which of the following?",
+    "options": {
+      "a": "The mucin is surrounded with granulation tissue.",
+      "b": "The mucin is surrounded with connective tissue.",
+      "c": "The mucin is not surrounded with epithelium.",
+      "d": "The salivary duct is dilated due to epithelial thickening."
+    },
+    "correct": "c",
+    "rationale": "A true cyst must be lined by epithelium. Mucoceles are pseudocysts formed by spilled mucin into connective tissue lined only by granulation tissue."
+  },
+  {
+    "num": 9,
+    "stem": "When the mucocele or Extravasation Phenomenon occurs in the floor of the mouth affecting the sublingual or submandibular glands, the correct term would be which of the following?",
+    "options": {
+      "a": "Dentigerous cyst",
+      "b": "Primordial cyst",
+      "c": "Ranula",
+      "d": "Sialometaplasia"
+    },
+    "correct": "c",
+    "rationale": "A ranula is the clinical term for a large mucocele located in the floor of the mouth affecting the sublingual or submandibular gland ducts."
+  },
+  {
+    "num": 10,
+    "stem": "A white line that extends from the anterior to the buccal mucosa caused by the impact of occlusion is called:",
+    "options": {
+      "a": "Leukoedema",
+      "b": "Stomatitis",
+      "c": "Lichen planus",
+      "d": "Linea alba"
+    },
+    "correct": "d",
+    "rationale": "Linea alba is a linear white keratinized line along the buccal mucosa positioned directly along the occlusal plane."
+  },
+  {
+    "num": 11,
+    "stem": "Nicotine stomatitis denotes irritation of the minor salivary glands. Where does this occur?",
+    "options": {
+      "a": "The floor of the mouth",
+      "b": "The buccal mucosa",
+      "c": "The palatal region",
+      "d": "The tongue"
+    },
+    "correct": "c",
+    "rationale": "Nicotine stomatitis affects the hard palate where minor salivary gland openings become inflamed and reddened due to heat and smoke."
+  },
+  {
+    "num": 12,
+    "stem": "Which of the following would not be the etiology in the development of the torus palatinus?",
+    "options": {
+      "a": "Bacterial or viral components",
+      "b": "Genetic propensity",
+      "c": "Masticatory factors",
+      "d": "Trauma to the bone"
+    },
+    "correct": "a",
+    "rationale": "Bacterial and viral infections are not etiologic factors. Torus palatinus is caused by genetic predisposition, masticatory forces, and bone trauma/stresses."
+  },
+  {
+    "num": 13,
+    "stem": "The torus mandibularis most often is observed in which age group?",
+    "options": {
+      "a": "Females in the 20- to 30-year-old age group",
+      "b": "Males in the 13- to 16-year-old age group",
+      "c": "Children under 10 years of age",
+      "d": "Males in the 20- to 30-year age group"
+    },
+    "correct": "b",
+    "rationale": "Torus mandibularis is typically diagnosed in young adults and teens (such as males in the 13- to 16-year-old age group)."
+  },
+  {
+    "num": 14,
+    "stem": "A patient who has the mandibular right and left premolars congenitally missing is probably suffering with which of the disorders listed below?",
+    "options": {
+      "a": "Ectodermal dysplasia",
+      "b": "Osteopetrosis",
+      "c": "Sarcoidosis",
+      "d": "Laugier-Hunziker syndrome"
+    },
+    "correct": "a",
+    "rationale": "Ectodermal dysplasia is an inherited syndrome characterized by hypodontia (congenitally missing teeth such as premolars), along with hair, skin, and sweat gland abnormalities."
+  },
+  {
+    "num": 15,
+    "stem": "All of the following are a contributing factor in Lingua villosa (Hairy Tongue) EXCEPT one. Which one is the EXCEPTION?",
+    "options": {
+      "a": "Radiation to the head and neck",
+      "b": "The use of proton-pump inhibitors",
+      "c": "Excessive alcohol use",
+      "d": "Consumption of excessive xylitol products such as gum and mints"
+    },
+    "correct": "d",
+    "rationale": "Consumption of xylitol products does not cause hairy tongue. Radiation therapy, PPIs, alcohol, smoking, and antibiotics are known contributing factors."
+  },
+  {
+    "num": 16,
+    "stem": "Two roots fused together in the cementum is called:",
+    "options": {
+      "a": "Fusion",
+      "b": "Concrescence",
+      "c": "Gemination",
+      "d": "Dilaceration"
+    },
+    "correct": "b",
+    "rationale": "Concrescence is a form of developmental fusion where two adjacent teeth are united only by root cementum."
+  },
+  {
+    "num": 17,
+    "stem": "The Pleomorphic adenoma accounts for what percentage of all salivary gland tumors?",
+    "options": {
+      "a": "60%",
+      "b": "70%",
+      "c": "80%",
+      "d": "90%"
+    },
+    "correct": "d",
+    "rationale": "Pleomorphic adenoma accounts for up to 90% of all benign salivary gland tumors, occurring most commonly in the parotid gland."
+  },
+  {
+    "num": 18,
+    "stem": "The Thyroglossal Tract Cyst is located in the midline of the neck. Which of the tasks performed by a dental hygienist is the most important in identifying this cyst? Select the best answer.",
+    "options": {
+      "a": "Update radiograph",
+      "b": "A panoramic x-ray",
+      "c": "A complete medical history",
+      "d": "A thorough thyroid exam"
+    },
+    "correct": "d",
+    "rationale": "A thorough thyroid and neck examination involving clinical palpation is the best method for detecting a midline thyroglossal tract cyst early."
+  },
+  {
+    "num": 19,
+    "stem": "The age range of a person who develops a thyroglossal tract cyst is:",
+    "options": {
+      "a": "Older adults",
+      "b": "Middle-aged adults",
+      "c": "Young adults",
+      "d": "Children"
+    },
+    "correct": "c",
+    "rationale": "Thyroglossal tract cysts develop along the path of embryonic thyroid descent and are usually diagnosed in young adults under 20 years of age."
+  },
+  {
+    "num": 20,
+    "stem": "Which of the following is NOT true for the pleomorphic adenoma?",
+    "options": {
+      "a": "It occurs most commonly in adults",
+      "b": "It occurs in the submandibular gland",
+      "c": "There is a 5% malignant transformation rate",
+      "d": "It is encapsulated"
+    },
+    "correct": "b",
+    "rationale": "Pleomorphic adenoma occurs in the parotid gland most often, not the submandibular gland."
+  },
+  {
+    "num": 21,
+    "stem": "The most commonly occurring odontogenic cyst is:",
+    "options": {
+      "a": "Residual cyst",
+      "b": "Periapical cyst (radicular cysts)",
+      "c": "Odontogenic Keratocyst",
+      "d": "Dentigerous cyst"
+    },
+    "correct": "b",
+    "rationale": "Periapical (radicular) cysts are the most common odontogenic cysts. Dentigerous cysts are the second most common."
+  },
+  {
+    "num": 22,
+    "stem": "The cause of a residual cyst is:",
+    "options": {
+      "a": "A viral component",
+      "b": "Improper removal of a tooth",
+      "c": "Trauma",
+      "d": "Genetic propensity"
+    },
+    "correct": "b",
+    "rationale": "A residual cyst forms when a radicular/periapical cyst is left behind following improper or incomplete tooth extraction."
+  },
+  {
+    "num": 23,
+    "stem": "The simple bone cyst is treated using which of the following protocols?",
+    "options": {
+      "a": "Curettage",
+      "b": "Antibiotics",
+      "c": "There is no treatment",
+      "d": "Endodontic treatment for the nonvital tooth"
+    },
+    "correct": "a",
+    "rationale": "Surgical curettage causes bleeding and clot formation, stimulating bone regeneration to fill the cavity within about six months."
+  },
+  {
+    "num": 24,
+    "stem": "Sickle Cell Anemia is predominately found in African American Populations. However, this may be found in other populations as well. Which group listed below is also susceptible to this disorder?",
+    "options": {
+      "a": "Mediterranean/Asian groups",
+      "b": "Northern European groups",
+      "c": "French",
+      "d": "Slavic groups"
+    },
+    "correct": "a",
+    "rationale": "Both African American and Mediterranean/Asian populations are susceptible to sickle cell gene mutations."
+  },
+  {
+    "num": 25,
+    "stem": "Which of the following is a major risk factor for oropharyngeal cancer in the tonsillar region?",
+    "options": {
+      "a": "Epstein-Bar virus",
+      "b": "Herpes simplex virus",
+      "c": "Human papillomavirus",
+      "d": "Varicella-Zoster virus"
+    },
+    "correct": "c",
+    "rationale": "Human Papillomavirus (HPV) is a major oncogenic virus known to promote oropharyngeal cancer in the tonsillar and base-of-tongue regions."
+  },
+  {
+    "num": 26,
+    "stem": "Pernicious Anemia is also known as:",
+    "options": {
+      "a": "Primary aplastic anemia",
+      "b": "Plummer-Vinson syndrome",
+      "c": "Thalassemia",
+      "d": "Polycythemia"
+    },
+    "correct": "b",
+    "rationale": "Plummer-Vinson syndrome is associated with mucosal atrophy and iron deficiency, while pernicious anemia stems from intrinsic factor deficiency."
+  },
+  {
+    "num": 27,
+    "stem": "A patient who is experiencing a loss of filiform papillae, angular cheilitis, pallor of the oral mucosa and burning of the tongue may be deficient in which of the following?",
+    "options": {
+      "a": "Vitamin B12",
+      "b": "Iron",
+      "c": "Vitamin B6",
+      "d": "Vitamin D"
+    },
+    "correct": "b",
+    "rationale": "Iron deficiency anemia presents with mucosal pallor, angular cheilitis, loss of filiform papillae (glossitis), and burning sensation."
+  },
+  {
+    "num": 28,
+    "stem": "The most common oral implication of HIV is:",
+    "options": {
+      "a": "Candidiasis",
+      "b": "Kaposi Sarcoma",
+      "c": "Anemia",
+      "d": "Fibromas"
+    },
+    "correct": "a",
+    "rationale": "Oral candidiasis occurs early in up to 85-90% of HIV cases. Kaposi sarcoma occurs in late-stage HIV (15-20%)."
+  },
+  {
+    "num": 29,
+    "stem": "The abnormal Philadelphia 22 chromosome is associated with which of the following?",
+    "options": {
+      "a": "Hemophilia",
+      "b": "Primary polycythemia",
+      "c": "Chronic leukemia",
+      "d": "Pernicious anemia"
+    },
+    "correct": "c",
+    "rationale": "The Philadelphia chromosome (abnormality of chromosome 22) is the diagnostic marker for Chronic Myelogenous Leukemia (CML)."
+  },
+  {
+    "num": 30,
+    "stem": "Cherubism is an inherited autosomal dominant disorder predominately in females. It is a defect of SH3BP2 gene. The disorder is usually found in which age group of patients?",
+    "options": {
+      "a": "Very young children",
+      "b": "Young adults",
+      "c": "Middle age",
+      "d": "Elderly"
+    },
+    "correct": "a",
+    "rationale": "Cherubism is diagnosed in very young children, sometimes as young as one to five years old."
+  },
+  {
+    "num": 31,
+    "stem": "The patient with Cherubism is at risk for which of the following?",
+    "options": {
+      "a": "Hemophilia",
+      "b": "Sarcoma",
+      "c": "Polycythemia",
+      "d": "Aneurysmal bone cyst"
+    },
+    "correct": "b",
+    "rationale": "Patients with cherubism are monitored for potential malignant sarcomatous transformations or aggressive giant cell lesions."
+  },
+  {
+    "num": 32,
+    "stem": "The patient who is at risk for pemphigoid should be evaluated for which of the following?",
+    "options": {
+      "a": "Skin cancer",
+      "b": "Hearing issues",
+      "c": "Eye damage",
+      "d": "Severe bone loss-possible osteoporosis"
+    },
+    "correct": "c",
+    "rationale": "Mucous membrane pemphigoid involves ocular tissues and can cause severe conjunctival scarring and eye damage."
+  },
+  {
+    "num": 33,
+    "stem": "Osteomalacia means \u201csoft bones,\u201d but what is the term used for adults who have demineralization of bones?",
+    "options": {
+      "a": "Paget disease",
+      "b": "Cherubism",
+      "c": "Rickets",
+      "d": "Osteopenia"
+    },
+    "correct": "d",
+    "rationale": "Osteopenia refers to demineralization and reduced bone density developing over time in adults."
+  },
+  {
+    "num": 34,
+    "stem": "The most likely area to witness Abfraction would be:",
+    "options": {
+      "a": "The incisal edge of the lower anterior teeth",
+      "b": "The occlusal surface of molars",
+      "c": "The cervical areas of teeth at the CEJ",
+      "d": "The lingual of maxillary incisors"
+    },
+    "correct": "c",
+    "rationale": "Abfraction produces wedge-shaped defects in the cervical areas of teeth at the Cementoenamel Junction (CEJ) due to flexural forces."
+  },
+  {
+    "num": 35,
+    "stem": "Amelogenesis imperfecta is categorized into four types. Which type listed is the least common type?",
+    "options": {
+      "a": "Hypoplastic",
+      "b": "Hypocalcified",
+      "c": "Hypomaturation",
+      "d": "Hypoplastic/hypomaturation/taurodontism"
+    },
+    "correct": "b",
+    "rationale": "Hypocalcified type represents a defect in mineralization of enamel matrix."
+  },
+  {
+    "num": 36,
+    "stem": "The term for two roots fused together in the cementum is:",
+    "options": {
+      "a": "Fusion",
+      "b": "Concrescence",
+      "c": "Gemination",
+      "d": "Dilaceration"
+    },
+    "correct": "b",
+    "rationale": "Concrescence is the union of two fully formed roots joined during root cementum formation."
+  },
+  {
+    "num": 37,
+    "stem": "Dens invaginatus (Dens in Dente) occurs most frequently in which location?",
+    "options": {
+      "a": "Mandibular teeth",
+      "b": "Maxillary molars",
+      "c": "Mandibular premolars",
+      "d": "Maxillary lateral incisors"
+    },
+    "correct": "d",
+    "rationale": "Maxillary lateral incisors are the most common site for dens invaginatus."
+  },
+  {
+    "num": 38,
+    "stem": "Geographic tongue (benign migratory glossitis) is associated with all of the following EXCEPT one. Which one is the EXCEPTION?",
+    "options": {
+      "a": "Genetic susceptibility",
+      "b": "Fissured tongue",
+      "c": "Psoriasis",
+      "d": "May have a malignancy component"
+    },
+    "correct": "d",
+    "rationale": "Geographic tongue is a benign condition with no malignancy component."
+  },
+  {
+    "num": 39,
+    "stem": "Which is the common site of Fordyce granules?",
+    "options": {
+      "a": "The buccal mucosa",
+      "b": "The floor of the mouth",
+      "c": "The posterior most palate region",
+      "d": "The labial and lingual frenum"
+    },
+    "correct": "a",
+    "rationale": "The buccal mucosa is the most common intraoral site for Fordyce granules."
+  },
+  {
+    "num": 40,
+    "stem": "Hairy tongue is associated with the elongation of which papillae?",
+    "options": {
+      "a": "Circumvallate",
+      "b": "Fungiform",
+      "c": "Filiform",
+      "d": "Folate"
+    },
+    "correct": "c",
+    "rationale": "Filiform papillae are the most numerous papillae on the tongue and become elongated in hairy tongue."
+  },
+  {
+    "num": 41,
+    "stem": "Of the following diseases, in which one would you expect to see melanin production and the oral pigmentation associated with the disorder?",
+    "options": {
+      "a": "HPV infection",
+      "b": "Addison disease",
+      "c": "Condyloma acuminatum",
+      "d": "Cherubism"
+    },
+    "correct": "b",
+    "rationale": "Addison disease (Primary Adrenal Insufficiency) stimulates melanin production, presenting with diffuse oral macular pigmentation."
+  },
+  {
+    "num": 42,
+    "stem": "Teeth that are present at birth present as unstable, with undeveloped roots are termed:",
+    "options": {
+      "a": "Dens invaginatus",
+      "b": "Supernumerary teeth",
+      "c": "Natal teeth",
+      "d": "Microdontia"
+    },
+    "correct": "c",
+    "rationale": "Natal teeth are present at birth, developing from dental lamina with undeveloped roots, making them unstable."
+  },
+  {
+    "num": 43,
+    "stem": "Clinical signs of Paget disease involve all of the following except which one?",
+    "options": {
+      "a": "Increased spacing between teeth",
+      "b": "Ill-fitting dentures",
+      "c": "More prevalent in African American males",
+      "d": "There is a decrease in radiodensity"
+    },
+    "correct": "c",
+    "rationale": "Paget disease occurs more often in Caucasian males, not African American males."
+  },
+  {
+    "num": 44,
+    "stem": "Select the entity that exhibits signs of kidney stones, join pain, resorption of bone, Brown tumors, malocclusion, and loss of lamina dura.",
+    "options": {
+      "a": "Paget disease",
+      "b": "Osteomalacia",
+      "c": "Polyostotic fibrous dysplasia",
+      "d": "Hyperparathyroidism"
+    },
+    "correct": "d",
+    "rationale": "Hyperparathyroidism / Osteomalacia manifests with inadequate mineralization of bone tissue, kidney stones, and Brown tumors."
+  },
+  {
+    "num": 45,
+    "stem": "Hemophilia is a genetic autosomal dominant deficiency of clotting factors of Vlll or lX in the blood. What is the name associated with this disorder occurring in males and females?",
+    "options": {
+      "a": "William\u2019s disease of blood",
+      "b": "Von Willebrand disease",
+      "c": "Christmas disease",
+      "d": "Klinefelter syndrome"
+    },
+    "correct": "b",
+    "rationale": "Von Willebrand disease is an inherited clotting factor deficiency occurring in both males and females."
+  },
+  {
+    "num": 46,
+    "stem": "The dentigerous cyst (follicular cyst) occurs around the crowns of an unerupted or developing tooth. They arise from a cystic change in the dental follicle. What other fact listed below is NOT commonly related to the dentigerous cyst?",
+    "options": {
+      "a": "The cyst is unilocular and sometimes multilocular",
+      "b": "The most frequent location is the third molar region",
+      "c": "The dentigerous cyst commonly occurs in the 20 to 30 age range",
+      "d": "It is the most common type of an inflammatory odontogenic cyst"
+    },
+    "correct": "d",
+    "rationale": "The dentigerous cyst is classified as a developmental cyst, not an inflammatory odontogenic cyst."
+  },
+  {
+    "num": 47,
+    "stem": "The Nasolabial cyst that is found in the soft tissues of the lip lateral to the midline, in the mucolabial fold near the maxillary canine, and in the floor of the nose is categorized as:",
+    "options": {
+      "a": "A developmental cyst",
+      "b": "Pseudocyst",
+      "c": "Primordial cyst",
+      "d": "Residual cyst"
+    },
+    "correct": "a",
+    "rationale": "The nasolabial cyst is a developmental soft tissue cyst."
+  },
+  {
+    "num": 48,
+    "stem": "Most people will clear the HPV virus in time. What is the usual amount of time for clearance to occur?",
+    "options": {
+      "a": "2 month",
+      "b": "6 months",
+      "c": "8 months",
+      "d": "12 months"
+    },
+    "correct": "d",
+    "rationale": "Twelve months (1 to 2 years) is the typical amount of time for spontaneous HPV clearance in immunocompetent individuals."
+  },
+  {
+    "num": 49,
+    "stem": "A simple bone cyst will usually be seen on radiograph as a large area of the mandible. The descriptor that is most appropriate is which of the following?",
+    "options": {
+      "a": "A small circular cyst-like structure",
+      "b": "A wide opaque structure",
+      "c": "A scalloped appearance encircling the roots of existing teeth",
+      "d": "A ground glass-like appearance"
+    },
+    "correct": "c",
+    "rationale": "Simple bone cysts present radiographically with a characteristic scalloped radiolucent margin encircling tooth roots."
+  },
+  {
+    "num": 50,
+    "stem": "What is the most common type of oral lichen planus?",
+    "options": {
+      "a": "Plaque type",
+      "b": "Erosive type",
+      "c": "Reticular type",
+      "d": "Atrophic type"
+    },
+    "correct": "c",
+    "rationale": "Reticular type is the most common clinical form of oral lichen planus (erosive form presents with intense intraoral lesions on attached gingiva)."
+  }
+]

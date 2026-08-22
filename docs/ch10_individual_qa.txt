@@ -1,0 +1,461 @@
+Chapter 10 Review Questions
+Answers and rationales to review questions are available on this text’s accompanying Evolve site. See inside front cover for details.
+
+1. Which of these groups is a regulatory body?
+a. The Occupational Safety and Health Administration (OSHA)
+b. The Centers for Disease Control and Prevention (CDC)
+c. The Association for Dental Safety (ADS)
+d. The American Dental Association (ADA)
+ 2. Which of these groups provides evidence-based recommendations?
+a. The Occupational Safety and Health Administration (OSHA)
+b. The Centers for Disease Control and Prevention (CDC)
+c. The Environmental Protection Agency (EPA)
+d. The Food and Drug Administration (FDA)
+ 3. Which of these strains of Hepatitis is NOT bloodborne?
+a. Hepatitis A
+b. Hepatitis B
+c. Hepatitis C
+d. Hepatitis D
+ 4. Which of these is considered a critical item according to the Spaulding classification?
+a. Blood pressure cuff
+b. Mouth mirror
+c. Radiograph sensor
+d. Dental hygiene curette
+ 5. Which of these is considered a semicritical item according to the Spaulding classification?
+a. Blood pressure cuff
+b. Mouth mirror
+c. Extraction forceps
+d. Dental hygiene curette
+ 6. Which of these is considered a noncritical item according to the Spaulding classification?
+a. Blood pressure cuff
+b. Mouth mirror
+c. Radiograph sensor
+d. Dental hygiene curette
+ 7. A sneeze or a cough is an example of:
+a. Source of microbe or pathogen
+b. A portal of entry
+c. A portal of exit
+d. A vulnerable host
+ 8. All of these are work restrictions for a dental health care worker EXCEPT one. Which is the EXCEPTION?
+a. Conjunctivitis
+b. Pediculosis
+c. Measles
+d. Headache
+ 9. Which best describes engineering controls?
+a. Devices to reduce the risk of exposure incidents
+b. Actions or behaviors that reduce the risk of exposure incidents
+c. Personal protective equipment that reduce the risk of exposure incidents
+d. All of the above
+ 10. All of the following are examples of work practice controls EXCEPT one. Which is the EXCEPTION?
+a. Self-sheathing needles
+b. One-handed scoop technique for recapping a needle
+c. Maintaining a 14–18-inch working distance to reduce droplets
+d. Fulcruming one to four teeth away from tooth being treated
+ 11. According to transmission-based precautions, where would a patient with active tuberculosis be treated?
+a. In the doctor’s treatment room
+b. In the dental hygienist’s operatory
+c. In an airborne isolation room
+d. In a hospital dental clinic
+ 12. According to standard precautions, all of the following are considered potentially infectious EXCEPT one. Which is the EXCEPTION?
+a. Blood
+b. Nonintact skin
+c. Sweat
+d. Mucous membranes
+ 13. Which of the following immunizations are recommended for dental health care workers?
+a. Shingles
+b. Hepatitis A and B
+c. Pneumonia
+d. Polio
+ 14. When should antibody follow-up testing occur for the Hepatitis B vaccine?
+a. 1–2 months after the final injection
+b. 3–4 months after the final injection
+c. 4–6 months after the final injection
+d. 1–2 years after the final injection
+ 15. Hand hygiene should be performed at all of these times EXCEPT one. Which is the EXCEPTION?
+a. Before gloving (donning)
+b. After gloves are removed (doffing)
+c. After using the restroom
+d. Before using the restroom
+ 16. Choose the correct sequence for donning personal protective equipment (PPE).
+a. Protective clothing (lab coat or gown), mask & eyewear, hand hygiene, then gloves
+b. Mask & eyewear, hand hygiene and gloves, then protective clothing (lab coat or gown)
+c. Protective clothing (lab or gown), hand hygiene and gloves, then mask & eyewear
+d. Mask & eyewear, protective clothing (lab coat or gown), then hand hygiene and gloves
+ 17. Which types of gloves should be used during instrument reprocessing?
+a. Nonsterile examination gloves
+b. Sterile surgical gloves
+c. Utility gloves
+d. Overgloves (food handler’s gloves)
+ 18. Latex allergy is which type of reaction?
+a. Type I immediate
+b. Type II Cytotoxic
+c. Type III Immune Complex
+d. Type IV delayed
+ 19. Which type of surface disinfectant should be used to wipe clinical contact surfaces that might be contaminated with blood or other potentially infectious material (OPIM)?
+a. High level
+b. Intermediate level
+c. Low level
+d. None of the above
+ 20. Intermediate-level disinfectants carry all of these kill claims EXCEPT one. Which is the EXCEPTION?
+a. C. difficile
+b. HIV
+c. Hepatitis B
+d. S. aureus
+ 21. Which of the following is NOT considered a clinical contact surface?
+a. Chair controls
+b. Bracket tray
+c. Floors
+d. Saliva ejector control
+ 22. Which organization regulates chemical disinfectants?
+a. FDA
+b. CDC
+c. OSHA
+d. EPA
+ 23. Dental Unit Water Lines measured in colony-forming units per milliliter (CFU/mL) must not exceed which level of bacterial contamination?
+a. 50 CFU/mL
+b. 100 CFU/mL
+c. 500 CFU/mL
+d. 1000 CFU/mL
+ 24. What is the first action that should be taken when a percutaneous (sharps injury) happens?
+a. Wash the area with soap and water
+b. Yell for help
+c. Report the injury
+d. Get an HIV test
+ 25. Where should blood-soaked or blood-saturated items should be discarded?
+a. In the trash can at the front desk
+b. In the operatory
+c. In a biohazard container
+d. In the sterilization area trash can
+ 26. How soon should a dental health care worker seek medical care after an exposure incident?
+a. Within one hour
+b. Within two hours
+c. Within four hours
+d. Within 24 hours
+ 27. All of the following are acceptable methods of cleaning for removing debris or bioburden from instruments prior to sterilization EXCEPT one. Which is the EXCEPTION?
+a. Hand scrubbing with a short-handled brush
+b. An ultrasonic bath
+c. An instrument washer
+d. An instrument washer/disinfector
+ 28. Autoclave tape is an example of which type of chemical indicator?
+a. Class I
+b. Class II
+c. Class III
+d. Class VI
+ 29. The best place to store instruments after sterilization is_______________?
+a. unwrapped in the sterilization drawer.
+b. unwrapped in the dental operatory.
+c. wrapped in a drawer in the operatory.
+d. wrapped on a shelf above the autoclave.
+ 30. How frequently should biological monitoring with chemical indicators occur?
+a. At least every hour
+b. At least daily
+c. At least weekly
+d. At least monthly
+ 31. Which type of chemical indicator should be placed inside of a wrapped instrument cassette?
+a. Class I
+b. Class II
+c. Class IV
+d. Class V
+ 32. All of the following methods inhibit the formation of biofilm in dental unit water lines EXCEPT one. Which is the EXCEPTION?
+a. Flushing water lines for 2 minutes
+b. Independent water reservoir
+c. Chemical disinfection of water lines
+d. Sterile-water delivery systems
+ 33. Which governmental agency is responsible for approving the safety and effectiveness of small office sterilizers and ultrasonic units?
+a. EPA
+b. FDA
+c. CDC
+d. OSHA
+ 34. What is the ultimate goal of disease prevention in the oral health care (OHC) setting?
+a. Prevent pathogens from entering the OHC setting.
+b. Sterilize clinical contact surfaces between patients.
+c. Prevent OHC related infections and disease.
+d. Eliminate all microbes in the OHC setting.
+ 35. A dental health care worker has occupationally acquired tuberculosis. Which of the following modes of transmission would be implicated in this case?
+a. Direct contact
+b. Indirect contact
+c. Droplet infection
+d. Airborne infection
+ 36. Which term is used for the practice of treating a patient’s blood, body fluids, nonintact skin, and mucous membranes as potentially infectious?
+a. Standard precautions
+b. Pervasive precautions
+c. Universal precautions
+d. Protective precautions
+ 37. Today, effective vaccines are available to prevent which of the following infections?
+a. HIV
+b. Hepatitis C
+c. Hepatitis B
+d. Herpes simplex
+ 38. Which of the following is an example of an engineering control?
+a. Eyewear
+b. Sharps container
+c. Using a one-handed scoop technique for recapping a needle
+d. Handwashing
+ 39. Which of the following is not a link in the chain of infection?
+a. A pathogen in sufficient number
+b. A mode of transmission for the pathogen
+c. An immune host
+d. A portal of entry into a new host
+e. A reservoir for the pathogen
+ 40. A person who is immune/recovered from a disease but can still transmit the disease is called:
+a. A susceptible host
+b. A source patient
+c. A carrier
+d. An at-risk dental health care worker
+ 41. All of the following tasks should be conducted to maintain high-quality dental unit water EXCEPT one. Which is the EXCEPTION?
+a. Use heated water for patient comfort.
+b. Flush water lines for 20–30 seconds between patients.
+c. Use low-level chemical germicides in dental unit water lines.
+d. Periodically test the CFU/mL level in dental unit water.
+ 42. The Centers for Disease Control and Prevention recommends that all dental offices have a designated person who handles infection control training records, monitors infection control policies and procedures, and who communicates updates about infection control policies and procedures. This person is known as the __________________.
+a. OSHA monitor
+b. Infection control coordinator
+c. Infection Manager
+d. CDC Monitor
+
+
+ANSWERS:
+
+
+Chapter Review - Answers and Rationales 
+
+	1.	A. The Occupational Safety and Health Administration (OSHA) is a regulatory body. 
+b.The Centers for Disease Control and Prevention (CDC). CDC is an advisory body only.
+c.The Association for Dental Safety (ADS) is a professional association.
+d.The American Dental Association (ADA) is a professional association.
+
+	2.	B. The Centers for Disease Control and Prevention (CDC) is an advisory body that provides evidence-based recommendations.
+	a.	The Occupational Safety and Health Administration (OSHA) is regulatory body.
+	c.	The Environmental Protection Agency (EPA) is regulatory (chemicals)
+	d.	The Food and Drug Administration (FDA) is regulatory (devices)
+
+	3.	A. Hepatitis A is fecal/oral route transmission, not bloodborne
+b. Hepatitis B is bloodborne
+c. Hepatitis C is bloodborne
+	d.	Hepatitis D is bloodborne
+ 
+	4.	D. Dental hygiene curette is a critical item because it penetrates tissues
+	a.	Blood pressure cuff is a non-critical item as it only touches skin
+	b.	Mouth mirror is a semi-critical item as it touches mucous membranes but does not penetrate
+	c.	Radiograph sensor is a semi critical item as it touches mucous membranes but does not penetrate
+
+	5.	B. Mouth mirror is a semi-critical item because is touches mucous membranes but does not penetrate.
+	a.	Blood pressure cuff is a non-critical item as it only touches skin
+	c.	Extraction forceps are critical as they penetrate tissues
+	d.	Dental hygiene curettes are critical as they penetrate tissues
+
+	6.	A. Blood pressure cuff is considered non-critical as it only touches skin.
+	b.	Mouth mirror is considered semi-critical as it touches mucous membranes.
+c. Radiograph sensor is considered semi-critical as it touches mucous membranes.
+d. Dental hygiene curettes are critical as they penetrate tissues
+
+	7.	C. A portal of exit is a way for pathogens to get OUT of a patient
+	a.	Source of microbe or pathogen is a patient with a disease
+	b.	A portal of entry is a way for pathogens to get into a patient
+d. A vulnerable host is a person that has the potential to acquire a disease
+
+	8.	D. Headache is NOT a CDC work restriction
+	a.	Conjunctivitis is a CDC work restriction
+	b.	Pediculosis is a CDC work restriction
+	c.	Measles is a CDC work restriction 
+
+	9.	A. Devices to reduce the risk of exposure incidents
+	b.	Actions or behaviors that reduce the risk of exposure incidents (actions/behaviors are not devices).
+	c.	Personal protective equipment that reduce the risk of exposure incidents (PPE not a device)
+	d.	All options are correct (incorrect)
+
+	10.	A. Self-sheathing needles are devices not behaviors
+	b.	One handed scoop technique for recapping a needle is a work practice behavior
+	c.	Maintaining a 14-18 inch working distance to reduce droplets is a work practice behavior
+	d.	Fulcruming one to four teeth away from tooth being treated is a work practice behavior 
+
+
+	11.	C. In an airborne isolation room (TB is treated in an isolation room)
+
+	a.	In the doctor’s treatment room (not an airborne isolation room)
+	b.	In the dental hygienist’s operatory (not an airborne isolation room)
+d.In a hospital dental clinic (not an airborne isolation room)
+
+	12.	C. Sweat is not potentially infectious 
+	a.	Blood is potentially infectious
+	b.	Non-intact skin is potentially infectious
+d.Mucous membranes is potentially infectious
+
+	13.	B. Hepatitus A and B is a recommended vaccine for DHCW
+A. Shingles is not a recommended vaccine for DHCW
+C. Pneumonia is not a recommended vaccine for DHCW
+D. Polio is not a recommended vaccine for DHCW
+
+	14.	A. 1 to 2 months after the final injection is the recommendation
+
+	b.	3-4 months after the final injection (incorrect answer)
+	c.	4-6 months after the final injection (incorrect answer)
+	d.	1 to 2 years after the final injection (incorrect answer)
+
+	15.	D. Before using the restroom (hand hygiene is NOT recommended at this time)
+
+	a.	Before gloving (donning) (hand hygiene is recommended at this time)
+	b.	After gloves are removed (doffing) (hand hygiene is recommended at this time)
+	c.	After using the restroom (hand hygiene is recommended at this time)
+
+	16.	A. Protective clothing (lab coat or gown), mask & eyewear, hand hygiene, then gloves. (this is correct sequence).
+	b.	Mask & eyewear, hand hygiene and gloves, then protective clothing (lab coat or gown). (this sequence is incorrect)
+	c.	Protective clothing (lab or gown), hand hygiene and gloves, then mask & eyewear. (this sequence is incorrect)
+	d.	Mask & eyewear, protective clothing (lab coat or gown), then hand hygiene and gloves (this sequence is incorrect)
+
+	17.	C. Utility gloves are used because they are puncture resistant
+
+	a.	Nonsterile examination gloves (incorrect-these are used during routine non-surgical treatment)
+	b.	Sterile surgical gloves (incorrect-these are used during surgical procedures)
+d. Over gloves (food handler’s gloves) (incorrect, as these are used over nonsterile gloves to prevent cross contamination).
+
+	18.	A. Latex allergy is which type of reaction?
+	a.	Type I immediate correct answer
+	b.	Type II Cytotoxic incorrect answer
+	c.	Type III Immune Complex incorrect answer
+	d.	Type IV delayed incorrect answer
+
+	19.	
+	a.	High level incorrect because it is immersion only for items that cannot withstand heat, not a surface disinfectant
+	b.	Intermediate level correct because it kills HIV, HepB, and test organism M. Tuberculosis, a highly resistant organism
+	c.	Low level incorrect because it does not have a TB kill claim
+	d.	No options are correct (incorrect)
+
+	20.	
+	a.	C. difficile is not killed with intermediate level disinfection
+	b.	HIV is killed by intermediate level disinfection
+	c.	Hepatitis B is killed by intermediate level disinfection
+	d.	S. aureus is killed by intermediate level disinfection
+
+	21.	
+	a.	Chair controls are clinical contact surfaces
+	b.	Bracket tray is a clinical contact surface
+	c.	Floors are housekeeping surfaces, not clinical contact surfaces
+	d.	Saliva ejector control are clinical contact surfaces
+
+	22.	
+	a.	FDA regulates devices
+	b.	CDC provides evidence-based recommendations and is advisory not regulatory
+	c.	OSHA regulates worker safety
+	d.	EPA regulates chemicals used in the United States
+
+	23.	
+	a.	50 CFU/mL (incorrect, can be up to 500 CFU)
+	b.	100 CFU/mL (incorrect, can be up to 500 CFU)
+	c.	500 CFU/mL (correct, cannot exceed 500 CFU)
+	d.	1000 CFU/mL (incorrect, cannot be more than 500 CFU)
+
+	24.	
+	a.	Wash the area with soap and water (first step in the process)
+	b.	Yell for help (incorrect and not part of the appropriate steps)
+	c.	Report the injury (incorrect, this is the second step)
+	d.	Get an HIV test (incorrect, this is a later step in the process along with Hepatitis B testing)
+
+	25.	
+	a.	In the trash can at the front desk (incorrect, blood soaked or saturated must discard in biohazard waste)
+	b.	In the operatory (incorrect, blood soaked or saturated must discard in biohazard waste)
+	c.	In a biohazard container (correct place to discard blood soaked or saturated)
+	d.	In the sterilization area trash can (incorrect, blood soaked or saturated must discard in biohazard waste)
+
+	26.	
+	a.	Within one hour (can go during this time but needs to be within 2 hours)
+	b.	Within two hours (must go within 2 hours)
+	c.	Within four hours (incorrect, 4 hours exceeds the 2-hour limit)
+	d.	Within 24 hours (incorrect, 4 hours exceeds the 2-hour limit)
+
+	27.	
+	a.	Hand scrubbing with a short-handled brush is NOT recommended by CDC to avoid a percutaneous (sharps) injury
+	b.	An ultrasonic bath (is acceptable method for cleaning)
+	c.	An instrument washer (is acceptable method for cleaning)
+	d.	An instrument washer/disinfector (is acceptable method for cleaning)
+
+	28.	
+	a.	Class I is correct because it is a single parameter (heat) autoclave tape is an example
+	b.	Class II is incorrect because it is a specific test like Bowie-Dick
+	c.	Class IV is incorrect because it is a multi-parameter indicator like a pouch
+	d.	Class V is incorrect because it is a multi-parameter indicator like an integrator inside a cassette.
+
+	29.	
+	a.	unwrapped in the sterilization drawer. Incorrect, instrument must be stored wrapped and unopened until the point of use.
+	b.	unwrapped in the dental operatory. Incorrect, instrument must be stored wrapped and unopened until the point of use. 
+	c.	wrapped in a drawer in the operatory. Correct because it must stay wrapped in a cool dry area away from the sterilizer
+	d.	wrapped on a shelf above the autoclave. Incorrect because it must be stored in a cool dry area away from the sterilizer.
+
+	30.	
+	a.	At least every hour (incorrect, unnecessary)
+	b.	At least daily (can be done daily, but incorrect according to CDC recommendations)
+	c.	At least weekly (correct per CDC recommendations as a MINIMUM)
+	d.	At least monthly (incorrect, too infrequent)
+
+	31.	
+	a.	Class I (incorrect because this is a single parameter like autoclave tape)
+	b.	Class II (incorrect because it is a specific test like Bowie-Dick
+	c.	Class IV (incorrect because this is a multiple parameter like a pouch)
+	d.	Class V (correct because it is a multiparameter integrator that is placed inside a cassette)
+
+	32.	
+	a.	Flushing water lines for 2 minutes (flushing alone does not reduce biofilm)
+	b.	Independent water reservoir (Is an acceptable method for reducing biofilm)
+	c.	Chemical disinfection of water lines (Is an acceptable method for reducing biofilm)
+	d.	Sterile water delivery systems (Is an acceptable method for reducing biofilm)
+
+	33.	
+	a.	EPA incorrect regulatory agency governing chemicals in the US
+	b.	FDA correct agency that regulates equipment and devices
+	c.	CDC incorrect as CDC provides evidence-based recommendations advisory not regulatory
+	d.	OSHA incorrect, regulates worker safety
+
+	34.	
+	a.	Prevent pathogens from entering the OHC setting. (Incorrect, cannot stop pathogens completely)
+	b.	Sterilize clinical contact surfaces between patients. (incorrect, cannot sterilize surfaces-can only disinfect)
+	c.	Prevent OHC related infections and disease. Correct answer
+	d.	Eliminate all microbes in the OHC setting. (Incorrect, cannot stop pathogens completely)
+
+	35.	
+	a.	Direct contact TB is airborne inhalation. Direct contact involves exposure to pathogens with nonintact skin on bare hands; person to person bodily contact
+	b.	Indirect contact TB is airborne inhalation not direct contact-results from exposure to pathogens via contaminated instruments or surfaces.
+	c.	Droplet infection TB is airborne inhalation not direct contact- results from contaminated liquid droplets from spray or spatter that contact mucous membranes or nonintact skin.
+	d.	Airborne infection this correct TB is airborne because it is inhaled into lungs
+
+	36.	
+	a.	Standard Precautions is correct because it adds an additional layer including saliva
+	b.	Pervasive precautions is incorrect
+	c.	Universal precautions is incorrect because it does not include saliva
+	d.	Protective precautions is incorrect
+
+	37.	
+	a.	HIV is incorrect as there is no vaccine for this
+	b.	Hepatitis C is incorrect as there is no vaccine for this, although it is treatable with medications.
+	c.	Hepatitis B
+	d.	Herpes simplex is incorrect as there is no vaccine for this
+
+	38.	
+	a.	Eyewear is incorrect because it is PPE not a device
+	b.	Sharps container is correct because it is a safety device
+	c.	Using a one-handed scoop technique for recapping a needle is incorrect as this is a work-practice control (safe behavior)
+	d.	Hand washing is incorrect as this is a behavior and not a device
+
+	39.	
+	a.	A pathogen in sufficient number. (this is a link in the chain)
+	b.	A mode of transmission for the pathogen. (this is a link in the chain)
+	c.	An immune host. (this is a link in the chain)
+	d.	A portal of entry into a new host. (this is a link in the chain)
+	e.	A reservoir for the pathogen. (this is a link in the chain)
+
+	40.	
+	a.	A susceptible host. (incorrect because they have not had the disease)
+	b.	A source patient. (incorrect because they have not had the disease)
+	c.	A carrier. (Correct because they carry the disease)
+	d.	An at-risk dental health care worker. (Incorrect)
+
+	41.	
+	a.	Use heated water for patient comfort. Correct answer-heated water is NOT recommended because it can easily grow biofilm.
+	b.	Flush water lines for 20-30 seconds between patients. (This helps maintain high quality water)
+	c.	Use low-level chemical germicides in dental unit water lines. (This helps maintain high quality water)
+	d.	Periodically test the CFU/mL level in dental unit water. (This helps maintain high quality water)
+
+	42.	
+	a.	OSHA monitor (OM) incorrect, no such title exists
+	b.	Infection control coordinator (ICC) this is correct from CDC recommendations
+	c.	Infection Manager (IM) incorrect, no such title exists
+	d.	CDC Monitor (CDCM) incorrect, no such title exists
