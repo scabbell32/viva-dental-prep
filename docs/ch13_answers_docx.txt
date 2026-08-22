@@ -1,0 +1,609 @@
+Blue: Darby's Comprehensive Review of Dental Hygiene, 9th Edition
+
+Chapter 13: Biomaterials
+
+Chapter Review - Answers and Rationales 
+
+
+1.e. Two liquids are mixed through a application tip for impression materials and for some polymer-based cements.
+a. 	Powder and liquids are pre-capsulated for dental amalgam, some cements, and some resin-modified glass ionomer filling materials.
+b. 	Powder and liquid are mixed together on a mixing pad for some glass ionomers cements and atraumatic restorative technique (ART) materials.
+c. 	No dental materials are mixed together simply by vibration.  
+d. 	Powder and liquid are mixed together in a mixing bowl for plaster, stone, die stone, alginate impression material, and gypsum-based investment material.
+
+2.d. 	The setting time is the elapsed time from the start of mixing until the end of setting.
+a. 	This is the sum of the mixing and setting intervals, and not the setting time. 
+b. 	This is the sum of the working and setting intervals, and not the setting time.
+c. 	This is the time from the start to the end of the setting process, and not the setting time.
+e. 	This is the working interval, and not the setting time.
+
+3.c.		Gypsum-bonded investment sets by water reacting with calcium sulfate hemihydrate to produce a dihydrate and does not involve polymerization.
+	a.	Flowable dental composite sets by the monomer matrix phase polymerizing
+	b.	Hybrid glass ionomer cements sets by the water soluble resin phase polymerizing
+	d.	Polyether impression material sets by the matrix phase undergoing polymerization
+	e.	Pit-and-fissure sealants set by the mixture of monomers undergoing polymerization
+	
+4.d. 	Alginate is a hydrogel that contains almost 85 percent water and quickly gains (imbibition) or loses water depending on the environment in which it is stored.
+a. 	Dental sealant only absorbs a small amount of water, and it occurs very slowly
+b. 	Flowable composite only absorbs a small amount of water, and it occurs very slowly
+c. 	Dental cement, even if it contains some water in the composition, does not undergo problematic imbibition 
+e. 	Zirconia is ceramic and do not gain or lose water, although very tiny amounts of water may be absorbed into surface cracks
+
+5.b. Dental amalgam restorations conduct heat relatively easily because they are metallic.
+a. 	Glass ionomer cements involve ceramic and polymeric phases which are insulating
+c. 	Packable composite, with its high ceramic filler content and insulating polymer matrix, is a poor thermal conductor
+d. 	Zirconia ceramic inlays are poor thermal insulators
+e. 	Ceramic veneers are insulators
+
+6.b. 	Cast gold restorations undergo crevice corrosion under plaque films albeit slowly.
+a.			Polycarboxylate cements contain no metallic phases to undergo corrosion
+c.			Ceramic orthodontic brackets contain no metallic phases to undergo corrosion
+d.			Zirconia is a ceramic and does not undergo corrosion
+e.			One of the above, cast gold restorations, does undergo crevice corrosion
+
+7.c.	 1 mm or more of remaining dentin thickness provides excellent pulpal insulation
+a.		Sealant over a restoration is extremely thin and provides little insulation
+b.		Calcium hydroxide above dentin is insulating but not nearly as good as the dentin below
+	d.	Composite is insulating but nearly as good as 1 mm of dentin below the composite
+	e.	5 mm of dental amalgam restoration is not insulating 
+	 
+8.a.	 Chelation refers to the attraction process of two oppositely charged molecular entities and is not related to color.
+	b.	Munsel is a color scale
+	c.	Lab refers to the three components (L*, a*, b*) of color in the CIE system
+	d.	VITA is a popular shade guide using for matching color developed by the VITA company
+e.		Metamerism is the situation in which two colors with different spectral distributions look the same under certain conditions
+	
+9.e.  Radiopacity is the ability of a material to block x-ray transmission.
+	a.	Crevices create small electrochemical couples for corrosion between shallow and deep areas
+b.		An electrochemical couple is created between the plaque covered and uncovered adjacent areas
+c.		Local stress creates an electrochemical couple between stressed and unstressed areas
+d.		Passivation is the formation of a tight adherent initial corrosion film that blocks further corrosion and protects the underlying metal or alloy
+
+10.a.  A material’s strength is the highest stress supported before failure.
+	b.	Maximum deformation before failure is the elongation
+	c.	Maximum elastic behavior before failure is the total elastic strain
+	d.	Toughness is the energy absorbed up to the point of failure
+	e.	Resilience is the total elastic energy absorbed up to the elastic limit
+
+11.d. Stress is computed as the applied load divided by the original cross-sectional area of the object being loaded.
+a. 	Modulus multiplied by the plastic deformation is a nonsense answer
+b. 	The difference between the total strain and the plastic strain is the elastic strain
+c. 	The deformation divided by the original length is the total strain
+e. 	Deformation divided by the volume of the object is a nonsense answer
+
+12.c. Engineering strain is the deformation divided by the original length of the object, or the fractional change in length of the object.
+a.	Load at yield divided by elastic deformation is a nonsense answer
+b.	Applied load divided by the total elastic deformation is a nonsense answer
+d.  	Change between the initial and final strain divided by the time is a nonsense answer
+e.   	Area under the stress-strain curve is a nonsense answer
+
+13.b. Stiffness measures the stress required to produce strain (and is the slope of the stress-strain curve and also called the modulus).
+a. 	Fracture strength is the maximum stress supported prior to failure 
+c. 	Fatigue resistance is the ability to resist many cycles of stress under all loading conditions.
+d. 	Brittleness is defined as very limited ability to undergo plastic deformation prior to fracture
+e. 	Toughness is the area under the stress-strain curve up to the breaking point
+
+14.d.  Abfraction is tooth loss at the CEJ due to tooth flexure under loading that produces saucer-shaped or notch-shaped lesions.
+	a.	Fracture at amalgam margins resulting from creep and occlusal loading is called ditching
+	b.	Wear on the occlusal surfaces of posterior teeth produces facets
+c.		Tooth fractures may occur parallel to the long dimensions of an older tooth but are not abfractions
+e.		Fatigue fractures in older restored teeth arise near restorations and undermine a cusp 
+
+15.b.  Axial loading of posterior teeth produces flexure that puts the CEJ region in tension and causes abfraction.
+a.	Toothbrushes have nylon bristles that are not hard enough to produce cervical notching
+c.	Improper tooth development does not create cervical lesions
+d.	Cervical caries can create cervical tooth loss but this is not associated with stress
+e.	Excessive exposure to acidic foods can produce enamel dissolution at many areas of teeth
+
+16.d.  Mohs scale compares the resistance to scratching which estimates the hardness.
+	a.	Toughness is the area under the stress-strain curve which estimates the energy to failure
+	b.	Resilience is the area under the stress-strain curve up to the elastic limit
+	c.	Ultimate strength is the highest stress supported before failure
+	e.	Fatigue is the accumulation of plastic strain during repeated load cycling
+
+17.c. Dental enamel has a Mohs’ hardness value of 5-6.
+a. 	Gypsum has a hardness of 2
+b. 	Dentin is 3-4 on the scale and is therefore softer than enamel
+d. 	Quartz has a hardness of 7 and is harder than enamel
+e. 	Corundum has a hardness of 9 and is much harder than enamel
+
+18.a. Ag-Sn is the phase that reacts with Hg during setting.  It is not entirely consumed by the reaction and remains as the strongest phase reinforcing a set amalgam. 
+b. 	Ag-Cu is a second reactant in many high-copper amalgams but is not as strong as Ag-Sn
+c. 	Cu-Sn is formed in high-copper amalgams to tie up the Sn but is relatively weak
+d. 	Ag-Hg is the primary reaction product phase but is weaker than Ag-Sn
+e. 	Sn-Hg is both corrosion-prone and weak
+
+19.a. Precapsulated amalgams minimize mercury release.
+b. 	Covered mixing arm on the triturator prevents the formation of aerosols if leakage occurs during mixing but does not prevent mercury vapor escape
+c. 	Mortar-and-pestle mixing is an antiquated mixing approach and is no longer recommended because it is inefficient and permits mercury vapor release
+d. 	Friction-fit or screw-fit capsules tend to leak during the trituration process
+e. 	More rapid trituration increases the likelihood of mercury release
+
+20.a. 12-30% copper is the broad range of copper content for high-copper amalgams.
+b. 	6-12% copper is beyond the low-copper range but insufficient to produce the major corrosion resistance of high-copper compositions
+c. 	Low-copper dental amalgams involve 1-5 percent copper
+d. 	0.5-1% is too little to affect amalgam properties
+e. 	0.1-0.5% copper is too little to affect amalgam properties
+
+21.a. High-copper dental amalgam is much more corrosion-resistant.
+b. 	Both types of amalgam are polishable
+c. 	Both types of amalgam have similar coefficients of thermal expansion
+d. 	Both types of amalgam have moderately high thermal conductivity
+e. 	Both types of amalgam have good mechanical properties
+
+22.a.  OSHA (Occupational Safety and Health Administration) regulates worker exposure limits.
+	b.	EPA (Environmental Protection Agency) regulates air and water pollution
+	c.	CDC (Centers for Disease Control) manage public health challenges
+	d.	ADA (American Dental Association) develops dental product standards
+	e.	FDI (Federation Dentaire International) recommends dental ISO standards
+
+23.a. 127 C is the temperature at which the Ag-Hg matrix phase begins to melt but this can be prevented if water is used to absorb and dissipate heat during polishing.
+b. 	137 C is above the temperature at which the Ag-Hg phase starts to melt
+c. 	147 C is above the temperature at which the Ag-Hg phase starts to melt
+d. 	157 C is above the temperature at which the Ag-Hg phase starts to melt
+e. 	167 C is above the temperature at which the Ag-Hg phase starts to melt
+
+24.b. Polishing produces heat that almost invariably causes localized melting of the amalgam matrix of Ag-Hg at the surface.
+a. 	Surface corrosion products including tarnish are easily removed by polishing and do not become embedded into the amalgam surface
+c. 	Polishing produces a shiny lustrous surface that is mirror-like and reflects adjacent tooth color
+d. 	Amalgam smear layers are easily removed and do not produce enamel staining
+e. 	Polishing will not produce marginal ditching
+
+25.d. Best management practices advise on all details of handling dental amalgam and mercury.
+a. 	The EPA is not directly involved with best management practices
+b. 	The EPA is not directly involved with best management practices
+c. 	The ADA standards for recapture devices are only part of best management practices
+e. 	Spent amalgam capsules contain residual traces of mercury and mixed amalgam and should be carefully stored and recycled, but are only part of the overall best management practices
+
+26.c.  The Minamata agreement commits to actively reduce all Hg use worldwide including dental uses.
+	a.	Composite is roughly the same overall cost of a dental amalgam procedure
+	b.	While patients prefer tooth-colored restorations, that has not been the greatest pressure 
+	d.	Patients like all-ceramic restorations, but they are much more costly
+	e.	While dentin bonding techniques continue to improve, they are not directly related to decreased amalgam use  
+
+27.d. Most high-copper dental amalgam restorations fail from bulk fracture following long-term fatigue. 
+a. 	Marginal ditching along occlusal margins occurs due to creep and corrosion but does not produce clinical failure
+b. 	Creep is minor in most cases and amalgam extrusion is either worn away or polished away
+c. 	Wear facets along the occlusal surface are indicative only of functional contact areas and are not considered failure
+e. 	Accumulation of green or black tarnish is not important to the success of a dental amalgam, although it may be esthetically displeasing
+
+28.a. Contemporary dental composites have excellent strength and wear resistance, compete well with dental amalgams, can be easily repaired, and are often chosen as an alternative to dental amalgam because they are relatively low-cost.
+b. 	Glass ionomer restorations do not have sufficient fracture resistance to be used in high stress and high wear situations
+c. 	Cast gold alloy is a good substitute for dental amalgam but is significantly more expensive and therefore not the routine choice
+d. 	While zirconia inlays, onlays, or crowns are becoming more popular for posterior use, porcelain restorations are far too weak and brittle for these high-stress situations
+e. 	ART materials are intended as temporary restorations only
+
+29.a. Amalgams very slowly expand and without abrasion become slightly extruded.
+	b.	While amalgams are not all well-placed, Class V sites are not unusually difficult to restore
+	c.	Corrosion occurs slowly and produces minor creep
+	d.	Secondary caries does not contribute to amalgam dimensional changes
+	e.	Amalgam does not react with F ions
+
+30.b. Tinted sealants facilitate the long-term identification of the sealant presence and are clinically preferred over colorless ones.
+a. 	Sealants have the proper mechanical properties to easily wear away in self-cleaning areas where they are not needed and remain in non–self-cleaning areas to preclude dental caries
+c. 	Sealants should be re-inspected every one-and-a-half to two years to insure that there are no failures that might increase caries risk. 
+d. 	Partial sealing of pits and fissures may actually encourage caries because generally sealants only fill the uppermost portions of fissures so leakage could occur underneath
+e. 	Uncured sealant along air-exposed surfaces is oxygen-inhibited material that will not cure on its own and should be wiped away at the end of the procedure
+
+31.d. Gum chewing should not affect any restorative material because saliva protects tooth surfaces constantly from strong adherence to food or gum.
+a. 	Extensive tea exposure may stain rough surfaces and slowly be absorbed into the surfaces of composite materials
+b.  	Acidulated phosphate fluoride (APF) exposure inadvertently causes etching of the ceramic portions of traditional hybrid composites and slowly produces a rougher surface
+c. 	Tobacco use (smoking or chewing) generally contributes to surface staining
+e. 	Whitening techniques for tooth structure may inadvertently alter the color match with the esthetic restorations because the teeth bleach and the restorations do not
+
+32.b. Staining of the apical margin occurs over time because this is the least well-bonded area since no enamel is present.
+	a.	Coronal margins of Class V composites are the strongest due to the presence of enamel
+c.	Modern composites and glass ionomers have small particle size reinforcement and thus surfaces remain clinically smooth
+d.	Composites and glass ionomers are formulated to resist discoloration 
+e.	Class V composites or glass ionomers are strong enough to resist fracture during tooth flexure
+	
+33.e. Stained composite within margins cannot be managed and should just be cleaned normally. 
+a. 	Regular toothpastes remove accessible surface stains, and whitening toothpastes tend to lighten the color of composite but not affect margins
+b. 	Treatment with peroxide is not useful and may damage the margin further
+c. 	Heavy pressure during prophy procedures will damage the composite at the margin
+d. 	Brushing with abrasive toothpaste will not be able to access the stains and could damage the margin
+
+34.a.	Infiltrants are resin impregnated non-cavitated proximal lesions that halt existing caries but appear radiolucent due to the presence of resin replacing dissolved enamel components.
+b.		Dental composites are designed to be radiopaque
+c.		Dental sealants do not need to be radiopaque because they are superficial
+d.		Temporary restorations generally are radiopaque
+e.		Glass ionomer restorations are radiopaque
+
+35.a. Infiltrant fills the space in a non-cavitated proximal lesion and stops caries progression.
+	b.	Infiltrant stops but is not intended to repair damage of secondary caries
+	c.	Infiltrant is for impregnating lesions and not for use as a surface sealant
+	d.	Infiltrant is not intended as a repair material for restorations
+	e.	Infiltrant is not intended to seal over SDF treated tooth structure
+
+36.c. Composite restorations can be easily resurfaced with new composite using bonding systems to attach the interface to older composite. 
+a. 	Composite can be easily repaired with new composite and does not require complete replacement for wear with amalgam
+b. 	Composite should be repaired with composite which is stronger and more wear-resistant than resin-modified glass ionomer
+d. 	Most wear is related to food bolus abrasion and not opponent tooth wear
+e. 	Composite can be easily repaired and does not require replacement with dental ceramic
+
+37.d. Self-etch dentin-bonding procedures, by definition, rely on acidic monomers to etch and not phosphoric acid solutions
+a. 	Sealant application involves enamel-bonding only and routinely relies on phosphoric-acid–solution etching
+b. 	Ceramic bracket attachment involves enamel bonding only and routinely relies on phosphoric-acid–solution etching
+c. 	Total-etch dentin-bonding procedures are, by definition, etching of enamel and dentin with phosphoric acid solution
+e. 	Amalgam bonding procedures, while rarely used, rely on total-etch bonding procedures
+
+38.d.  Bonding depends on resin infiltration of etched dentin that produces a hybrid zone.
+a.	Dentin should remain moist during bonding procedures
+b.	Chlorhexidine cavity cleanser when used may interfere with bonding
+c.	Post-curing with visible light may advance polymerization but is not necessary
+e.	Long etching times are unnecessary
+
+39.e. Monomers in the dentin bonding composition function in two roles, initial etching and subsequent polymerization.
+a. 	Wetting agents are no help in this particular step
+b. 	No monomers are added for chemical reaction with hydroxyapatite
+c. 	No phosphoric acid is added to the composition
+d. 	No chemical bonding occurs with collagen
+
+40.a.  Bonding agents are normally supplied from solvent solutions and dry to very thin films.
+b.	Prophy materials do not come into contact with bonding agent films and should not react
+c.	Bonding agent films are thin (1-5 m)
+d.	Bonding agents, even if they slightly changed color, would not produce visible discoloration
+e.	Bonding agent films are too thin to produce thermal protection
+
+41.c.  Dentin primers contain HEMA which is water miscible.
+a.  	APF does not contain acrylic monomers
+b.  	Pit-and-fissure sealants currently do not contain water-miscible monomers
+d.	Resin surface sealers are predominantly hydrophobic and do not contain water-miscible monomers
+e.  	Polishing pastes contain no reactive liquids
+
+42.b. HEMA is a common monomer in dentin-bonding system primers that causes relatively rapid sensitization in some clients.
+a. 	Ethanol is a water-soluble solvent used in many dentin-bonding systems, but it does not produce sensitization
+c. 	UDMA is a monomer in many bonding adhesives, but it generally does not produce sensitization very readily
+d. 	BIS-GMA is a monomer in many bonding adhesives (and composite resins), but it does not produce sensitization very readily
+e. 	Phosphoric acid is a very strong acid and could potentially produce burns on epithelium, but it will not produce sensitization
+
+
+43.c. Total-etch adhesives can be three component (E+P+B) or two component (E+PB) and both contain phosphoric acid as the primary etchant.  
+a. 	E is simply the symbol for etching only
+b. 	EP+B is the shorthand for a two-component self-etch bonding system
+d. 	E+PB is the shorthand for a two-component total-etch bonding system
+e. 	EPB is the shorthand for a one-component self-etch bonding system
+
+44.b. Porcelain ceramics or porcelain-veneered alumina or zirconia will etch in contact with APF.
+a. 	Amalgam phases do not dissolve in APF
+c. 	Cast gold is not soluble in APF solutions
+d. 	Orthodontic wires are covered with a passivating film that tends to protect them during APF treatment
+e. 	Sealants are almost exclusively resin and not susceptible to etching in APF
+
+45.b.  F ions replace a few hydroxyl ions in hydroxyapatite and increase the acid resistance.
+a.	While CaF2 (2 should be subscript) precipitates can form, they are not protective and are lost quickly from tooth structure
+c.	F may kill bacteria in the biofilm but this is very temporary and not the main action
+d.	There is no effect on resistance of teeth to discoloration
+e.	There is no effect on pit and fissure sealants
+
+46.b. Eugenol mitigates the action of the c-axis nerve fibers and produces a palliative action if it diffuses to the dental pulp.
+a. 	HEMA is a monomer that is a sensitizer and is irritating to cells if it diffuses to the dental pulp
+c. 	UDMA is a monomer that is irritating to cells if it diffuses to the dental pulp
+d. 	BIS-GMA is a monomer that is irritating to cells if it diffuses to the dental pulp
+e. 	Calcium hydroxide stimulates the production of secondary dentin if it diffuses to the dental pulp, but it is not palliative
+
+47.e. Silica (silicon oxide and silicon dioxide) is the primary component of aluminosilicate fillers in composite.
+a. 	Zirconium oxide (zirconia) is a very strong ceramic used for ceramic restorations
+b. 	Aluminum oxide is in ZOE cements or as a modifier of silicate fillers in composites
+c.	Zinc oxide is the major reactant and filler in ZOE cement
+d. 	Calcium oxide is not a primary filler in composite
+
+48.e.  Zinc phosphate cement is a ceramic material.  It does not include polymer.
+a. 	Polycarboxylate cement contains polyacrylic acid that is crosslinked with zinc ions during the setting reaction
+b. 	Glass ionomer contains polyacrylic acid that is crosslinked by calcium and aluminum ions during the setting reaction
+c. 	Resin-modified glass ionomer contains polyacrylic acid and is modified to also undergo additional crosslinking reactions
+d. 	Composite cement sets by polymerization of BIS-GMA-like monomers with themselves and diluent monomers
+
+49.c. Provisional restorations are made from PMMA or composite and currently do not release fluoride.
+a. 	Resin-modified glass ionomers generally contain less releasable fluoride, and the diffusion is retarded by the presence of the resin modifiers
+b. 	Compomers contain fluoride in the reinforcing filler glasses that may be dissolved and released at the surfaces, but the amounts are very small
+d. 	ART restorations are based on glass ionomer and contain releasable fluoride
+e. 	Traditional glass ionomer cement contains the greatest amount of releasable fluoride
+
+50.a. The fluoride-release rate from glass ionomers rapidly decreases after 24 hours.
+b. 	The rapid decrease occurs immediately and then only occurs very slowly over days to months
+c. 	The rapid decrease occurs immediately and then only occurs very slowly over days to months
+d. 	Unless the glass ionomer is recharged it does not gain fluoride
+e. 	Glass ionomers continue to release only low levels of fluoride over many years
+
+51.b.  Recharging has only a very short-term effect and lasts a few days.
+a.		Recharging does work but is not very effective
+c.		Recharging has only a short-term effect and not for a few months
+d.		Recharging has only a short-term effect and not for 1-2 years
+e.		Recharging is not permanent
+
+52.a. A huge volume of glass ionomer is used for ART procedures in second- and third-world regions as short-term Class I and II restorations for caries control to gain time until patients can get more advanced dental care.
+	b. 	Most Class III and IV restorations are permanent and made from bonded composites
+c. 	Liners are not made from ART materials
+d.	Temporary crowns are made from PMMA or composite materials
+e. 	Class V esthetic restorations are made from bonded composites or glass ionomer
+
+53.d.  Silver diamine fluoride (SDF) is a potent anticaries agent usually most often with primary dentition for caries control.
+	a.	Fluoride-releasing glass ionomer may reduce caries but the effect is suspected to be small
+	b.	Tin oxide is a polishing compound
+	c.	Ultraviolet light does not have any effect on carious lesions
+	e.	Zirconium dioxide (zirconia) is a strong all-ceramic material with no anticaries effects
+
+54.c.  Caries removal, SDF or analog treatment, and/or GI restoration.
+a.	Treatment with SDF avoids a common option of extracting teeth
+b.	Caries removal and restoration is a lengthy procedure for a child
+d.	Infiltration of the lesions is not practical because many are cavitated
+e.	Calcium phosphate cement is not strong enough as a restoration in most cases
+
+55.a. Alginate contains 85% water in its set composition.
+b. 	Polysulfide contains no water
+c. 	Polyether contains no water
+d. 	Vinyl polysiloxane contains no water
+e. 	ZOE contains no major water content
+
+56.b.  Water can be quickly lost from an alginate impression surface, so it is common to wrap the impression in a wet paper towel while manipulating it and before it is poured with plaster.  
+	a.	Water is quickly exchanged with air.  It is not stable over time
+	c.	Alginate may exchange water with air, and usually is losing water to the air
+	d.	Alginate is not contaminated by things in the air
+	e.	Alginate has a stable water distribution, so water does not tend to pool to the bottom of the impression.
+
+57.c. It should not be poured immediately because gas bubbles may be released for up to 4 hours after setting that would contaminate and alter the surface of a setting model or cast.
+a. 	It shrinks very little on setting
+b. 	After setting, it is dimensionally stable, and does not continue to react
+d. 	Like all impression materials, it contains fillers to mitigate any potential shrinkage
+e. 	It picks up very fine details of surfaces and is very accurate
+
+58.d. Dies are duplicates of teeth that can be removed from the working cast to more carefully work with indirect restorations being fit onto them and need to be stronger and wear resistant.
+a. 	Denture fabrication requires space filling material for molding but also needs to be easily removed at the end of the process
+b. 	Plaster or stone is generally used to repair models or casts
+c. 	A master cast is the first cast produced for capturing the cavity preparation information and occlusion for the production of indirect restorations
+e.  	Orthodontic models capture all soft- and hard-tissue information about a patient for reference but not for use in producing indirect restorations
+
+59.b. Calcium sulfate dihydrate is the reaction product of water and calcium sulfate hemihydrate.
+a.	Calcium sulfate trihydrate does not exist
+c. 	Calcium sulfate monohydrate does not exist
+d. 	Calcium sulfate hemihydrate is gypsum that is only partially reacted with water
+e. 	Calcium sulfate unhydrated is not stable at room temperature
+
+60.e. Gypsum powder for models (or casts) is composed of calcium sulfate hemihydrate.
+a. 	Gypsum powder for models (or casts) does not contain calcium chloride
+b. 	Gypsum powder for models (or casts) does not contain calcium phosphate
+c.	Gypsum powder for models (or casts) does not contain calcium carbonate
+d. 	Gypsum powder for models (or casts) does not contain calcium fluoride
+
+61.b. 18 mL is the theoretical amount of water required for complete reaction of 100 g of powder, but additional water must always be added to make a workable mixture.
+a. 	12 mL is too little water to produce the complete reaction of with 100 g of plaster powder
+c. 	24 mL is the amount of water routinely required for mixing with 100 g of improved die stone
+d. 	32 mL is the amount of water routinely required for mixing with 100 g of die stone
+e. 	50 mL is the amount of water routinely required for mixing with 100 g of plaster powder
+
+62.d. Stone has more efficient powder particle packing and requires less excess water for making a suitable mixture.
+a. 	While the reaction is exothermic, there are no worries about the small temperature rise
+b. 	The reaction rate is not affected much by the amount of water
+c. 	In this particular application there is no need for hygroscopic expansion
+e. 	Both plaster and stone powders are calcium sulfate hemihydrate before reaction and only calcium sulfate dihydrate after reaction
+
+63.b. Different particle shapes produce different packing efficiencies that affect the amount of excess water required for making a suitable mixture. 
+a. 	Neither material is formally sterilized
+c. 	Both materials are calcium sulfate hemihydrate powder
+d. 	Very minor colorant is artificially added to distinguish materials
+e. 	The materials are the same crystal structure, although slightly different forms of it
+
+64.e. Different particle shapes produce different packing efficiencies that affect the amount of excess water required for making a suitable mixture. 
+a. 	All gypsum products set by the same chemical reaction
+b. 	Powder particles are not porous
+c. 	The chemical reactions for plaster and stone are the same
+d. 	There are no fillers added to diestone or plaster
+
+65.c. Wax cools from the outside to the inside producing distortions when it shrinks.
+a. 	Wax adhesion to dies is generally not a problem
+b. 	Generally shrinkage does not generate porosity but does create stresses
+d. 	Generally the additions are small enough that their weight does not induce sag
+e. 	Waxes are hydrophobic and not susceptible to water absorption
+
+66.a. Paraffin is the major component of most waxes.
+b. 	Beeswax is not the major wax and is added only to induce tackiness
+c. 	Ceresin is a modifier but not the major wax
+d. 	Carnuba wax is a modifier that raises the melting point but not the major wax
+e. 	Microcrystalline is a modifier but not the major wax
+
+67.c. Inlay wax patterns and dies are invested and then must be removed by pyrolysis from the molds so they must easily burn up into CO2 and H2O.
+a. 	A high hardness for wax would be a disadvantage because it would interfere with the ability to carve it for wax patterns
+b. 	All waxes and components already have high coefficients of thermal expansion
+d. 	All components of dental waxes are organic materials with low melting ranges
+e. 	All components of dental waxes are relatively inexpensive
+
+68.c. Investment materials are primarily a matrix and filler with a small amount of modifier.
+a. 	Usually there is only one filler
+b. 	There is always at least one solid phase involved
+d. 	Pastes are not chosen because low viscosity is needed   
+e. 	Investment materials require a filler phase for high temperature resistance
+
+69.e. Phosphate bonded investment (PBI) is thermally stable to higher temperatures than gypsum bonded investment (GBI) and is useful for casting higher-temperature melting alloys.
+a. 	Strength is not very important for investment materials
+b. 	Higher-temperature melting alloys typically require higher and not lower setting expansion
+c. 	The setting reaction is governed more by accelerators and retarders, not type of composition
+d. 	PBI is actually more expensive than GBI
+
+70.d. 18 karat is (18/24)(100 percent) = ~75 percent Au.
+a. 	10 karat is (10/24)(100 percent) = ~42 percent Au
+b. 	12 karat is (12/24)(100 percent) = ~50 percent Au
+c. 	15 karat is (15/24)(100 percent) = ~62 percent Au
+e. 	20 karat is (22/24)(100 percent) = ~83 percent Au
+
+71.a. Cu increases the hardness of an otherwise relatively soft composition that is mostly Au.
+b. 	Zn is added in small amounts as a processing aid to suppress oxidation during melting and casting
+c. 	Au is the dominant element in the composition and imparts good corrosion resistance
+d. 	Pd is added in minor amounts to adjust the melting temperature and hardness
+e. 	Ag is added to Au to counteract the effect of Cu which creates a more orange color
+
+72.a. Cr instantaneously reacts with O2 and creates a tight adherent film (chromium oxide) that prevents further corrosion (oxidation) of the alloy surface. 
+b. 	C is added to Fe to produce steel and improve mechanical properties
+c. 	Cobalt is added to steels and other alloys but for other reasons
+d.  	Nickel is added to steels and other alloys but for other reasons
+e. 	Fe is the major element in stainless steel but is not corrosion-resistant
+
+73.c. Stainless steel includes 18-28% chromium to produce a chromium oxide film to passivate the alloy.
+a. 	10-14% chromium is too little to produce passivation
+b. 	14-18% chromium is too little to produce effective passivation
+d. 	28-40% chromium is much more than needed for effective passivation
+e. 	>40% chromium is much more than needed for effective passivation
+
+74.a. The soldered portion of the joint is more corrosion prone than the parent metals.
+	b.	It is weaker than the parent metals being joined.
+	c.	Solders are classified with a fineness scale (1-1000 fineness).
+	d.	Brazed or welded joints involve melting the parent metals and do not use a solder.
+	e.	Most dental solders are based on gold or silver.
+75.d. Titanium, rather than gold alloys, is used for most implants because of its superior strength and ability to osseointegrate at its surfaces. 
+a. 	Cast gold alloys are excellent for fabricating bridges
+b. 	Cast gold alloys are excellent for fabricating crowns
+c. 	Cast gold alloys are used when cast post and cores are required
+e. 	Cast gold alloys are still occasionally used for partial denture frameworks
+
+76.b. Dental amalgam contains no nickel.
+a. 	Nickel is a component of stainless steel used for crowns for primary teeth
+c. 	Nickel is part of many denture framework alloys (e.g., Fe-Cr, Ni-Cr)
+d. 	Nickel is part of many PFM-based metal alloys (e.g., Fe-Cr, Ni-Cr)
+e. 	Nickel is part of stainless steel orthodontic wires
+
+77.a. The incidence of nickel sensitivity is approximately 6% for men and 11-24% for women.
+b. 	The incidence of nickel sensitivity for men is ~6%
+c. 	The incidence of nickel sensitivity for men is ~6%
+d. 	The incidence of nickel sensitivity for men is ~6%
+e. 	The incidence of nickel sensitivity for men is ~6%
+
+78.c. Women tend to have much greater nickel-based jewelry contact than men.
+a. 	There are no known genetic predispositions to nickel sensitivity
+b. 	Hair does not appear to be a protective factor in limiting contact dermatitis to nickel
+d. 	Both men and women appear to be at equal risk to contact with stainless steel in the environment
+e. 	Both men and women appear to be at equal risk to contact with nickel-containing coinage
+
+79.e. Ceramic materials are based on major combinations of metallic and non-metallic elements into compounds or alloys.
+a.	Ceramics are often glass or crystalline but so are metals and polymers
+b.	Ceramics tend to have high Moh’s hardness values but some metals do as well
+c.	Ceramics can be thermal and electrical semi-conductors or insulators
+d.	Ceramics are frequently used as abrasives but that is not true for all ceramics
+
+80.d. Silica (silicon dioxide), alumina (aluminum oxide), and potassium oxide are the main components in dental porcelain.
+a. 	Calcium oxide is not a main component in dental porcelain
+b. 	Calcium oxide is not a main component in dental porcelain
+c. 	Calcium oxide, magnesium oxide, and chromium oxide are not main components in dental porcelain
+e. 	Zinc oxide and calcium fluoride are not main components in dental porcelain
+
+81.a. Silica (Silicon dioxide) is the major component of feldspathic porcelains and contributes substantially to the esthetic properties.
+b. 	Potassium oxide is employed simply to lower the melting temperature of the mixture
+c. 	Chromium oxide is not a major component and is used only as a colorant
+d. 	Titanium dioxide is not a major component and is added simply as an opacifier
+e. 	Alumina produces improvements in strength but tends to scatter light and decrease esthetics
+
+82.d. Very-high–strength ceramics are based on yttria-stabilized tetragonal “zirconia.”
+a. 	Silicon carbide is not used in dental ceramics
+b. 	Potassium oxide is relatively low strength
+c. 	Chromium oxide is relatively brittle and is not used for high-strength ceramics
+e. 	Silica is relatively low strength.
+
+83.a. Feldspathic porcelain is used to veneer metal castings.
+b. 	Feldspathic porcelain is not strong enough to be used for all-ceramic restorations
+c. 	Feldspathic porcelain has relatively low strength compared to other ceramics like zirconia
+d. 	Feldspathic porcelain has good translucency
+e. 	Feldspathic porcelain is easy to color and excellent for creating excellence esthetics
+
+84.a. Silicon is not a ceramic.  It is a metallic element.  Silicon dioxide(silica) is a ceramic.
+b.  	Corundum (aluminum oxide) is a ceramic having a metal (aluminum) and non-metal (oxygen) portion of its composition
+c.  	Hydroxyapatite is a ceramic and is normal part of enamel and dentin
+d.		Zirconia (zirconium dioxide) is a strong ceramic used often for dental implants
+e.		Titanium dioxide is a ceramic and occurs as a protective coating on titanium implants
+
+85.e.  Feldspathic porcelains are relatively weak compared to zirconia.
+a.	Feldspathic porcelain is relatively brittle
+b.	Feldspathic porcelain is a type of a ceramic based on relatively standard amount of silica, alumina, and potassium oxide
+c.	Feldspathic porcelain is often used to veneer metal alloys in dentistry to mimic tooth structure
+d.	Feldspathic porcelain is based on relatively standard amount of silica, alumina, and potassium oxide
+
+86.e. The ideal film thickness for dental cement is 50-100 m and not the <25 m often quoted in older dental literature.
+a.	1-5 m is very thin and typical only of dentin bonding agents.
+b.	5-10 m is too small a tolerance for cast restorations and tooth structure to fit together
+c.	<25 m is an often quoted incorrect value in older dental literature
+d.	25-50 um is still too small for a restoration and tooth structure to fit together
+
+87.e. Zinc phosphate cement is very exothermic and requires very careful mixing to control the reaction.
+a. 	Polycarboxylate cement cannot be staged because the reaction involves cross-linking
+b. 	Resin-modified glass ionomer cements are not very exothermic and can be mixed easily
+c. 	Compomer cement polymerizes on setting and is only modestly exothermic
+d. 	Universal cement polymerizes on setting and is only modestly exothermic
+
+88.e. MMA (methyl methacrylate) is the major monomer in denture-base resin.
+a. 	HEMA is used in many bonding primers but not in denture bases
+b. 	BIS-GMA is a major monomer used in restorative resin compositions but not in denture bases
+c. 	Denture bases contain small amounts of EMA (ethyl methacrylate) as an internal plasticizer for the polymer that is primarily polymethyl methacrylate
+d. 	UDM is used in many restorative resin compositions and in some light-activated denture bases
+
+89.c. Acrylic resin teeth can be bonded to the denture base. Porcelain teeth must be provided with gross mechanical retention. Esthetic (composite) denture teeth are difficult to get well-bonded.
+a. 	Acrylic resin, composite, and porcelain teeth are all easy to clean
+b. 	Acrylic resin wears more than composite or porcelain denture teeth
+d. 	Weight of denture teeth is not an issue
+e. 	Acrylic teeth are esthetic but not as much as composite or porcelain teeth
+
+90.a. Tissue conditioners are softened by alcoholic plasticizers that rapidly desorb from the conditioner over several days and cause them to become harder.
+b. 	Generally there is no taste produced by the tissue conditioners
+c. 	Tissue conditioners are bonded well enough to survive the first few days
+d. 	While discoloration can occur, it is not common over the first few days
+e. 	Although fungal growth can occur along the surfaces of dentures and tissue conditioners, it should not significantly alter the properties of the conditioner and does not generally occur in the first few days
+
+91.b. Cool soap-and-water solutions are the easiest and cheapest method to cleanse a mouth protector.
+a. 	Dilute chlorhexidine might stain or otherwise deteriorate the polymer used for the mouth protector
+c. 	Denture-cleaning solutions generally are too extreme for the softer polymer used in mouth protectors
+d. 	Dilute chlorine bleach in water may attack the polymer in the mouth protector
+e. 	Gentle ultrasonic agitation could be used, but there is no benefit to including baking soda solutions for cleaning
+
+92.e. Thermoplastic polymer is commonly used to mold a mouth protector.
+a. 	Impression material is not used and would be too weak to resist clenching
+b. 	Gutta percha would not be sufficiently flexible
+c. 	Composite would not be sufficiently flexible
+d. 	Denture base resin would not be sufficiently flexible
+
+93.c.  CAD/CAM is the acronym for computer “aided or assisted” design and machining.
+	a.	Augmented is a nonsense option.
+	b.	Automated is not a synonym for “aided or assisted”
+	d.	Aged is a nonsense option
+	e.	Aligned is nonsense option
+
+94.b. Soft machining is the process by which a partially sintered (porous and less strong ceramic) is machined as an oversized object and then sintered to remove the porosity while shrinking to the exactly appropriate final size.  
+	a.	High-temperature vitrification is not involved and would be equivalent to melting
+	c.	Milling during vitrification is not a currently available production process
+	d.	Laser milling is a different process
+e.	Hard machining is the milling of an object to the exact final shape out of a non-porous and strong ceramic block
+
+95.d. Dental floss does not affect the integrity of the titanium dioxide surface of dental implants.
+a. 	Polishing agents erode the titanium oxide surface of dental implants, but it can reform
+b. 	Abrasive dentifrices erode the titanium dioxide surface of dental implants, but it can reform
+c. 	Scaling scratches the titanium dioxide surface of dental implants, but it can reform
+e. 	APF attacks the titanium dioxide surface of dental implants, but it can reform
+
+96.a.  Zirconia is now being used for more and more dental implants as a replacement for titanium
+	b.	Alumina is not used because it is not sufficiently strong as a polycrystalline material
+	c.	Aluminosilicate is not sufficiently strong
+	d.	Silicon carbide is strong but black in color
+	e.	Porcelain is relatively weak compared to zirconia
+
+97.a.  Inkjet printers can be used to build up (additive) restorations in three dimensions.
+b.  	CAD/CAM machining of composite is a subtractive process because material is being removed
+c.	CAD/CAM machining of zirconia is a subtractive process
+d.	Casting does not involve milling and is thus not categorized as additive or subtractive
+e.	There is a true answer in the collection of options
+
+98.e. For creation of new tissue (tissue engineering) there must be cells, signals, and scaffolds.
+a. 	Cells are also required
+b. 	Signals are also required
+c. 	Signals are also required
+d. 	Signals are also required
+
+99.b. Allograft is tissue replacement that comes from the same species, usually cadavers.
+a. 	Xenograft is tissue replacement that comes from different species
+c. 	Synthetic tissue is made from nonliving materials and remains artificial
+d. 	Tissue engineering replacement is produced in the laboratory or built in situ from cells, signals, and scaffold material
+e. 	Autograft is tissue replacement that comes from one’s own body
+
+100.a. Gold mesh is not used as a scaffold
+b. 	Polylactic acid (and polyglycolic acid) scaffolds are common for tissue engineering
+c. 	Bioglass is a bioactive ceramic material that is commonly used to help form new bone
+d. 	Collagen is a common scaffold for both soft- and hard-tissue engineering
+e. 	Bone chips have been used as a scaffold for forming new bone
+
+
+
