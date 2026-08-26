@@ -7,6 +7,7 @@ import { redirect } from 'next/navigation'
 import { Nav } from '@/components/nav'
 import { QuizPreviewClient } from '@/components/admin/quiz-preview-client'
 import { QuizPreviewHeader } from '@/components/admin/quiz-preview-header'
+import { QuizCalendar, QuizDateInfo } from '@/components/admin/quiz-calendar'
 import { GenerateButtonClient, RegenerateButtonClient } from '@/components/admin/daily-quiz-generate-button'
 import { getCurrentWeekNumber } from '@/lib/program-week'
 
@@ -27,11 +28,18 @@ export default async function QuizPreviewPage({
   const today = paramDate || new Date().toISOString().slice(0, 10)
   const week = getCurrentWeekNumber()
 
-  const [{ data: quiz }, { data: poolIds }, { data: candidates }] = await Promise.all([
+  const [{ data: quiz }, { data: poolIds }, { data: candidates }, { data: allQuizzes }] = await Promise.all([
     adminDb.from('daily_quizzes').select('*').eq('date', today).maybeSingle(),
     adminDb.from('questions').select('id').eq('track', 'nbdhe').eq('is_active', true).lte('week_number', week),
     adminDb.from('profiles').select('id, full_name, phone').eq('role', 'candidate').order('full_name'),
+    adminDb.from('daily_quizzes').select('date, status, question_ids').order('date', { ascending: false }),
   ])
+
+  const quizDates: QuizDateInfo[] = (allQuizzes ?? []).map(q => ({
+    date: q.date,
+    status: q.status as 'draft' | 'published',
+    questionCount: Array.isArray(q.question_ids) ? q.question_ids.length : 0,
+  }))
 
   const availableCount = poolIds?.length ?? 0
 
@@ -41,6 +49,14 @@ export default async function QuizPreviewPage({
         <Nav role="admin" />
         <main className="max-w-3xl mx-auto px-4 py-8 space-y-6">
           <QuizPreviewHeader date={today} week={week} />
+          
+          {/* Interactive Month Calendar */}
+          <QuizCalendar
+            selectedDate={today}
+            quizzes={quizDates}
+            navigationUrl="/admin/quiz-preview"
+          />
+
           <div className="rounded-xl border bg-white p-10 flex flex-col items-center gap-4">
             <div className="text-4xl">📋</div>
             <h2 className="font-semibold text-gray-700">No hay quiz generado para esta fecha</h2>
@@ -102,6 +118,13 @@ export default async function QuizPreviewPage({
             )}
           </div>
         </div>
+
+        {/* Interactive Month Calendar */}
+        <QuizCalendar
+          selectedDate={today}
+          quizzes={quizDates}
+          navigationUrl="/admin/quiz-preview"
+        />
 
         <QuizPreviewClient
           quiz={quizWithQuestions as Parameters<typeof QuizPreviewClient>[0]['quiz']}

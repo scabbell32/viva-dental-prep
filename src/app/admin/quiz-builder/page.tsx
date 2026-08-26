@@ -42,6 +42,17 @@ export default async function QuizBuilderPage() {
       return n(a) - n(b)
     })
 
+  const { data: allQuizzes } = await adminClient
+    .from('daily_quizzes')
+    .select('date, status, question_ids')
+    .order('date', { ascending: false })
+
+  const quizDates = (allQuizzes ?? []).map(q => ({
+    date: q.date,
+    status: q.status as 'draft' | 'published',
+    questionCount: Array.isArray(q.question_ids) ? q.question_ids.length : 0,
+  }))
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Nav role="admin" />
@@ -52,7 +63,7 @@ export default async function QuizBuilderPage() {
             Configura los parámetros y genera una vista previa del quiz
           </p>
         </div>
-        <QuizBuilderClient chapters={chapters} />
+        <QuizBuilderClient chapters={chapters} quizDates={quizDates} />
       </main>
     </div>
   )

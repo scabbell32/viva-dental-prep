@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Badge } from '@/components/ui/badge'
+import { QuizCalendar, QuizDateInfo } from '@/components/admin/quiz-calendar'
 import type { AdminQuestion, CaseSetWithImages, Option } from '@/types/database'
 
 const OPTIONS: Option[] = ['a', 'b', 'c', 'd', 'e', 'f']
@@ -27,6 +28,7 @@ const TYPE_COLOR: Record<string, string> = {
 
 interface Props {
   chapters: string[]
+  quizDates?: QuizDateInfo[]
 }
 
 const RANGES: Record<string, { min: number; max: number; label: string }> = {
@@ -236,7 +238,7 @@ function QuestionCard({ q, index }: { q: AdminQuestion; index: number }) {
   )
 }
 
-export function QuizBuilderClient({ chapters }: Props) {
+export function QuizBuilderClient({ chapters, quizDates }: Props) {
   const router = useRouter()
   const [range, setRange]         = useState('10-15')
   const [week, setWeek]           = useState('all')
@@ -309,6 +311,15 @@ export function QuizBuilderClient({ chapters }: Props) {
 
   return (
     <div className="space-y-6">
+      {/* Visual Month Calendar for Scheduling */}
+      {quizDates && (
+        <QuizCalendar
+          selectedDate={publishDate}
+          quizzes={quizDates}
+          onSelectDate={(d) => setPublishDate(d)}
+        />
+      )}
+
       {/* Config card */}
       <div className="bg-white rounded-xl border border-gray-200 p-5 space-y-5">
         <h2 className="font-semibold text-gray-700 text-sm">Parámetros del Quiz</h2>
