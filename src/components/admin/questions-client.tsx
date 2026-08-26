@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -664,10 +664,30 @@ export function QuestionsClient({ questions: initial, reports = {} }: { question
   const [editing, setEditing] = useState<string | null>(null)
   const [filter, setFilter] = useState('')
   const [weekFilter, setWeekFilter] = useState<string>('all')
+  const [chapterFilter, setChapterFilter] = useState<string>('all')
   const [legacyFilter, setLegacyFilter] = useState<string>('all')
   const [reportedOnly, setReportedOnly] = useState(false)
   const [deleting, setDeleting] = useState<string | null>(null)
   const [resolving, setResolving] = useState<string | null>(null)
+
+  const availableChapters = useMemo(() => {
+    const map = new Map<string, number>()
+    questions.forEach(q => {
+      if (q.chapter_tag) {
+        if (!map.has(q.chapter_tag)) {
+          map.set(q.chapter_tag, q.week_number ?? 0)
+        }
+      }
+    })
+    return Array.from(map.entries())
+      .map(([tag, week]) => ({ tag, week }))
+      .sort((a, b) => {
+        const numA = parseInt(a.tag.replace(/\D/g, '')) || 999
+        const numB = parseInt(b.tag.replace(/\D/g, '')) || 999
+        if (numA !== numB) return numA - numB
+        return a.tag.localeCompare(b.tag)
+      })
+  }, [questions])
 
   async function resolveReports(questionId: string) {
     setResolving(questionId)
@@ -701,6 +721,7 @@ export function QuestionsClient({ questions: initial, reports = {} }: { question
 
   const filtered = questions.filter(q => {
     const matchesWeek = weekFilter === 'all' || String(q.week_number) === weekFilter
+    const matchesChapter = chapterFilter === 'all' || (q.chapter_tag ?? '').toLowerCase() === chapterFilter.toLowerCase()
     const matchesLegacy = legacyFilter === 'all' ||
       (legacyFilter === 'legacy' && q.is_legacy) ||
       (legacyFilter === 'new' && !q.is_legacy)
@@ -710,7 +731,7 @@ export function QuestionsClient({ questions: initial, reports = {} }: { question
       q.question_text.toLowerCase().includes(search) ||
       (q.chapter_tag ?? '').toLowerCase().includes(search) ||
       q.option_a.toLowerCase().includes(search)
-    return matchesWeek && matchesLegacy && matchesReported && matchesSearch
+    return matchesWeek && matchesChapter && matchesLegacy && matchesReported && matchesSearch
   })
 
   return (
@@ -723,6 +744,22 @@ export function QuestionsClient({ questions: initial, reports = {} }: { question
           onChange={e => setFilter(e.target.value)}
           className="max-w-xs h-8 text-sm"
         />
+        <Select value={chapterFilter} onValueChange={v => setChapterFilter(v ?? 'all')}>
+          <SelectTrigger className="w-48 h-8 text-sm"><SelectValue placeholder="Capítulo" /></SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">Todos los capítulos</SelectItem>
+            {availableChapters.map(c => {
+              const label = c.tag.toLowerCase().startsWith('ch')
+                ? `Capítulo ${c.tag.replace(/\D/g, '')}`
+                : c.tag
+              return (
+                <SelectItem key={c.tag} value={c.tag}>
+                  {label} {c.week ? `(Sem. ${c.week})` : ''}
+                </SelectItem>
+              )
+            })}
+          </SelectContent>
+        </Select>
         <Select value={weekFilter} onValueChange={v => setWeekFilter(v ?? 'all')}>
           <SelectTrigger className="w-36 h-8 text-sm"><SelectValue placeholder="Semana" /></SelectTrigger>
           <SelectContent>
